@@ -8,16 +8,24 @@
     <link rel="icon" type="image/png" href="../icones/icone.png">
 </head>
 <body>
-    <main>
-        <div class="box">
-            <form class="form">
+    <main> <!-- Conteúdo principal da página -->
+        <div class="box"> <!-- Caixa principal do formulário -->
+            <form class="form"> <!-- Formulário de login -->
+                <!-- Logo do site -->
                 <img src="../icones/logo.png">
+                <!-- Campo de e-mail -->
                 <label for="e-mail">e-mail:</label>
                 <input type="text" id="e-mail" name="e-mail" placeholder="Digite seu e-mail">
+                <!-- Campo de senha -->
                 <label for="senha">senha:</label>
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
-                <button>Entrar</button>
-                <p>Não tem conta?<a href="../conta/index-cadastrar.html">Cadastrar-se</a></p>
+                <!-- Botão que envia o formulário
+                formaction = para onde vai
+                formtarget="_blank" = abre em nova aba -->
+                <button formaction="/index.html" formtarget="_blank">Entrar</button>
+                <!-- Link para cadastro -->
+                <p>Não tem conta?<a href="../conta/index-cadastrar.html">Cadastrar-se</a>
+                </p>
             </form>
         </div>
     </main>
