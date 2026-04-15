@@ -11,26 +11,24 @@
 </head>
 <body class="claro">
     <!-- Cabeçalho -->
-    <header>
+    <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <img id="logo" src="./src/icones/logo.png" alt="Logo ByteNews">
+            <img id="logo" src="./src/icones/logo-pradrao.png" alt="Logo ByteNews">
         </div>
         <!-- menu -->
         <div class="menu">
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Noticias</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Ciencia</a></li>
-            </ul>
+            <a class="home" href="#">INÍCIO</a>
+            <a href="">NOTÍCIAS</a>
+            <a href="">REVIEWS</a>
+            <a href="">GAMES</a>
+            <a href="">CIÊNCIA</a>
         </div>
         <!-- botões do menu -->
          <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()">🌙</button><!--botão alterar modo-->
+            <button id="tema" onclick="toggleStyle()"><img src="./src/icones/sun.png"></button><!--botão alterar modo-->
             <form>
-                <button formaction="./src/conta/index-login.html" formtarget="_blank">Entrar</button><!--botão para entra em uma conta-->
+                <button id="login" formaction="./src/conta/index-login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
     </header>
@@ -180,47 +178,48 @@
     <footer>
         <div class="box-footer">
         <!-- logo do footer -->
+         ->
             <div class="logo-footer">
-                <img id="logo" src="./src/icones/logo.png" alt="Logo ByteNews">
+                <img id="logo" src="./src/icones/logo-pradrao.png" alt="Logo ByteNews">
             </div>
         <!-- frase do footer -->
             <div class="phrase">
                 <p>Seu portal de tecnologia, games e inovações</p>
             </div>
             <div class="social-media"><!-- redes sociais-->
-                <a href=""><img src="./src/icones/instagram.png" alt="Instagram"></a>
-                <a href=""><img src="./src/icones/whatsapp.png" alt="Whatsapp"></a>
-                <a href=""><img src="./src/icones/facebook.png" alt="Facebook"></a>
-                <a href=""><img src="./src/icones/tiktok.png" alt="Tiktok"></a>
+                <a href="#nav"><img src="./src/icones/instagram.png" alt="Instagram"></a>
+                <a href="#nav"><img src="./src/icones/whatsapp.png" alt="Whatsapp"></a>
+                <a href="#nav"><img src="./src/icones/facebook.png" alt="Facebook"></a>
+                <a href="#nav"><img src="./src/icones/tik-tok.png" alt="Tiktok"></a>
             </div>
             <!-- caixa de navegação -->
             <div class="navegacao-footer">
                 <h2>Navegação</h2>
                 <ul>
-                    <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Anuncie</a></li>
-                    <li><a href="">Trabalhe Conosco</a></li>
+                    <li><a href="#nav">Sobre Nós</a></li>
+                    <li><a href="#nav">Contato</a></li>
+                    <li><a href="#nav">Anuncie</a></li>
+                    <li><a href="#nav">Trabalhe Conosco</a></li>
                 </ul>
             </div>
             <!-- caixa de categorias -->
             <div class="categories-footer">
                 <h2>Categorias</h2>
                 <ul>
-                    <li><a href="">Smartphones</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">IA & Machine Learning</a></li>
-                    <li><a href="">Hardware</a></li>
+                    <li><a href="#nav">Smartphones</a></li>
+                    <li><a href="#nav">Games</a></li>
+                    <li><a href="#nav">IA & Machine Learning</a></li>
+                    <li><a href="#nav">Hardware</a></li>
                 </ul>
             </div>
             <!-- caixa legal -->
             <div class="legal-footer">
                 <h2>Legal</h2>
                 <ul>
-                    <li><a href="">Política de Privacidade</a></li>
-                    <li><a href="">Termos de Uso</a></li>
-                    <li><a href="">Cookies</a></li>
-                    <li><a href="">LGPD</a></li>
+                    <li><a href="#nav">Política de Privacidade</a></li>
+                    <li><a href="#nav">Termos de Uso</a></li>
+                    <li><a href="#nav">Cookies</a></li>
+                    <li><a href="#nav">LGPD</a></li>
                 </ul>
             </div>
         </div>

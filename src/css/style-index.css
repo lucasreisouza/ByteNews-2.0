@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Fundo */
+  --bg-primary: #010626;
+  --bg-secondary: #0F172A;
+  --bg-card: #111827;
+
+  /* Neon / Destaque */
+  --neon-blue: #00E5FF;
+  --neon-purple: #A855F7;
+  --neon-pink: #FF2D9A;
+  --neon-green: #00FF9C;
+
+  /* Gradientes comuns */
+  --gradient-primary: linear-gradient(90deg, #00E5FF, #A855F7);
+  --gradient-secondary: linear-gradient(90deg, #FF2D9A, #00E5FF);
+
+  /* Texto */
+  --text-primary: #e4e4e4;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+
+  /* Bordas / detalhes */
+  --border-color: #1F2937;
+  --glow-blue: rgba(0, 229, 255, 0.5);
+  --glow-purple: rgba(168, 85, 247, 0.5);
+
+  /* Botões */
+  --btn-primary: #00E5FF;
+  --btn-hover: #00C4D6;
+}
+
+header {
+  background-color:var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+  padding: 5px 15px;
+  height: 60px;
+} 
+
+header #logo {
+  width: 200px;
+}
+
+header .menu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    gap: 30px;
+}
+
+header .menu a{
+    text-decoration: none;
+    color: var(--text-primary);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.menu a:hover{
+    border-bottom: 2px solid var(--neon-purple) ;
+}
+
+header .button-menu{
+    display: flex;
+    justify-content: space-around;
+    width: 130px;
+}
+
+header .button-menu #tema{
+    width: 40px;
+    background: none;
+    border: none;
+}
+
+header .button-menu #tema img{
+    width: 25px;
+}
+
+header .button-menu #login{
+  background: transparent;
+  color: var(--btn-hover);
+  border: 2px solid var(--btn-hover);
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 5px;
+  width: 75px;
+}
+
