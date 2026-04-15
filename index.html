@@ -7,8 +7,9 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>ByteNews</title>
     <link rel="icon" type="image/png" href="./src/icones/icone.png">
+    <link rel="stylesheet" href="./src/css/style-index.css">
 </head>
-<body>
+<body class="claro">
     <!-- Cabeçalho -->
     <header>
         <!-- logo -->
@@ -29,234 +30,131 @@
          <div class="button-menu">
             <button id="tema" onclick="toggleStyle()">🌙</button><!--botão alterar modo-->
             <form>
-                <button formaction="./src/conta/index-login.html" formtarget="_blank">Entrar</button><!--botão par entra em uma conta-->
+                <button formaction="./src/conta/index-login.html" formtarget="_blank">Entrar</button><!--botão para entra em uma conta-->
             </form>
         </div>
     </header>
-<!--conteúdo principal-->
-    <main>
-        <div>
-            <section class="carousel-main"> <!--seção do carrossel-->
-                <div id="carouselMain" class="carousel slide" data-bs-ride="carousel"> <!--carrossel principal-->
-                    <div class="carousel-indicators"> <!--indicadores de slides do carrossel-->
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active" 
-                            aria-current="true" aria-label="Slide 1"></button> <!--indicador 1-->
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button> <!--indicador 2-->
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button> <!--indicador 3-->
+
+    <!-- Conteúdo principal da página -->
+<main>
+    <div>
+        <!-- ================= CARROSSEL PRINCIPAL ================= -->
+        <section class="carousel-main"> <!-- carrossel principal-->
+            <!-- Carrossel Bootstrap -->
+            <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores (bolinhas do carrossel) -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="4"></button>
+                </div>
+                <!-- Slides do carrossel -->
+                <div class="carousel-inner" data-bs-interval="3000">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="cartao noticia1">
+                            <!-- Link abre notícia em nova aba -->
+                            <a href="./noticias/iPhone-17.html" target="_blank">
+                                <img src="./imagens/iPhone-17.png" class="d-block" alt="Iphone 16 vs 17">
+                            </a>
+                        </div>
                     </div>
-                    <div class="carousel-inner" data-bs-interval="3000"> <!--slide principal e o primeiro-->
-                        <div class="carousel-item active">
-                            <div class="cartao noticia1"> <!--cartão para adicionar a notícia-->
-                                <a href="./noticias/iPhone-17.html" target="_blank"> <!--link da notícia-->
-                                    <img src="./imagens/iPhone-17.png" class="d-block" alt="Iphone 16 vs 17"> <!--imagem da notícia-->
-                                </a>
-                            </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="cartao noticia2">
+                            <a href="./noticias/apple-watch.html" target="_blank">
+                                <img src="./imagens/apple-watch.png" class="d-block" alt="Apple Wath">
+                            </a>
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000"> <!--segundo slide-->
-                            <div class="cartao noticia2"> <!--cartão para adicionar a notícia-->
-                                <a href="./noticias/apple-watch.html" target="_blank"> <!--link da notícia-->
-                                    <img src="./imagens/apple-watch.png" class="d-block" alt="Apple Wath"> <!--imagem da notícia-->
-                                </a>
-                            </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="cartao noticia3">
+                            <a href="./noticias/como-o-sinal.html" target="_blank">
+                                <img src="./imagens/como-o-sinal.png" class="d-block">
+                            </a>
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000"> <!--terceiro slide-->
-                            <div class="cartao noticia3"> <!--cartão para adicionar a notícia-->
-                                <a href="./noticias/como-o-sinal.html" target="_blank"> <!--link da notícia-->
-                                    <img src="./imagens/como-o-sinal.png" class="d-block" alt="Operadora contra a bateria"> <!--imagem da notícia-->
-                                </a>
-                            </div>
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile"
-                            data-bs-slide="prev"> <!--botão para avançar-->
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!--ícone da seta-->
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile"
-                            data-bs-slide="next"> <!--botão para regredir-->
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span> <!--ícone da seta-->
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                </div>     
-            </section>
-            <section class="news-emphasis">
-                <div class="news-emphasis_title"> <!--notícias destaques do dia-->
-                    <h3>DESTAQUES DO DIA</h3>
-                    <a href=".//src/noticias/rool-noticias.html">VER TODOS →</a> <!--link para ser encaminhado para o rol de notícias-->
+                    </div>
+                    <!-- Botões anterior / próximo -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
-                <div>
-                    <article> <!--caixa para notícia-->                      
-                        <a href="/noticias/iphone-15-ultra-vazamento"> <!--link da notícia-->
-                            
-                            <figure class="news-card_image"> <!--local onde fica a imagem-->
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            > <!--imagem da notícia-->
-                            </figure>
-                            <div class="news-card_content"> <!--caixa com o conteúdo da notícia-->
-                            <span class="news-card_category">Smartphones</span> <!--categoria da notícia-->
-                            <h2 class="news-card_title"> <!--título da notícia-->
-                                iPhone 15 Ultra vaza antes do lançamento
-                            </h2>
-                            <p>2 horas atrás</p> <!--tempo que foi publicado a notícia-->
-                            </div>
-                        </a>
-                    </article>
-                    <article>                      
-                        <a href="/noticias/iphone-15-ultra-vazamento">
-                            
-                            <figure class="news-card_image">
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            >
-                            </figure>
-                            <div class="news-card_content">
+            </div>
+        </section>
+        <!-- ================= DESTAQUES DO DIA ================= -->
+        <section class="news-emphasis">
+            <!-- Título da seção -->
+            <div class="news-emphasis_title">
+                <h3>DESTAQUES DO DIA</h3>
+                <a href=".//src/noticias/rool-noticias.html">VER TODOS →</a>
+            </div>
+            <div>
+                <!-- Card de notícia -->
+                <article>
+                    <a href="/noticias/iphone-15-ultra-vazamento">
+                        <!-- Imagem da notícia -->
+                        <figure class="news-card_image">
+                            <img src="iphone-15-ultra.jpg" alt="Imagem ilustrativa do iPhone 15 Ultra">
+                        </figure>
+                        <!-- Conteúdo da notícia -->
+                        <div class="news-card_content">
                             <span class="news-card_category">Smartphones</span>
                             <h2 class="news-card_title">
                                 iPhone 15 Ultra vaza antes do lançamento
                             </h2>
                             <p>2 horas atrás</p>
-                            </div>
-                        </a>
-                    </article>
-                    <article>                      
-                        <a href="/noticias/iphone-15-ultra-vazamento">
-                            
-                            <figure class="news-card_image">
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            >
-                            </figure>
-                            <div class="news-card_content">
-                            <span class="news-card_category">Smartphones</span>
-                            <h2 class="news-card_title">
-                                iPhone 15 Ultra vaza antes do lançamento
-                            </h2>
-                            <p>2 horas atrás</p>
-                            </div>
-                        </a>
-                    </article>
-                    <article>                      
-                        <a href="/noticias/iphone-15-ultra-vazamento">
-                            
-                            <figure class="news-card_image">
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            >
-                            </figure>
-                            <div class="news-card_content">
-                            <span class="news-card_category">Smartphones</span>
-                            <h2 class="news-card_title">
-                                iPhone 15 Ultra vaza antes do lançamento
-                            </h2>
-                            <p>2 horas atrás</p>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            </section>
-            <div class="news-lower">
+                        </div>
+                    </a>
+                </article>
+                <!-- outros articles repetem o mesmo padrão -->
+            </div>
+        </section>
+        <!-- ================= ÁREA INFERIOR ================= -->
+        <div class="news-lower">
+            <!-- ===== ÚLTIMAS NOTÍCIAS ===== -->
             <section class="news-latest">
+                <!-- título -->
                 <div class="news-latest_title">
                     <h3>ÚLTIMAS NOTÍCIAS</h3>
                 </div>
+                <!-- lista de cards -->
                 <div class="news-latest_cards">
-                    <article>                      
+                    <!-- Card notícia -->
+                    <article>
                         <a href="/noticias/iphone-15-ultra-vazamento">
-                            
                             <figure class="news-card_image">
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            >
+                                <img src="iphone-15-ultra.jpg">
                             </figure>
                             <div class="news-card_content">
-                            <span class="news-card_category">Smartphones</span>
-                            <h2 class="news-card_title">
-                                iPhone 15 Ultra vaza antes do lançamento
-                            </h2>
-                            <p>2 horas atrás</p>
-                            <p>1.8k</p>
-                            </div>
-                        </a>
-                    </article>
-                    <article>                      
-                        <a href="/noticias/iphone-15-ultra-vazamento">
-                            
-                            <figure class="news-card_image">
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            >
-                            </figure>
-                            <div class="news-card_content">
-                            <span class="news-card_category">Smartphones</span>
-                            <h2 class="news-card_title">
-                                iPhone 15 Ultra vaza antes do lançamento
-                            </h2>
-                            <p>2 horas atrás</p>
-                            <p>1.8k</p>
-                            </div>
-                        </a>
-                    </article>
-                    <article>                      
-                        <a href="/noticias/iphone-15-ultra-vazamento">
-                            
-                            <figure class="news-card_image">
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            >
-                            </figure>
-                            <div class="news-card_content">
-                            <span class="news-card_category">Smartphones</span>
-                            <h2 class="news-card_title">
-                                iPhone 15 Ultra vaza antes do lançamento
-                            </h2>
-                            <p>2 horas atrás</p>
-                            <p>1.8k</p>
-                            </div>
-                        </a>
-                    </article>
-                    <article>                      
-                        <a href="/noticias/iphone-15-ultra-vazamento">
-                            
-                            <figure class="news-card_image">
-                            <img 
-                                src="iphone-15-ultra.jpg" 
-                                alt="Imagem ilustrativa do iPhone 15 Ultra"
-                            >
-                            </figure>
-                            <div class="news-card_content">
-                            <span class="news-card_category">Smartphones</span>
-                            <h2 class="news-card_title">
-                                iPhone 15 Ultra vaza antes do lançamento
-                            </h2>
-                            <p>2 horas atrás</p>
-                            <p>1.8k</p>
+                                <span class="news-card_category">Smartphones</span>
+                                <!-- título -->
+                                <h2 class="news-card_title">
+                                    iPhone 15 Ultra vaza antes do lançamento
+                                </h2>
+                                <!-- tempo -->
+                                <p>2 horas atrás</p>
+                                <!-- visualizações -->
+                                <p>1.8k</p>
                             </div>
                         </a>
                     </article>
                 </div>
             </section>
+            <!-- ===== NOTÍCIAS EM ALTA ===== -->
             <section class="news-rise">
+                <!-- título -->
                 <div class="news-rise_title">
                     <h3>EM ALTA</h3>
                 </div>
-                <article>
-                    <img>
-                    <p></p>
-                </article>
-                <article>
-                    <img>
-                    <p></p>
-                </article>
+                <!-- lista simples -->
                 <article>
                     <img>
                     <p></p>
@@ -270,9 +168,13 @@
                     <p></p>
                 </article>
             </section>
-            </div>
         </div>
-    </main>
+    </div>
+</main>
+
+
+
+
 
     <!-- rodapé -->
     <footer>
