@@ -3,13 +3,13 @@ const logo = document.querySelector('#logo');
 const tema = document.querySelector('#tema')
 
 function toggleStyle() {
-  if (body.classList.contains('claro')) {
-    body.classList.remove('claro');
-    body.classList.add('escuro');
-    logo.setAttribute('src', './imagens/logo.png');
+  if (body.classList.contains('dark')) {
+    body.classList.remove('dark');
+    body.classList.add('clear');
+    logo.setAttribute('src', './src/assets/icons/logo-claro.png');
   } else {
-    body.classList.remove('escuro');
-    body.classList.add('claro');
-    logo.setAttribute('src', './Imagens/logo.png');
+    body.classList.remove('clear');
+    body.classList.add('dark');
+    logo.setAttribute('src', './src/assets/icons/logo-padrao.png');
   }
 }

@@ -27,6 +27,7 @@
   /* Neon / Destaque */
   --neon-blue: #00E5FF;
   --neon-purple: #c17eff;
+  --neon-purple2:#7f00b1;
   --neon-pink: #FF2D9A;
   --neon-green: #00FF9C;
 
@@ -132,10 +133,15 @@ main .container {
 }
 
 main .container .carousel-main {
-  width: 80%;
+  width: 89%;
   height: auto;
 }
 
+#carouselMain .carousel-inner h5{
+    font-size: 80px;
+    text-shadow: 7px 6px 10px var(--neon-purple2);
+    color: var(--neon-blue);
+}
 
 /* rodape */
 footer{
