@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -24,8 +25,8 @@
   --bg-card: #111827;
 
   /* Neon / Destaque */
-  --neon-blue: #00f0ff;;
-  --neon-purple: #cd98ff;
+  --neon-blue: #00E5FF;
+  --neon-purple: #A855F7;
   --neon-pink: #FF2D9A;
   --neon-green: #00FF9C;
 
@@ -47,6 +48,8 @@
   --btn-primary: #00E5FF;
   --btn-hover: #00C4D6;
 }
+
+/* ====== header príncipal ====== */
 
 header {
   backdrop-filter: blur(10px);
@@ -112,32 +115,28 @@ header .button-menu #login{
   box-shadow: 0 0 10px #00f0ff50;
 }
 
-/*Main*/
+/* ====== header do article ======= */
 
-main {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.news-header{
+    background: #fff;
 }
 
-main .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  height: auto;
+
+
+
+/* ====== footer do article ====== */
+
+.news-footer{
+    background: #fff;
+    color: black;
 }
 
-main .container .carousel-main {
-  width: 80%;
-  height: auto;
-}
-
-/* rodape */
 
 
+
+
+
+/* footer */
 footer{
     background: var(--bg-primary);
     font-family: Arial, Helvetica, sans-serif;
@@ -241,7 +240,7 @@ footer{
 .navegacao-footer a:hover,
 .categories-footer a:hover,
 .legal-footer a:hover{
-    color: var(--neon-purple);
+    color: var(--neon-blue);
 }
 
 /* parte final */
@@ -256,3 +255,4 @@ footer{
 .end-footer p{
     margin-bottom: 0;
 }
+

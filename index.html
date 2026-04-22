@@ -6,15 +6,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>ByteNews</title>
-    <link rel="icon" type="image/png" href="./src/icones/icone.png">
-    <link rel="stylesheet" href="./src/css/style-index.css">
+    <link rel="icon" type="image/png" href="./src/assets/icons/icone.png">
+    <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body class="claro">
     <!-- Cabeçalho -->
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <img id="logo" src="./src/icones/logo-padrao.png" alt="Logo ByteNews">
+            <a href="index.html">
+                <img id="logo" src="./src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            </a>
         </div>
         <!-- menu -->
         <div class="menu">
@@ -26,9 +28,9 @@
         </div>
         <!-- botões do menu -->
          <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="./src/icones/sun.png"></button><!--botão alterar modo-->
-            <form>
-                <button id="login" formaction="./src/conta/index-login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+            <button id="tema" onclick="toggleStyle()"><img src="./src/assets/icons/sun.png"></button><!--botão alterar modo-->
+            <form> 
+                <button id="login" formaction="./src/pages/account/index-login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
     </header>
@@ -170,24 +172,27 @@
         </div>
     </main>
 
-     <!-- rodapé -->
 
+
+
+
+    <!-- rodapé -->
     <footer>
         <div class="box-footer">
             <div class="first-footer">
                 <!-- logo do footer -->
                 <div class="logo-footer">
-                    <img id="logo" src="./src/icones/logo-padrao.png" alt="Logo ByteNews">
+                    <img id="logo" src="./src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
                 </div>
                 <!-- frase do footer -->
                 <div class="phrase">
                     <p>Seu portal de tecnologia, games e inovações</p>
                 </div>
                 <div class="social-media"><!-- redes sociais-->
-                    <a href="#nav"><img src="./src/icones/instagram.png" alt="Instagram"></a>
-                    <a href="#nav"><img src="./src/icones/whatsapp.png" alt="Whatsapp"></a>
-                    <a href="#nav"><img src="./src/icones/facebook.png" alt="Facebook"></a>
-                    <a href="#nav"><img src="./src/icones/tiktok.png" alt="Tiktok"></a>
+                    <a href="#nav"><img src="./src/assets/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#nav"><img src="./src/assets/icons/whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#nav"><img src="./src/assets/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#nav"><img src="./src/assets/icons/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
                 <!-- caixa de navegação -->

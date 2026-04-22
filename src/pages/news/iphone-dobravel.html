@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>ByteNews</title>
+    <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
+    <link rel="stylesheet" href="/src/pages/news/style.css">
+</head>
+<body class="claro">
+    <!-- Cabeçalho -->
+    <header id="nav">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            </a>
+        </div>
+        <!-- menu -->
+        <div class="menu">
+            <a class="home" href="#">INÍCIO</a>
+            <a href="">NOTÍCIAS</a>
+            <a href="">REVIEWS</a>
+            <a href="">GAMES</a>
+            <a href="">CIÊNCIA</a>
+        </div>
+        <!-- botões do menu -->
+         <div class="button-menu">
+            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button><!--botão alterar modo-->
+            <form> 
+                <button id="login" formaction="/src/pages/account/index-login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+            </form>
+        </div>
+    </header>
+
+
+    <!-- Conteudo Principal -->
+     <main class="news-container">
+        <article class="news-article">
+            <header class="news-header">
+                <h1>iPhone dobrável enfrenta problemas de engenharia e lançamento pode atrasar, diz jornal</h1><!-- titulo da noticia-->
+                <div class="news-meta">
+                    <span>Por ByteNews</span>
+                    <span>• 19 Abril 2026</span>
+                    <span>•Tecnologia<span>    
+                </div>
+            </header>
+
+            <!-- imagem -->
+            <figure class="news-image">
+                <img src="/src/assets/images/iphone-dobravel.png" alt="Iphone dobravel">
+                <figcaption></figcaption>
+            </figure><!-- imagem da noticia-->
+
+
+            <!-- conteúdo -->
+            <section class="news-content">
+                <!-- noticia-->
+                <p>Modelo em teste enfrenta mais problemas do que o esperado, e lançamento previsto para 2026 pode atrasar, segundo o Nikkei Asia.</p>
+                <p>A Apple tem enfrentado problemas na fase de testes de engenharia de seu primeiro iPhone dobrável, o que pode atrasar em meses a produção em massa e o envio dos aparelhos, segundo o jornal Nikkei Asia, que cita fontes.</p>
+                <p>"É verdade que mais problemas do que o esperado surgiram durante a fase inicial de produção de testes, e será necessário mais tempo para resolvê-los e fazer os ajustes necessários", diz o relatório ao qual o Nikkei Asia teve acesso. A Reuters não conseguiu verificar a informação.</p>
+                <p>Em janeiro, o Nikkei Asia informou que a Apple planejava lançar seu primeiro iPhone dobrável, além de dois modelos tradicionais com câmeras aprimoradas e telas maiores, no segundo semestre de 2026.</p>
+                <p>A Apple não respondeu ao pedido da Reuters para um comentário sobre as informações do Nikkei Asia.</p>
+                <p>Em 2024, o site de tecnologia The Information já havia noticiado que a empresa poderia apresentar o modelo dobrável em 2026.</p>
+                <p>O plano da Apple era lançar um aparelho dobrável em linha com o movimento da Samsung, que entrou nesse mercado em 2019 para tentar atrair novos clientes com mudanças no design.</p>
+                <p>Na época, segundo o The Information, a Apple buscava fornecedores na Ásia para fabricar componentes do dispositivo e criou o codinome interno V68 para o projeto.</p>
+            </section>
+
+            <!-- rodapé da notícia -->
+            <footer class="news-footer">
+                <p>Fonte: OpenAI</p>
+            </footer>
+        </article>  
+    </main>
+
+
+    <!-- rodapé -->
+    <footer>
+        <div class="box-footer">
+            <div class="first-footer">
+                <!-- logo do footer -->
+                <div class="logo-footer">
+                    <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+                </div>
+                <!-- frase do footer -->
+                <div class="phrase">
+                    <p>Seu portal de tecnologia, games e inovações</p>
+                </div>
+                <div class="social-media"><!-- redes sociais-->
+                    <a href="#nav"><img src="/src/assets/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#nav"><img src="/src/assets/icons/whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#nav"><img src="/src/assets/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#nav"><img src="/src/assets/icons/tiktok.png" alt="Tiktok"></a>
+                </div>
+            </div>
+                <!-- caixa de navegação -->
+                <div class="navegacao-footer">
+                    <h2>Navegação</h2>
+                    <ul>
+                        <li><a href="#nav">Sobre Nós</a></li>
+                        <li><a href="#nav">Contato</a></li>
+                        <li><a href="#nav">Anuncie</a></li>
+                        <li><a href="#nav">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <!-- caixa de categorias -->
+            <div class="categories-footer">
+                <h2>Categorias</h2>
+                <ul>
+                    <li><a href="#nav">Smartphones</a></li>
+                    <li><a href="#nav">Games</a></li>
+                    <li><a href="#nav">IA & Machine Learning</a></li>
+                    <li><a href="#nav">Hardware</a></li>
+                </ul>
+            </div>
+            <!-- caixa legal -->
+            <div class="legal-footer">
+                <h2>Legal</h2>
+                <ul>
+                    <li><a href="#nav">Política de Privacidade</a></li>
+                    <li><a href="#nav">Termos de Uso</a></li>
+                    <li><a href="#nav">Cookies</a></li>
+                    <li><a href="#nav">LGPD</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- caixa do footer final -->
+        <div class="end-footer">
+            <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
