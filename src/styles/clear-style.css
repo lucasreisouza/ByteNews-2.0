@@ -85,7 +85,7 @@ body.clear footer a:hover{
 }
 
 body.clear .end-footer{
-    background: var(--bg-clear-primary);
+    background: var(--border-clear-color);
     color: var(--text-clear-muted);
 }
 

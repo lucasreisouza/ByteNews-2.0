@@ -88,7 +88,7 @@ header .menu a{
     text-decoration: none;
     color: var(--text-primary);
     font-family: "Inter", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .menu a:hover{
@@ -153,14 +153,16 @@ main .container .carousel-main {
   height: auto;
 }
 
-#carouselMain .carousel-inner h5{
-    font-size: 40px;
-    text-shadow: 7px 6px 10px var(--bg-primary);
-    color: var(--text-primary);
+#carouselMain .carousel-inner {
+    border-radius: 15px;
 }
 
-.container img{
-    border-radius:12px;
+#carouselMain .carousel-inner h5{
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 7px 6px 10px var(--bg-primary);
+    color: var(--text-primary);
 }
 
 /* rodape */
@@ -187,7 +189,6 @@ footer::before{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 40px;
-    display: flex;
     justify-content: space-between;
 }
 
