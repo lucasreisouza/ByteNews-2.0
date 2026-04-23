@@ -165,10 +165,6 @@ main .container .carousel-main {
     color: var(--text-primary);
 }
 
-.container img{
-    border-radius:12px;
-}
-
 /* rodape */
 
 footer{
