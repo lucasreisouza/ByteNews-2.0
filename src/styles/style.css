@@ -21,19 +21,17 @@
 :root {
   /* Fundo */
   --bg-primary: #010626;
-  --bg-secondary: #0F172A;
+  --bg-secondary: #0e1420;
   --bg-card: #111827;
 
   /* Neon / Destaque */
   --neon-blue: #00E5FF;
   --neon-purple: #c17eff;
-  --neon-purple2:#7f00b1;
   --neon-pink: #FF2D9A;
   --neon-green: #00FF9C;
 
   /* Gradientes comuns */
-  --gradient-primary: linear-gradient(90deg, #00E5FF, #A855F7);
-  --gradient-secondary: linear-gradient(90deg, #FF2D9A, #00E5FF);
+  --gradient-primary: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
 
   /* Texto */
   --text-primary: #e4e4e4;
@@ -50,18 +48,32 @@
   --btn-hover: #00C4D6;
 }
 
-header {
+header{
   backdrop-filter: blur(10px);
-  background-color:var(--bg-primary);
+  background-color: var(--bg-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 20px 0;
   padding: 5px 15px;
   height: 60px;
-} 
+  position: relative; /* IMPORTANTE */
+}
 
-header #logo {
+/* linha neon */
+header:after{
+    content:"";
+    position:absolute;
+    bottom:-6px;
+    left:0;
+    width:100%;
+    height:3px;
+    border-radius:10px;
+    background: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
+}
+
+
+header #logoHeader {
   width: 200px;
 }
 
@@ -114,6 +126,10 @@ header .button-menu #login{
   box-shadow: 0 0 10px #00f0ff50;
 }
 
+body{
+    background: var(--bg-primary);
+}
+
 /*Main*/
 
 main {
@@ -138,17 +154,29 @@ main .container .carousel-main {
 }
 
 #carouselMain .carousel-inner h5{
-    font-size: 80px;
-    text-shadow: 7px 6px 10px var(--neon-purple2);
-    color: var(--neon-blue);
+    font-size: 40px;
+    text-shadow: 7px 6px 10px var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.container img{
+    border-radius:12px;
 }
 
 /* rodape */
+
 footer{
     background: var(--bg-primary);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-primary);
     margin-top: 40px;
+}
+
+footer::before{
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
 }
 
 /* container principal */
@@ -170,7 +198,7 @@ footer{
 }
 
 /* logo */
-.logo-footer img{
+footer #logoFooter{
     width: 250px;
     margin-bottom: 20px;
 }

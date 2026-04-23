@@ -1,0 +1,101 @@
+/* ===================== VARIÁVEIS MODO CLARO ===================== */
+:root {
+  --bg-clear-primary: #f5f7fb;
+  --bg-clear-secondary: #ffffff;
+  --bg-clear-card: #ffffff;
+
+  --text-clear-primary: #0f172a;
+  --text-clear-secondary: #64748b;
+  --text-clear-muted: #94a3b8;
+
+  --neon-clear-blue: #3b82f6;
+  --neon-clear-purple: #8b5cf6;
+  --neon-clear-pink: #ec4899;
+
+  --border-clear-color: #e5e7eb;
+
+  --shadow-clear: 0 4px 15px rgba(0,0,0,0.05);
+  --shadow-clear-hover: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+/* ===================== BODY ===================== */
+body.clear{
+  background: var(--bg-clear-primary);
+  color: var(--text-clear-primary);
+}
+
+
+/* ===================== HEADER ===================== */
+body.clear header{
+  background: var(--bg-clear-primary);
+}
+
+body.clear header .menu a{
+    color: var(--neon-clear-blue);
+    font-weight: 600;
+}
+
+body.clear header .menu a:hover{
+  color: var(--neon-clear-blue);
+  border-bottom: 2px solid var(--neon-clear-blue) ;
+}
+
+
+body.clear header:after{
+    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+}
+
+
+/* ===================== BOTÕES ===================== */
+body.clear #login{
+  background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+}
+
+body.clear #tema{
+  background: none;
+}
+
+
+/* ===================== FOOTER ===================== */
+body.clear footer{
+  background: var(--bg-clear-primary);
+  border-top:1px solid var(--border-clear-color);
+  margin-top:40px;
+}
+
+body.clear footer:before{
+    content:"";
+    width:100%;
+    height:3px;
+    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+}
+
+
+body.clear footer h2{
+    color: var(--text-clear-primary);
+}
+
+body.clear footer a{
+  color: var(--text-clear-secondary);
+}
+
+body.clear footer a:hover{
+  color: var(--neon-clear-blue);
+}
+
+body.clear .end-footer{
+    background: var(--bg-clear-primary);
+    color: var(--text-clear-muted);
+}
+
+/* frase */
+body.clear .phrase p{  
+    font-size: 15px;
+    color: var(--text-clear-secondary);
+    margin-bottom: 15px;
+}
+
+body.clear .social-media img{
+    filter: none;
+}

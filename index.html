@@ -8,6 +8,7 @@
     <title>ByteNews</title>
     <link rel="icon" type="image/png" href="./src/assets/icons/icone.png">
     <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/clear-style.css">
 </head>
 <body class="dark">
     <!-- Cabeçalho -->
@@ -15,20 +16,22 @@
         <!-- logo -->
         <div class="logo">
             <a href="index.html">
-                <img id="logo" src="./src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+                <img id="logoHeader" src="./src/assets/icons/logo-padrao.png">
             </a>
         </div>
         <!-- menu -->
         <div class="menu">
             <a class="home" href="#">INÍCIO</a>
-            <a href="">NOTÍCIAS</a>
-            <a href="">REVIEWS</a>
-            <a href="">GAMES</a>
-            <a href="">CIÊNCIA</a>
+            <a class="news" href="">NOTÍCIAS</a>
+            <a class="reviews" href="">REVIEWS</a>
+            <a class="games" href="">GAMES</a>
+            <a class="science" href="">CIÊNCIA</a>
         </div>
         <!-- botões do menu -->
          <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="./src/assets/icons/sun.png"></button><!--botão alterar modo-->
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="./src/assets/icons/sun.png">
+            </button>
             <form> 
                 <button id="login" formaction="./src/pages/account/index-login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
@@ -57,10 +60,10 @@
                             <div class="cartao noticia1">
                                 <!-- Link abre notícia em nova aba -->
                                 <a href="./src/pages/news/gta-6.html" target="_blank">
-                                    <img src="./src/assets/images/carousel/gta-6.png" class="d-block" alt="Iphone 16 vs 17">
+                                    <img src="./src/assets/images/carousel/gta-6.png" class="d-block" alt="Lançamento do GTA 6">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>GTA 6: lançamento</h5>
+                                    <h5>GTA 6: lançamento, trailer e o que esperar do jogo</h5>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +74,7 @@
                                     <img src="./src/assets/images/carousel/iphone-dobravel.png" class="d-block" alt="Apple Wath">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
-                                        <h5>GTA 6: lançamento</h5>
+                                    <h5>iPhone dobrável enfrenta problemas de engenharia e lançamento pode atrasar, diz jornalo</h5>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +85,7 @@
                                     <img src="./src/assets/images/carousel/meta-ai.png" class="d-block">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
-                                        <h5>GTA 6: lançamento</h5>
+                                    <h5>Meta finalmente apresenta plano para futuro da IA na empresa</h5>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +96,7 @@
                                     <img src="./src/assets/images/carousel/produto-apple.png" class="d-block">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
-                                        <h5>GTA 6: lançamento</h5>
+                                    <h5>Produto mais cobiçado da Apple pode te surpreender; veja qual</h5>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +107,7 @@
                                     <img src="./src/assets/images/carousel/treinar-robos.png" class="d-block">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
-                                        <h5>GTA 6: lançamento</h5>
+                                    <h5>Como gravar tarefas domésticas pode treinar robôs "mordomos" no futuro</h5>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +216,7 @@
             <div class="first-footer">
                 <!-- logo do footer -->
                 <div class="logo-footer">
-                    <img id="logo" src="./src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+                    <img id="logoFooter" src="./src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
                 </div>
                 <!-- frase do footer -->
                 <div class="phrase">
