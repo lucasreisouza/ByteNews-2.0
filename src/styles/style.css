@@ -153,6 +153,10 @@ main .container .carousel-main {
   height: auto;
 }
 
+#carouselMain .carousel-inner {
+    border-radius: 15px;
+}
+
 #carouselMain .carousel-inner h5{
     font-size: 40px;
     text-shadow: 7px 6px 10px var(--bg-primary);
