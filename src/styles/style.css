@@ -189,7 +189,6 @@ footer::before{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 40px;
-    display: flex;
     justify-content: space-between;
 }
 
