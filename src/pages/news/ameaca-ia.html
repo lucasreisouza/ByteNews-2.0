@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <title>ByteNews</title>
-
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="/src/pages/news/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./clear-style.css">
 </head>
 
-<body class="claro">
+<body class="dark">
     <!-- Cabeçalho -->
     <header id="nav">
         <div class="logo">
@@ -29,9 +27,7 @@
             <a href="">CIÊNCIA</a>
         </div>
         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()">
-                <img src="/src/assets/icons/sun.png">
-            </button>
+            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button>
             <form>
                 <button id="login" formaction="/src/pages/account/index-login.html" formtarget="_blank">
                     ENTRAR
@@ -135,5 +131,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="/src/scripts/script-tema.js"></script>
 </body>
 </html>
