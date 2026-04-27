@@ -149,12 +149,17 @@ main .container {
 }
 
 main .container .carousel-main {
-  width: 89%;
+  width: 90%;
   height: auto;
 }
 
 #carouselMain .carousel-inner {
     border-radius: 15px;
+}
+
+#carouselMain .carousel-inner img {
+    width: 100%;
+    height: 100%;
 }
 
 #carouselMain .carousel-inner h5{
