@@ -170,6 +170,10 @@ main .container .carousel-main {
     color: var(--text-primary);
 }
 
+.news-emphasis {
+    width: 100%;
+}
+
 /* rodape */
 
 footer{
