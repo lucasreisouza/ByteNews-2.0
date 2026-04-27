@@ -6,40 +6,24 @@
     <title>Conta ByteNews</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-</head>
 <body>
-    <!-- conteúdo principal -->
-    <main>
-        <div class="box"> <!-- caixa geral -->
-            <!-- banner lateral -->
-            <div class="banner">
-                <!-- logo -->
-                <img src="/src/assets/icons/logo-padrao.png">
-                <!-- texto do banner -->
-                <p>Crie sua conta e fique por dentro das últimas notícias sobre tecnologia, inovação e o mundo digital.</p>
-            </div>
-            <!-- formulário de cadastro -->
-            <form class="form">
-                <!-- campo nome -->
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="informe seu nome completo">
-                <!-- campo email -->
-                <label for="e-mail">Informe seu e-mail:</label>
-                <input type="text" id="e-mail" name="e-mail" placeholder="ex:@gmail">
-                <!-- campo senha -->
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="informe a senha">
-                <!-- confirmar senha -->
-                <label for="senha">Confirmar senha</label>
-                <input type="password" id="confirme-senha" name="confirme-senha" placeholder="confirme a senha">
-                <!-- botão cadastrar
-                formaction = redireciona para index
-                formtarget = abre em nova aba -->
-                <button formaction="/index.html" formtarget="_blank">Cadastrar</button>
-                <!-- link para login -->
-                <p class="login">Ja tem uma conta?<a href="./index-login.html">Entrar</a></p>
-            </form>
+<form id="formUsuario">
+    <img src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+    <div class="container">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="informe seu nome completo">
+        <label for="e-mail">Informe seu e-mail:</label>
+        <input type="text" id="e-mail" name="e-mail" placeholder="ex:@gmail">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="informe a senha">
+        <label for="senha">Confirmar senha</label>
+        <input type="password" id="confirme-senha" name="confirme-senha" placeholder="confirme a senha">
+        <div class="botoes">
+            <button formaction="/index.html" formtarget="_self">Cadastrar</button>
         </div>
-    </main>
+        <p class="login">Ja tem uma conta?<a href="./index-login.html">Entrar</a></p>
+    </div>
+</form>
+<script src="./script/script.js"></script>
 </body>
 </html>
