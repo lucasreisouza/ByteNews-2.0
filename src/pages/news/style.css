@@ -115,26 +115,30 @@ header .button-menu #login{
   box-shadow: 0 0 10px #00f0ff50;
 }
 
-/* ====== header do article ======= */
+/* Main das Noticias */
+.news-container{
+    padding: 100px;
+    margin: 15px;
+}
+.news-article{
 
-.news-header{
-    background: #fff;
 }
 
+.news-image{
+    width: 100%;
+    margin: 20px 0 5px 0;
+    border-radius: 10px;
+}
+/* Header das noticias */
+.news-header{
+    background-color: #fff;
+}
 
-
-
-/* ====== footer do article ====== */
-
+/* Footer das Noticias */
 .news-footer{
-    background: #fff;
+    background: white;
     color: black;
 }
-
-
-
-
-
 
 /* footer */
 footer{
