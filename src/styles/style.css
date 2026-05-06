@@ -27,6 +27,7 @@
   /* Neon / Destaque */
   --neon-blue: #00E5FF;
   --neon-purple: #c17eff;
+  --neon-purple2: #9523ff;
   --neon-pink: #FF2D9A;
   --neon-green: #00FF9C;
 
@@ -34,6 +35,7 @@
   --gradient-primary: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
 
   /* Texto */
+  --text-white:#ffffff;
   --text-primary: #e4e4e4;
   --text-secondary: #9CA3AF;
   --text-muted: #6B7280;
@@ -211,9 +213,10 @@ main .container .carousel-main {
     flex-wrap: wrap;
     justify-content: center;
     width: auto;
+    text-decoration: none;
 }
 
-.news-emphasis_cards article figure {
+.news-card_figure {
     width: 100%;
     height: auto;
 }
@@ -224,8 +227,20 @@ main .container .carousel-main {
     border-radius: 12px 12px 0 0 ;
 }
 
-.news-emphasis_cards article a .news-card_content {
+.news-card_content {
     padding: 0 5px 0 5px;
+    position: relative;
+}
+
+.news-card_category {
+    color: var(--text-white);
+    font-weight: 500;
+    position: absolute;
+    top: -50px;
+    left: 15px;
+    background-color: ;
+    border-radius: 14px;
+    padding: 1px 7px 2px 7px;
 }
 
 /* rodape */
