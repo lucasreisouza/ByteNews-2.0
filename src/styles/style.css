@@ -238,9 +238,9 @@ main .container .carousel-main {
     position: absolute;
     top: -50px;
     left: 15px;
-    background-color: ;
     border-radius: 14px;
     padding: 1px 7px 2px 7px;
+    background-color: 1px;
 }
 
 /* rodape */
