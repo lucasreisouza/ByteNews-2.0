@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>ByteNews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./src/assets/icons/icone.png">
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/clear-style.css">
@@ -112,15 +111,15 @@
                             </div>
                         </div>
                         <!-- Botões anterior / próximo -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </section>
             <!-- ================= DESTAQUES DO DIA ================= -->
@@ -132,7 +131,7 @@
                 </div>
                 <div class="news-emphasis_cards">
                     <!-- Card de notícia -->
-                    <article>
+                    <article class="news-card">
                         <a href="/src/pages/news/grecia-redes-sociais.html">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
@@ -140,7 +139,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category">redes sociais</span>
+                                <span class="news-card_category redes_sociais">redes sociais</span>
                                 <h2 class="news-card_title">
                                     Grécia proíbe redes sociais para menores
                                 </h2>
@@ -148,7 +147,7 @@
                             </div>
                         </a>
                     </article>
-                    <article>
+                    <article class="news-card">
                         <a href="/src/pages/news/hacker-reino-unido.html">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
@@ -156,7 +155,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category">cibersegurança</span>
+                                <span class="news-card_category cibersegurança">cibersegurança</span>
                                 <h2 class="news-card_title">
                                     Hacker ataca sistemas do Reino Unido
                                 </h2>
@@ -164,7 +163,7 @@
                             </div>
                         </a>
                     </article>
-                    <article>
+                    <article class="news-card">
                         <a href="/src/pages/news/modelo-ia.html">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
@@ -172,7 +171,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category">IA</span>
+                                <span class="news-card_category ia">IA</span>
                                 <h2 class="news-card_title">
                                     Modelo de IA revoluciona o setor de tecnologia
                                 </h2>
@@ -180,7 +179,7 @@
                             </div>
                         </a>
                     </article>
-                    <article>
+                    <article class="news-card">
                         <a href="/src/pages/news/voz-clonada.html">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
@@ -188,7 +187,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category">IA</span>
+                                <span class="news-card_category ia">IA</span>
                                 <h2 class="news-card_title">
                                     Voz clonada é usada em ataque de phishing
                                 </h2>

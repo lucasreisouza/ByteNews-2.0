@@ -30,6 +30,11 @@
   --neon-purple2: #9523ff;
   --neon-pink: #FF2D9A;
   --neon-green: #00FF9C;
+  --neon-blue-transp: #00e5ff98;
+  --neon-purple-transp: #c17effc5;
+  --neon-purple2-transp: #9523ffcb;
+  --neon-pink-transp: #ff2d99be;
+  --neon-green-transp: #00ff9d85;
 
   /* Gradientes comuns */
   --gradient-primary: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
@@ -151,8 +156,16 @@ main .container {
 }
 
 main .container .carousel-main {
-  width: 90%;
-  height: auto;
+    width: 90%;
+    border-radius: 15px;
+    position: relative;
+    padding: 2px; /* espaço para a borda aparecer */
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple2), var(--neon-purple));
+}
+
+#carouselMain {
+    border-radius: 13px; /* ligeiramente menor que o pai */
+    overflow: hidden;
 }
 
 #carouselMain .carousel-inner {
@@ -202,10 +215,29 @@ main .container .carousel-main {
     gap: 15px;
 }
 
-.news-emphasis_cards article {
+.news-emphasis_cards .news-card {
     width: 25%;
     background-color: var(--text-clear-primary);
-    border-radius: 12px;
+    border-radius: 10px;
+    position:relative;
+    z-index: 0;
+}
+
+.news-emphasis_cards .news-card_image {
+    z-index: -2;
+}
+
+.news-emphasis_cards .news-card::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 10px;
+    padding: 2px;
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple2), var(--neon-purple));
+    -webkit-mask: linear-gradient(var(--neon-blue), var(--neon-purple2), var(--neon-purple) 0 0) content-box,  linear-gradient(var(--neon-blue), var(--neon-purple2), var(--neon-purple) 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
 }
 
 .news-emphasis_cards article a {
@@ -238,9 +270,20 @@ main .container .carousel-main {
     position: absolute;
     top: -50px;
     left: 15px;
-    background-color: ;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 1px 7px 2px 7px;
+}
+
+.redes_sociais {
+    background-color: var(--neon-purple2-transp);
+}
+
+.cibersegurança {
+    background-color: var(--neon-purple-transp);
+}
+
+.ia {
+    background-color: var(--neon-pink-transp);
 }
 
 /* rodape */
