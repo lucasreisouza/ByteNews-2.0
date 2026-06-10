@@ -270,8 +270,13 @@ main .container .carousel-main {
     position: absolute;
     top: -50px;
     left: 15px;
+<<<<<<< HEAD
     border-radius: 10px;
+=======
+    border-radius: 14px;
+>>>>>>> 4726800366fc4938dbe4159a2232cbad930cb845
     padding: 1px 7px 2px 7px;
+    background-color: 1px;
 }
 
 .redes_sociais {
