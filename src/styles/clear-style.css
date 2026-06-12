@@ -99,3 +99,7 @@ body.clear .phrase p{
 body.clear .social-media img{
     filter: none;
 }
+
+body.clear .news-emphasis_title h3 {
+    color: var(--text-clear-primary);
+} 
