@@ -309,23 +309,37 @@ main .container .carousel-main {
     width: 100%;
     height: auto;
     margin: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .news-lower .news-latest {
     
 }
 
+.news-latest_image img {
+    width: 400px;
+    height: 150px;
+}
+
+/* Etiquetas */
 
 .redes_sociais {
     background-color: var(--neon-purple2-transp);
 }
 
-.cibersegurança {
+.ciberseguranca {
     background-color: var(--neon-purple-transp);
 }
 
 .ia {
     background-color: var(--neon-pink-transp);
+}
+
+.smartphones {
+    background-color: var(--neon-green-transp);
 }
 
 /* rodape */
