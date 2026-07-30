@@ -315,13 +315,18 @@ main .container .carousel-main {
     justify-content: center;
 }
 
-.news-lower .news-latest {
-    
+.news-lower .news-latest a {
+    text-decoration: none;
 }
 
 .news-latest_image img {
     width: 400px;
     height: 150px;
+}
+
+.news-card_description{
+    gap: 20px;
+    display: flex;
 }
 
 /* Etiquetas */
