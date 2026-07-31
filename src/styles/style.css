@@ -20,39 +20,52 @@
 
 :root {
   /* Fundo */
-  --bg-primary: #010626;
-  --bg-secondary: #0e1420;
-  --bg-card: #111827;
+    --bg-primary: rgb(0, 7, 24);
+    --bg-secondary: rgb(14, 20, 32);
+    --bg-card: rgb(0, 4, 29);
+    --bg-body: rgb(1, 6, 38);
 
-  /* Neon / Destaque */
-  --neon-blue: #00E5FF;
-  --neon-purple: #c17eff;
-  --neon-purple2: #9523ff;
-  --neon-pink: #FF2D9A;
-  --neon-green: #00FF9C;
-  --neon-blue-transp: #00e5ff98;
-  --neon-purple-transp: #c17effc5;
-  --neon-purple2-transp: #9523ffcb;
-  --neon-pink-transp: #ff2d99be;
-  --neon-green-transp: #00ff9d85;
+    /* Neon / Destaque */
+    --neon-blue: rgb(0, 229, 255);
+    --neon-purple: rgb(193, 126, 255);
+    --neon-purple2: rgb(149, 35, 255);
+    --neon-pink: rgb(255, 45, 154);
+    --neon-green: rgb(0, 255, 156);
 
-  /* Gradientes comuns */
-  --gradient-primary: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
+    --neon-blue-transp: rgba(0, 229, 255, 0.60);
+    --neon-purple-transp: rgba(193, 126, 255, 0.77);
+    --neon-purple2-transp: rgba(149, 35, 255, 0.80);
+    --neon-pink-transp: rgba(255, 45, 154, 0.75);
+    --neon-green-transp: rgba(0, 255, 157, 0.52);
 
-  /* Texto */
-  --text-white:#ffffff;
-  --text-primary: #e4e4e4;
-  --text-secondary: #9CA3AF;
-  --text-muted: #6B7280;
+    --neon-blue-rgb: 0, 229, 255;
+    --neon-purple-rgb: 193, 126, 255;
+    --neon-purple2-rgb: 149, 35, 255;
+    --neon-pink-rgb: 255, 45, 154;
+    --neon-green-rgb: 0, 255, 156;
 
-  /* Bordas / detalhes */
-  --border-color: #1F2937;
-  --glow-blue: rgba(0, 229, 255, 0.5);
-  --glow-purple: rgba(168, 85, 247, 0.5);
+    /* Gradientes comuns */
+    --gradient-primary: linear-gradient(
+        90deg,
+        rgb(0, 229, 255),
+        rgb(0, 102, 255),
+        rgb(0, 229, 255)
+    );
 
-  /* Botões */
-  --btn-primary: #00E5FF;
-  --btn-hover: #00C4D6;
+    /* Texto */
+    --text-white: rgb(255, 255, 255);
+    --text-primary: rgb(228, 228, 228);
+    --text-secondary: rgb(156, 163, 175);
+    --text-muted: rgb(107, 114, 128);
+
+    /* Bordas / detalhes */
+    --border-color: rgb(31, 41, 55);
+    --glow-blue: rgba(0, 229, 255, 0.5);
+    --glow-purple: rgba(168, 85, 247, 0.5);
+
+    /* Botões */
+    --btn-primary: rgb(0, 229, 255);
+    --btn-hover: rgb(0, 196, 214);
 }
 
 header{
@@ -138,7 +151,7 @@ header .button-menu #login{
 }
 
 body{
-    background: var(--bg-primary);
+    background: var(--bg-body);
 }
 
 /*Main*/
@@ -233,7 +246,7 @@ main .container .carousel-main {
 
 .news-emphasis_cards .news-card {
     width: 25%;
-    background-color: var(--text-clear-primary);
+    background-color: var(--bg-card);
     border-radius: 10px;
     position:relative;
     z-index: 0;
@@ -314,18 +327,70 @@ main .container .carousel-main {
     justify-content: center;
 }
 
-.news-lower .news-latest a {
+.news-latest {
+    width: 65%;
+}
+
+.news-latest_cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.news-latest_cards article {
+    width: 45%;
+    height: auto;
+    background: var(--bg-card);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(var(--neon-purple2-rgb), 0.3);
+}
+
+.news-latest_cards article a {
     text-decoration: none;
+    display: block;
 }
 
-.news-latest .news-latest_image img {
-    width: 400px;
-    height: 150px;
+.news-latest_cards .news-latest_image {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
 }
 
-.news-card_description{
+.news-latest_cards .news-latest_image img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.news-latest_content {
+    padding: 0 10px 0 10px;
+    height: 65px;
+}
+
+.news-latest_cards .news-card_title{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.news-latest_cards .news-card_description{
     gap: 20px;
     display: flex;
+    color: var(--text-secondary);
+    padding: 0 0 0 30px;
+}
+
+.news-latest_cards .news-card_description .icon-eye{
+    position: absolute;
+    top: 169px;
+    left: 18px;
+    filter: brightness(0) invert(80%);
+    width: 5%;
+    height: auto;
 }
 
 /* Etiquetas */
