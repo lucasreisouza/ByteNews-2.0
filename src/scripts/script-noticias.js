@@ -21,3 +21,4 @@ function toggleStyle() {
     temaIcon.src = './src/assets/icons/sun.png';
   }
 }
+
