@@ -1,4 +1,4 @@
-/* ===================== VARIÁVEIS MODO CLARO ===================== */
+/* VARIÁVEIS MODO CLARO */
 :root {
   --bg-clear-primary: #f5f7fb;
   --bg-clear-secondary: #ffffff;
@@ -19,14 +19,14 @@
 }
 
 
-/* ===================== BODY ===================== */
+/* BODY  */
 body.clear{
   background: var(--bg-clear-primary);
   color: var(--text-clear-primary);
 }
 
 
-/* ===================== HEADER ===================== */
+/* HEADER */
 body.clear header{
   background: var(--bg-clear-primary);
 }
@@ -47,7 +47,7 @@ body.clear header:after{
 }
 
 
-/* ===================== BOTÕES ===================== */
+/* BOTÕES */
 body.clear #login{
   background: linear-gradient(90deg,#3b82f6,#8b5cf6);
 }
@@ -57,7 +57,7 @@ body.clear #tema{
 }
 
 
-/* ===================== FOOTER ===================== */
+/* FOOTER */
 body.clear footer{
   background: var(--bg-clear-primary);
   border-top:1px solid var(--border-clear-color);
