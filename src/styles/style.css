@@ -302,7 +302,6 @@ main .container .carousel-main {
 
 .news-card_time {
     color: var(--text-primary);
-    padding: 0 0 0 10px;
 }
 
 .news-lower {
@@ -319,7 +318,7 @@ main .container .carousel-main {
     text-decoration: none;
 }
 
-.news-latest_image img {
+.news-latest .news-latest_image img {
     width: 400px;
     height: 150px;
 }
