@@ -328,7 +328,36 @@ main .container .carousel-main {
 }
 
 .news-latest {
+    display: flex;
+    flex-direction: column;
     width: 65%;
+    background-color: var(--bg-primary);
+    border: 2px solid rgba(var(--neon-blue-rgb), 0.3);
+    border-radius: 15px;
+}
+
+.news-latest_title{
+    margin: 20px 0 10px 40px;
+    color: var(--text-primary);
+}
+
+.news-latest_title h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.news-latest_title h3::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 25px;
+    background: var(--neon-blue);
+    border-radius: 2px;
 }
 
 .news-latest_cards {
@@ -336,6 +365,8 @@ main .container .carousel-main {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0 10px 30px 10px;
+    justify-content: center;
 }
 
 .news-latest_cards article {
@@ -375,6 +406,9 @@ main .container .carousel-main {
     font-size: 18px;
     font-weight: 700;
     color: white;
+    white-space: nowrap;     
+    overflow: hidden;    
+    text-overflow: ellipsis;
 }
 
 .news-latest_cards .news-card_description{
