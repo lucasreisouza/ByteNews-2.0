@@ -205,6 +205,9 @@ main .container .carousel-main {
 .news-emphasis {
     width: 90%;
     margin-top: 25px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    background-color: var(--bg-primary);
 }
 
 .news-emphasis_title {
