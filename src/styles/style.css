@@ -334,6 +334,7 @@ main .container .carousel-main {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
+    gap: 40px;
 }
 
 .news-latest {
@@ -466,6 +467,54 @@ main .container .carousel-main {
 .news-latest_cards .news-card_description p{
     margin: 0;
     line-height: 1;
+}
+
+.news-rise {
+    width: 20%;
+    background-color: var(--bg-primary);
+    border: 2px solid rgba(var(--neon-pink-rgb), 0.3);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.news-rise_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.news-rise_item a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.news-rise_rank {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--neon-blue);
+    min-width: 20px;
+}
+
+.news-rise_title-text {
+    color: var(--text-white);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.news-rise_stats {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.news-rise_trend.up {
+    color: var(--neon-green);
 }
 
 /* Etiquetas */
