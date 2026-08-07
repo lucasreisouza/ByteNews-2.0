@@ -31,6 +31,7 @@
     --neon-purple2: rgb(149, 35, 255);
     --neon-pink: rgb(255, 45, 154);
     --neon-green: rgb(0, 255, 156);
+    --neon-red: rgb(247, 58, 0);
 
     --neon-blue-transp: rgba(0, 229, 255, 0.60);
     --neon-purple-transp: rgba(193, 126, 255, 0.77);
@@ -43,6 +44,7 @@
     --neon-purple2-rgb: 149, 35, 255;
     --neon-pink-rgb: 255, 45, 154;
     --neon-green-rgb: 0, 255, 156;
+    --neon-red-rgb: 247, 58, 0;
 
     /* Gradientes comuns */
     --gradient-primary: linear-gradient(
@@ -470,34 +472,51 @@ main .container .carousel-main {
 }
 
 .news-rise {
+    display: flex;
+    flex-direction: column;
     width: 20%;
     background-color: var(--bg-primary);
     border: 2px solid rgba(var(--neon-pink-rgb), 0.3);
     border-radius: 15px;
-    padding: 20px;
+    gap: 10px;
 }
 
 .news-rise_title{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom: 1px solid rgba(var(--neon-blue-rgb), 0.1);
+    padding: 10px;
+    padding-left: 15px;
+    gap: 5px;
+    background: linear-gradient(
+        90deg,
+        rgba(247, 58, 0, 0.3) 0%,
+        rgba(247, 58, 0,0.2) 65%,
+        rgba(247, 58, 0,0.1) 100%
+    );
 }
 
 .news-rise_title img{
-    width: 30px;
-    height: auto;
+    width: 24px;
+    height: 20px;
 }
 
 .news-rise_title h3{
-    font-size: 24px;
+    font-size: 20px;
+    margin: 0;
+    color: var(--text-primary);
 }
 
 .news-rise_list {
+    width: 90%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 14px;
-    padding: 0;
+    padding-left: 24px;
 }
 
 .news-rise_item a {
@@ -515,11 +534,20 @@ main .container .carousel-main {
     min-width: 20px;
 }
 
+.news-rise_content{
+    min-width: 0;
+}
+
 .news-rise_title-text {
     color: var(--text-white);
+    white-space: nowrap;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    min-width: 0;
 }
 
 .news-rise_stats {
