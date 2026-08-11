@@ -80,23 +80,17 @@ header{
   padding: 5px 15px;
   height: 60px;
   position: relative; /* IMPORTANTE */
-}
-
-/* linha neon */
-header:after{
-    content:"";
-    position:absolute;
-    bottom:-6px;
-    left:0;
-    width:100%;
-    height:0.6px;
-    border-radius:10px;
-    background: linear-gradient(
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
     90deg,
     var(--neon-blue-transp),
     var(--neon-purple-transp),
-    var(--neon-purple2-transp));
+    var(--neon-purple2-transp)
+  ) 1;
 }
+
+
+/* linha neon */
 
 
 header #logoHeader {

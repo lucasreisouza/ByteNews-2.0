@@ -41,7 +41,6 @@ body.clear header .menu a:hover{
   border-bottom: 2px solid var(--neon-clear-blue) ;
 }
 
-
 body.clear header:after{
     background: linear-gradient(90deg,#3b82f6,#8b5cf6);
 }
@@ -49,13 +48,50 @@ body.clear header:after{
 
 /* ===================== BOTÕES ===================== */
 body.clear #login{
-  background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+  background: var(--bg-clear-primary);
+  color: var(--neon-clear-blue);
+  border: 2px solid var(--neon-clear-blue);
+  box-shadow: none;
 }
 
 body.clear #tema{
   background: none;
 }
 
+/* ====================== BODY =======================*/
+
+body.clear .news-latest {
+  background: var(--bg-clear-card);
+}
+
+body.clear .news-latest .news-latest_title h3 {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-latest_title h3::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 25px;
+    background: var(--neon-clear-blue);
+    border-radius: 2px;
+}
+
+body.clear .news-latest_cards article{
+  background: var(--bg-clear-primary);
+}
+
+body.clear .news-card_title {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-card_description .icon-eye{
+  filter: brightness(0) invert(10%);
+}
+
+body.clear .news-card_description p{
+  color: var(--text-clear-secondary);
+}
 
 /* ===================== FOOTER ===================== */
 body.clear footer{
@@ -102,8 +138,4 @@ body.clear .social-media img{
 
 body.clear .news-emphasis_title h3 {
     color: var(--text-clear-primary);
-<<<<<<< HEAD
-} 
-=======
 }
->>>>>>> ef534ab83fd0d2712265c64c3933a8f0e6852082
