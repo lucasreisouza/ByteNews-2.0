@@ -14,47 +14,47 @@
 
   --border-clear-color: #e5e7eb;
 
-  --shadow-clear: 0 4px 15px rgba(0,0,0,0.05);
-  --shadow-clear-hover: 0 8px 25px rgba(0,0,0,0.08);
+  --shadow-clear: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-clear-hover: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 
 /* ===================== BODY ===================== */
-body.clear{
+body.clear {
   background: var(--bg-clear-primary);
   color: var(--text-clear-primary);
 }
 
 
 /* ===================== HEADER ===================== */
-body.clear header{
+body.clear header {
   background: var(--bg-clear-primary);
 }
 
-body.clear header .menu a{
-    color: var(--neon-clear-blue);
-    font-weight: 600;
-}
-
-body.clear header .menu a:hover{
+body.clear header .menu a {
   color: var(--neon-clear-blue);
-  border-bottom: 2px solid var(--neon-clear-blue) ;
+  font-weight: 600;
 }
 
-body.clear header:after{
-    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+body.clear header .menu a:hover {
+  color: var(--neon-clear-blue);
+  border-bottom: 2px solid var(--neon-clear-blue);
+}
+
+body.clear header:after {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 }
 
 
 /* ===================== BOTÕES ===================== */
-body.clear #login{
+body.clear #login {
   background: var(--bg-clear-primary);
   color: var(--neon-clear-blue);
   border: 2px solid var(--neon-clear-blue);
   box-shadow: none;
 }
 
-body.clear #tema{
+body.clear #tema {
   background: none;
 }
 
@@ -69,15 +69,15 @@ body.clear .news-latest .news-latest_title h3 {
 }
 
 body.clear .news-latest_title h3::before {
-    content: "";
-    display: inline-block;
-    width: 4px;
-    height: 25px;
-    background: var(--neon-clear-blue);
-    border-radius: 2px;
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 25px;
+  background: var(--neon-clear-blue);
+  border-radius: 2px;
 }
 
-body.clear .news-latest_cards article{
+body.clear .news-latest_cards article {
   background: var(--bg-clear-primary);
 }
 
@@ -116,48 +116,48 @@ body.clear .news-rise_trend.up {
 
 
 /* ===================== FOOTER ===================== */
-body.clear footer{
+body.clear footer {
   background: var(--bg-clear-primary);
-  border-top:1px solid var(--border-clear-color);
-  margin-top:40px;
+  border-top: 1px solid var(--border-clear-color);
+  margin-top: 40px;
 }
 
-body.clear footer:before{
-    content:"";
-    width:100%;
-    height:3px;
-    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+body.clear footer:before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 }
 
 
-body.clear footer h2{
-    color: var(--text-clear-primary);
+body.clear footer h2 {
+  color: var(--text-clear-primary);
 }
 
-body.clear footer a{
+body.clear footer a {
   color: var(--text-clear-secondary);
 }
 
-body.clear footer a:hover{
+body.clear footer a:hover {
   color: var(--neon-clear-blue);
 }
 
-body.clear .end-footer{
-    background: var(--border-clear-color);
-    color: var(--text-clear-muted);
+body.clear .end-footer {
+  background: var(--border-clear-color);
+  color: var(--text-clear-muted);
 }
 
 /* frase */
-body.clear .phrase p{  
-    font-size: 15px;
-    color: var(--text-clear-secondary);
-    margin-bottom: 15px;
+body.clear .phrase p {
+  font-size: 15px;
+  color: var(--text-clear-secondary);
+  margin-bottom: 15px;
 }
 
-body.clear .social-media img{
-    filter: none;
+body.clear .social-media img {
+  filter: none;
 }
 
 body.clear .news-emphasis_title h3 {
-    color: var(--text-clear-primary);
+  color: var(--text-clear-primary);
 }
