@@ -213,12 +213,13 @@ main .container .carousel-main {
 }
 
 .news-emphasis_title h3 {
-    font-size: 20px;
-    font-weight: 600;
     color: var(--text-primary);
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .news-emphasis_title h3::before {
@@ -348,7 +349,7 @@ main .container .carousel-main {
 }
 
 .news-latest_title {
-    margin: 20px 0 10px 40px;
+    margin: 20px 0 10px 28px;
     color: var(--text-primary);
 }
 
@@ -366,7 +367,7 @@ main .container .carousel-main {
     content: "";
     display: inline-block;
     width: 4px;
-    height: 25px;
+    height: 18px;
     background: var(--neon-blue);
     border-radius: 2px;
 }
@@ -376,7 +377,7 @@ main .container .carousel-main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 20px 30px 20px;
+    padding: 0 8px 10px;
     justify-content: center;
 }
 
@@ -480,7 +481,7 @@ main .container .carousel-main {
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
     border-bottom: 1px solid rgba(var(--neon-blue-rgb), 0.1);
-    padding: 10px;
+    padding: 18px;
     padding-left: 15px;
     gap: 5px;
     background: linear-gradient(90deg,
@@ -495,9 +496,11 @@ main .container .carousel-main {
 }
 
 .news-rise_title h3 {
-    font-size: 20px;
     margin: 0;
     color: var(--text-primary);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .news-rise_list {
