@@ -168,7 +168,7 @@ main .container {
 }
 
 main .container .carousel-main {
-    width: 90%;
+    width: 99%;
     border-radius: 15px;
     position: relative;
     padding: 0.8px;
@@ -200,7 +200,7 @@ main .container .carousel-main {
 }
 
 .news-emphasis {
-    width: 90%;
+    width: 99%;
     margin-top: 25px;
     padding: 20px 20px 20px 20px;
     border-radius: 15px;
@@ -326,7 +326,7 @@ main .container .carousel-main {
 }
 
 .news-lower {
-    width: 90%;
+    width: 99%;
     height: auto;
     margin: 40px;
     display: flex;
