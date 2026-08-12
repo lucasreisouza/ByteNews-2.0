@@ -85,13 +85,35 @@ body.clear .news-card_title {
   color: var(--text-clear-primary);
 }
 
-body.clear .news-card_description .icon-eye{
+body.clear .news-card_description .icon-eye {
   filter: brightness(0) invert(10%);
 }
 
-body.clear .news-card_description p{
+body.clear .news-card_description p {
   color: var(--text-clear-secondary);
 }
+
+body.clear .news-rise {
+  background-color: var(--bg-clear-secondary);
+}
+
+body.clear .news-rise_title h3 {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-rise_rank {
+  color: var(--neon-clear-blue);
+}
+
+body.clear .news-rise_title-text {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-rise_trend.up {
+  color: var(--text-clear-muted);
+}
+
+
 
 /* ===================== FOOTER ===================== */
 body.clear footer{
