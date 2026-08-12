@@ -510,6 +510,11 @@ main .container .carousel-main {
     padding-left: 24px;
 }
 
+.news-rise_item {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(var(--neon-blue-rgb), 0.1);
+}
+
 .news-rise_item a {
     display: flex;
     align-items: center;
