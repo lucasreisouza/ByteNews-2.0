@@ -2,7 +2,6 @@
 :root {
   --bg-clear-primary: #f5f7fb;
   --bg-clear-secondary: #ffffff;
-  --bg-clear-card: #ffffff;
 
   --text-clear-primary: #0f172a;
   --text-clear-secondary: #64748b;
@@ -11,6 +10,9 @@
   --neon-clear-blue: #3b82f6;
   --neon-clear-purple: #8b5cf6;
   --neon-clear-pink: #ec4899;
+
+  --bg-clear-primary-rgb: 245, 247, 251;
+  --neon-clear-purple-rgb: 139, 92, 246;
 
   --border-clear-color: #e5e7eb;
 
@@ -60,8 +62,13 @@ body.clear #tema {
 
 /* ====================== BODY =======================*/
 
+body.clear .news-emphasis {
+  background-color: var(--bg-clear-secondary);
+  border: 2px solid rgba(var(--neon-blue-rgb), 0.3);
+}
+
 body.clear .news-latest {
-  background: var(--bg-clear-card);
+  background: var(--bg-clear-secondary);
 }
 
 body.clear .news-latest .news-latest_title h3 {
@@ -93,6 +100,13 @@ body.clear .news-card_description p {
   color: var(--text-clear-secondary);
 }
 
+body.clear .news-rise_title {
+  background: linear-gradient(90deg,
+            rgba(var(--bg-clear-primary-rgb), 1) 0%,
+            rgba(var(--bg-clear-primary-rgb), 0.8) 65%,
+            rgba(var(--bg-clear-primary-rgb), 0.6) 100%);
+}
+
 body.clear .news-rise {
   background-color: var(--bg-clear-secondary);
 }
@@ -113,7 +127,9 @@ body.clear .news-rise_trend.up {
   color: var(--text-clear-muted);
 }
 
-
+body.clear .news-rise_item {
+  border-bottom: 1px solid rgba(var(--neon-clear-purple-rgb), 0.3);
+}
 
 /* ===================== FOOTER ===================== */
 body.clear footer {
