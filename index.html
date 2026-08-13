@@ -23,11 +23,11 @@
         </div>
         <!-- menu -->
         <div class="menu">
-            <a class="home" href="#">INÍCIO</a>
-            <a class="news" href="">NOTÍCIAS</a>
-            <a class="reviews" href="">REVIEWS</a>
-            <a class="games" href="">GAMES</a>
-            <a class="science" href="">CIÊNCIA</a>
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
         <div class="button-menu">
@@ -45,7 +45,7 @@
     <main>
         <div class="container">
             <!-- ================= CARROSSEL PRINCIPAL ================= -->
-            <section class="carousel-main"> <!-- carrossel principal-->
+            <section id="Home" class="carousel-main"> <!-- carrossel principal-->
                 <!-- Carrossel Bootstrap -->
                 <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicadores (bolinhas do carrossel) -->
@@ -131,7 +131,7 @@
                 </div>
             </section>
             <!-- ================= DESTAQUES DO DIA ================= -->
-            <section class="news-emphasis">
+            <section id="Destaques" class="news-emphasis">
                 <!-- Título da seção -->
                 <div class="news-emphasis_title">
                     <h3>DESTAQUES DO DIA</h3>
@@ -213,7 +213,7 @@
             <!-- ================= ÁREA INFERIOR ================= -->
             <div class="news-lower">
                 <!-- ===== ÚLTIMAS NOTÍCIAS ===== -->
-                <section class="news-latest">
+                <section id="Ultimas" class="news-latest">
                     <!-- título -->
                     <div class="news-latest_title">
                         <h3>ÚLTIMAS NOTÍCIAS</h3>
@@ -301,7 +301,7 @@
                     </div>
                 </section>
                 <!-- ===== NOTÍCIAS EM ALTA ===== -->
-                <section class="news-rise">
+                <section id="EmAlta" class="news-rise">
                     <!-- título -->
                     <div class="news-rise_title">
                         <img src="./src/assets/icons/fire.png" alt="">
@@ -405,7 +405,7 @@
 
 
     <!-- rodapé -->
-    <footer>
+    <footer id="Rodape">
         <div class="box-footer">
             <div class="first-footer">
                 <!-- logo do footer -->

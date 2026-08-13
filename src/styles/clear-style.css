@@ -67,6 +67,18 @@ body.clear .news-emphasis {
   border: 2px solid rgba(var(--neon-blue-rgb), 0.3);
 }
 
+body.clear .news-emphasis .news-card {
+  background: var(--bg-clear-primary);
+}
+
+body.clear .news-card_time {
+  color: var(--text-clear-secondary);
+}
+
+body.clear .news-emphasis_title a {
+  color: var(--neon-clear-blue);
+}
+
 body.clear .news-latest {
   background: var(--bg-clear-secondary);
 }
