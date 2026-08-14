@@ -21,13 +21,17 @@
 }
 
 :root {
-    /* Fundo */
+    /* ========================================
+       FUNDOS
+    ======================================== */
     --bg-primary: rgb(0, 7, 24);
     --bg-secondary: rgb(14, 20, 32);
     --bg-card: rgb(0, 4, 29);
     --bg-body: rgb(1, 6, 38);
 
-    /* Neon / Destaque */
+    /* ========================================
+       CORES NEON
+    ======================================== */
     --neon-blue: rgb(0, 229, 255);
     --neon-purple: rgb(193, 126, 255);
     --neon-purple2: rgb(149, 35, 255);
@@ -35,12 +39,9 @@
     --neon-green: rgb(0, 255, 156);
     --neon-red: rgb(247, 58, 0);
 
-    --neon-blue-transp: rgba(0, 229, 255, 0.60);
-    --neon-purple-transp: rgba(193, 126, 255, 0.77);
-    --neon-purple2-transp: rgba(149, 35, 255, 0.80);
-    --neon-pink-transp: rgba(255, 45, 154, 0.75);
-    --neon-green-transp: rgba(0, 255, 157, 0.52);
-
+    /* ========================================
+       CORES NEON - RGB
+    ======================================== */
     --neon-blue-rgb: 0, 229, 255;
     --neon-purple-rgb: 193, 126, 255;
     --neon-purple2-rgb: 149, 35, 255;
@@ -48,26 +49,51 @@
     --neon-green-rgb: 0, 255, 156;
     --neon-red-rgb: 247, 58, 0;
 
-    /* Gradientes comuns */
-    --gradient-primary: linear-gradient(90deg,
-            rgb(0, 229, 255),
-            rgb(0, 102, 255),
-            rgb(0, 229, 255));
-
-    /* Texto */
+    /* ========================================
+       TEXTOS
+    ======================================== */
     --text-white: rgb(255, 255, 255);
     --text-primary: rgb(228, 228, 228);
     --text-secondary: rgb(156, 163, 175);
     --text-muted: rgb(107, 114, 128);
 
-    /* Bordas / detalhes */
+    /* ========================================
+       BORDAS E EFEITOS
+    ======================================== */
     --border-color: rgb(31, 41, 55);
+
     --glow-blue: rgba(0, 229, 255, 0.5);
     --glow-purple: rgba(168, 85, 247, 0.5);
 
-    /* Botões */
+    /* ========================================
+       BOTÕES
+    ======================================== */
     --btn-primary: rgb(0, 229, 255);
     --btn-hover: rgb(0, 196, 214);
+
+    /* ========================================
+       TEMA CLARO
+    ======================================== */
+    --bg-clear-primary: #f5f7fb;
+    --bg-clear-secondary: #ffffff;
+
+    --text-clear-primary: #0f172a;
+    --text-clear-secondary: #64748b;
+    --text-clear-muted: #94a3b8;
+
+    --neon-clear-blue: #3b82f6;
+    --neon-clear-purple: #8b5cf6;
+
+    /* ========================================
+       TEMA CLARO - RGB
+    ======================================== */
+    --bg-clear-primary-rgb: 245, 247, 251;
+    --neon-clear-purple-rgb: 139, 92, 246;
+
+    /* ========================================
+       TEMA CLARO - BORDAS
+    ======================================== */
+    --border-clear-color: #e5e7eb;
 }
 
 header {
@@ -83,14 +109,12 @@ header {
     /* IMPORTANTE */
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(90deg,
-            var(--neon-blue-transp),
-            var(--neon-purple-transp),
-            var(--neon-purple2-transp)) 1;
+            rgba(var(--neon-blue-rgb), 0.6),
+            rgba(var(--neon-purple-rgb), 0.77),
+            rgba(var(--neon-purple2-rgb), 0.8)) 1;
 }
 
-
 /* linha neon */
-
 
 header #logoHeader {
     width: 200px;
@@ -173,7 +197,11 @@ main .container .carousel-main {
     position: relative;
     padding: 0.8px;
     /* espaço para a borda aparecer */
-    background: linear-gradient(45deg, var(--neon-blue-transp), var(--neon-purple2-transp), var(--neon-purple-transp));
+    background: linear-gradient(
+        45deg, 
+        rgba(var(--neon-blue-rgb), 0.6), 
+        rgba(var(--neon-purple2-rgb), 0.8), 
+        rgba(var(--neon-purple-rgba), 0.77));
 }
 
 #carouselMain {
@@ -273,8 +301,18 @@ main .container .carousel-main {
     bottom: 0;
     border-radius: 10px;
     padding: 0.6px;
-    background: linear-gradient(45deg, var(--neon-blue-transp), var(--neon-purple2-transp), var(--neon-purple-transp));
-    -webkit-mask: linear-gradient(var(--neon-blue-transp), var(--neon-purple2-transp), var(--neon-purple) 0 0) content-box, linear-gradient(var(--neon-blue-transp), var(--neon-purple2-transp), var(--neon-purple) 0 0);
+    background: linear-gradient(
+        45deg, 
+        rgba(var(--neon-blue-rgb), 0.6), 
+        rgba(var(--neon-purple2-rgb), 0.8), 
+        rgba(var(--neon-purple-rgb), 0.77));
+    -webkit-mask: linear-gradient(
+        rgba(var(--neon-blue-rgb), 0.6), 
+        rgba(var(--neon-purple2-rgb), 0.8), 
+        var(--neon-purple) 0 0) content-box, linear-gradient(
+            rgba(var(--neon-blue-rgb), 0.6), 
+            rgba(var(--neon-purple2-rgb), 0.8), 
+            var(--neon-purple) 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     z-index: -1;
@@ -562,19 +600,19 @@ main .container .carousel-main {
 /* Etiquetas */
 
 .redes_sociais {
-    background-color: var(--neon-purple2-transp);
+    background-color: rgba(var(--neon-purple2-rgb), 0.8);
 }
 
 .ciberseguranca {
-    background-color: var(--neon-purple-transp);
+    background-color: rgba(var(--neon-purple-rgb), 0.77);
 }
 
 .ia {
-    background-color: var(--neon-pink-transp);
+    background-color: rgba(var(--neon-pink-rgb), 0.75);
 }
 
 .smartphones {
-    background-color: var(--neon-green-transp);
+    background-color: rgba(var(--neon-green-rgb), 0.52);
 }
 
 /* rodape */

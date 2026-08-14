@@ -8,16 +8,11 @@
   --text-clear-muted: #94a3b8;
 
   --neon-clear-blue: #3b82f6;
-  --neon-clear-purple: #8b5cf6;
-  --neon-clear-pink: #ec4899;
 
   --bg-clear-primary-rgb: 245, 247, 251;
   --neon-clear-purple-rgb: 139, 92, 246;
 
   --border-clear-color: #e5e7eb;
-
-  --shadow-clear: 0 4px 15px rgba(0, 0, 0, 0.05);
-  --shadow-clear-hover: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 
