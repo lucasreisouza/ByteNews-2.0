@@ -741,3 +741,174 @@ footer #logoFooter {
 .end-footer p {
     margin-bottom: 0;
 }
+
+/* ============================= MODO CLARO ================================ */
+
+/* ===================== BODY ===================== */
+body.clear {
+  background: var(--bg-clear-primary);
+  color: var(--text-clear-primary);
+}
+
+
+/* ===================== HEADER ===================== */
+body.clear header {
+  background: var(--bg-clear-primary);
+}
+
+body.clear header .menu a {
+  color: var(--neon-clear-blue);
+  font-weight: 600;
+}
+
+body.clear header .menu a:hover {
+  color: var(--neon-clear-blue);
+  border-bottom: 2px solid var(--neon-clear-blue);
+}
+
+body.clear header:after {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+
+/* ===================== BOTÕES ===================== */
+body.clear #login {
+  background: var(--bg-clear-primary);
+  color: var(--neon-clear-blue);
+  border: 2px solid var(--neon-clear-blue);
+  box-shadow: none;
+}
+
+body.clear #tema {
+  background: none;
+}
+
+/* ====================== BODY =======================*/
+
+body.clear .news-emphasis {
+  background-color: var(--bg-clear-secondary);
+  border: 2px solid rgba(var(--neon-blue-rgb), 0.3);
+}
+
+body.clear .news-emphasis .news-card {
+  background: var(--bg-clear-primary);
+}
+
+body.clear .news-card_time {
+  color: var(--text-clear-secondary);
+}
+
+body.clear .news-emphasis_title a {
+  color: var(--neon-clear-blue);
+}
+
+body.clear .news-latest {
+  background: var(--bg-clear-secondary);
+}
+
+body.clear .news-latest .news-latest_title h3 {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-latest_title h3::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 25px;
+  background: var(--neon-clear-blue);
+  border-radius: 2px;
+}
+
+body.clear .news-latest_cards article {
+  background: var(--bg-clear-primary);
+}
+
+body.clear .news-card_title {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-card_description .icon-eye {
+  filter: brightness(0) invert(10%);
+}
+
+body.clear .news-card_description p {
+  color: var(--text-clear-secondary);
+}
+
+body.clear .news-rise_title {
+  background: linear-gradient(90deg,
+            rgba(var(--bg-clear-primary-rgb), 1) 0%,
+            rgba(var(--bg-clear-primary-rgb), 0.8) 65%,
+            rgba(var(--bg-clear-primary-rgb), 0.6) 100%);
+}
+
+body.clear .news-rise {
+  background-color: var(--bg-clear-secondary);
+}
+
+body.clear .news-rise_title h3 {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-rise_rank {
+  color: var(--neon-clear-blue);
+}
+
+body.clear .news-rise_title-text {
+  color: var(--text-clear-primary);
+}
+
+body.clear .news-rise_trend.up {
+  color: var(--text-clear-muted);
+}
+
+body.clear .news-rise_item {
+  border-bottom: 1px solid rgba(var(--neon-clear-purple-rgb), 0.3);
+}
+
+/* ===================== FOOTER ===================== */
+body.clear footer {
+  background: var(--bg-clear-primary);
+  border-top: 1px solid var(--border-clear-color);
+  margin-top: 40px;
+}
+
+body.clear footer:before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+
+body.clear footer h2 {
+  color: var(--text-clear-primary);
+}
+
+body.clear footer a {
+  color: var(--text-clear-secondary);
+}
+
+body.clear footer a:hover {
+  color: var(--neon-clear-blue);
+}
+
+body.clear .end-footer {
+  background: var(--border-clear-color);
+  color: var(--text-clear-muted);
+}
+
+/* frase */
+body.clear .phrase p {
+  font-size: 15px;
+  color: var(--text-clear-secondary);
+  margin-bottom: 15px;
+}
+
+body.clear .social-media img {
+  filter: none;
+}
+
+body.clear .news-emphasis_title h3 {
+  color: var(--text-clear-primary);
+}
