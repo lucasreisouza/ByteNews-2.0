@@ -2,20 +2,14 @@
 :root {
   --bg-clear-primary: #f5f7fb;
   --bg-clear-secondary: #ffffff;
-  --bg-clear-card: #ffffff;
 
   --text-clear-primary: #0f172a;
   --text-clear-secondary: #64748b;
   --text-clear-muted: #94a3b8;
 
   --neon-clear-blue: #3b82f6;
-  --neon-clear-purple: #8b5cf6;
-  --neon-clear-pink: #ec4899;
 
   --border-clear-color: #e5e7eb;
-
-  --shadow-clear: 0 4px 15px rgba(0,0,0,0.05);
-  --shadow-clear-hover: 0 8px 25px rgba(0,0,0,0.08);
 }
 
 
