@@ -7,13 +7,12 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>ByteNews</title>
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./clear-style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
 <body class="dark">
     <!-- Cabeçalho -->
-    <header id="nav">
+<header id="nav">
         <!-- logo -->
         <div class="logo">
             <a href="index.html">
@@ -34,7 +33,7 @@
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
             <form>
-                <button id="login" formaction="./src/pages/account/index-login.html"
+                <button id="login" formaction="../../pages/account/index-login.html"
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
@@ -42,17 +41,13 @@
 
 
     <!-- Conteudo Principal -->
-     <main class="news-container">
-        <article class="news-article">
+     <main>
+        <section class="news-article">
             <!--titulo  -->
-            <header class="news-header">        
+            <div class="news-title">        
                 <h1>GTA 6: lançamento, trailer e o que esperar do jogo</h1><!-- titulo da noticia-->
-                <div class="news-meta">
-                    <span>Por ByteNews</span>
-                    <span>• 19 Abril 2026</span>
-                    <span>•Tecnologia<span>    
-                </div>
-            </header>                    
+                <p>Saiba o que esperar de Grand Theft Auto VI (GTA 6), o jogo mais aguardado da última década</p>
+            </div>                    
 
             <!-- imagem -->
             <figure class="news-image">
@@ -60,10 +55,10 @@
                 <figcaption></figcaption>
             </figure>
 
-
+            <p>Por <a href="https://canaltech.com.br/equipe/andre-leonardo/?_gl=1*jxlyg1*_gcl_au*MTg3OTA3MjYyMC4xNzYxNTA1ODA2" target="_blank">André Leonardo</a> | 14/10/2025 às 18:00 editado por <a href="../index.html">ByteNews</a> </p>
 
             <!-- conteúdo -->
-            <section class="news-content">
+            <article class="news-content">
                 <!-- noticia-->
                 <p>Saiba o que esperar de Grand Theft Auto VI (GTA 6), o jogo mais aguardado da última década</p>
                 <p>Grand Theft Auto VI, ou GTA 6, é um dos jogos mais aguardados dos últimos anos; afinal, já se passaram mais de 12 anos desde o lançamento de seu antecessor. Mesmo assim, GTA 5 continua entre os títulos mais vendidos do mercado, popularidade que também é esperada para o novo jogo.</p>
@@ -92,13 +87,8 @@
                 <h2>GTA 6 estará disponível para quais consoles?</h2>
                 <p>A Rockstar Games confirmou o lançamento de Grand Theft Auto VI para os consoles PlayStation 5, Xbox Series X e Xbox Series S. Por enquanto, ainda não há confirmação oficial de uma versão para computadores.</p>
                 <p>Porém, considerando que GTA 5 chegou depois aos PCs, muitos fãs esperam que GTA 6 siga o mesmo caminho e ganha uma versão algum tempo depois do lançamento.</p>
-            </section>
-
-            <!-- rodapé da notícia -->
-            <footer class="news-footer">
-                <p>Fonte: OpenAI</p>
-            </footer>
-        </article>  
+            </article>
+        </section>  
     </main>
 
 
@@ -157,6 +147,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/scripts/script-tema.js"></script>
+    <script src="/src/scripts/script-noticias.js"></script>
 </body>
 </html>
