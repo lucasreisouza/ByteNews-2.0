@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .orbitron {
@@ -94,6 +95,12 @@
        TEMA CLARO - BORDAS
     ======================================== */
     --border-clear-color: #e5e7eb;
+
+    /*==========================================
+        GRADIENTE
+    ==========================================*/
+    --gradient-primary: linear-gradient(135deg, #00E5FF, #A855F7);
+
 }
 
 header {
@@ -726,12 +733,6 @@ footer #logoFooter {
 
 /* ============================= MODO CLARO ================================ */
 
-/* ===================== BODY ===================== */
-body.clear {
-  background: var(--bg-clear-primary);
-  color: var(--text-clear-primary);
-}
-
 
 /* ===================== HEADER ===================== */
 body.clear header {
@@ -766,6 +767,11 @@ body.clear #tema {
 }
 
 /* ====================== BODY =======================*/
+
+body.clear {
+  background: var(--bg-clear-primary);
+  color: var(--text-clear-primary);
+}
 
 body.clear .news-emphasis {
   background-color: var(--bg-clear-secondary);
@@ -929,7 +935,7 @@ body.clear .news-emphasis_title h3 {
     color: var(--text-primary);
 }
 
-/* ============================= MODO CLARO DAS NOTÍ ================================ */
+/* ============================= MODO CLARO DAS NOTÍCIAS ================================ */
 
 /*  BODY  */
 body.clear{
@@ -1010,4 +1016,118 @@ body.clear .phrase p{
 
 body.clear .social-media img{
     filter: none;
+}
+
+/* ================= LOGIN & CADASTRO =============*/
+
+body.acount {
+  background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  font-family: "Inter", sans-serif;
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card principal */
+#formUsuario {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+#formUsuario > img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 24px
+}
+
+#formUsuario .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Labels */
+#formUsuario .container label {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--neon-blue);
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+#formUsuario .container input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--neon-blue);
+}
+
+/* Botão Entrar */
+.botoes {
+  margin-top: 10px;
+}
+
+.botoes button {
+  width: 100%;
+  padding: 12px;
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.botoes button:hover {
+  transform: translateY(-2px);
+}
+
+/* Link de Cadastro */
+.container p {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.container p a {
+  color: var(--neon-pink);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 6px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.container p a:hover {
+  color: var(--neon-blue);
 }
