@@ -13,27 +13,31 @@
 <body class="dark">
     <!-- Cabeçalho -->
     <header id="nav">
+        <!-- logo -->
         <div class="logo">
-            <a href="index.html">
-                <img id="logoHeader" src="../../assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            <a href="../../../index.html">
+                <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
+        <!-- menu -->
         <div class="menu">
-            <a class="home" href="#">INÍCIO</a>
-            <a href="">NOTÍCIAS</a>
-            <a href="">REVIEWS</a>
-            <a href="">GAMES</a>
-            <a href="">CIÊNCIA</a>
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
+        <!-- botões do menu -->
         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button>
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../../assets/icons/sun.png">
+            </button>
             <form>
-                <button id="login" formaction="./src/pages/account/login.html" formtarget="_blank">
-                    ENTRAR
-                </button>
+                <button id="login" formaction="../../pages/account/login.html"
+                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-    </header>
+</header>
 
 
     <!-- Conteudo Principal -->
