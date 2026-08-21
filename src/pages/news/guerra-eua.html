@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>ByteNews</title>
+    <title>GTA 6: lançamento, trailer e o que esperar do jogo</title>
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./clear-style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
 <body class="dark">
@@ -16,27 +15,29 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="index.html">
-                <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            <a href="../../../index.html">
+                <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
         <!-- menu -->
         <div class="menu">
-            <a class="home" href="#">INÍCIO</a>
-            <a href="">NOTÍCIAS</a>
-            <a href="">REVIEWS</a>
-            <a href="">GAMES</a>
-            <a href="">CIÊNCIA</a>
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
-         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button><!--botão alterar modo-->
-            <form> 
-                <button id="login" formaction="/src/pages/account/login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+        <div class="button-menu">
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../../assets/icons/sun.png">
+            </button>
+            <form>
+                <button id="login" formaction="../../pages/account/login.html"
+                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
     </header>
-
 
     <!-- Conteudo Principal -->
      <main class="news-container">
