@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>ByteNews</title>
+    <title>Hackers ligados ao Irã invadem e-mail de diretor do FBI e vazam fotos e mensagens; o que se sabe</title>
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./clear-style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
 <body class="dark">
@@ -16,50 +15,49 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="index.html">
-                <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            <a href="../../../index.html">
+                <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
         <!-- menu -->
         <div class="menu">
-            <a class="home" href="#">INÍCIO</a>
-            <a href="">NOTÍCIAS</a>
-            <a href="">REVIEWS</a>
-            <a href="">GAMES</a>
-            <a href="">CIÊNCIA</a>
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
-         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button><!--botão alterar modo-->
-            <form> 
-                <button id="login" formaction="/src/pages/account/login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+        <div class="button-menu">
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../../assets/icons/sun.png">
+            </button>
+            <form>
+                <button id="login" formaction="../../pages/account/login.html"
+                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-    </header>
+</header>
 
 
     <!-- Conteudo Principal -->
      <main class="news-container">
-        <article class="news-article">
-            <header class="news-header">
+        <section class="news-article">
+            <div class="news-header">
                 <h1>Hackers ligados ao Irã invadem e-mail de diretor do FBI e vazam fotos e mensagens; o que se sabe</h1><!-- titulo da noticia-->
-                <div class="news-meta">
-                    <span>Por ByteNews</span>
-                    <span>• 19 Abril 2026</span>
-                    <span>•Tecnologia<span>    
-                </div>
-            </header>
+                <p>O e-mail pessoal do diretor do FBI, Kash Patel, foi invadido por hackers ligados ao Irã nesta sexta-feira (27/3).</p>
+                <p>Por <a href="https://www.bbc.com/portuguese/articles/czd7ldv289go" target="_blank">Grace Eliza Goodwine Author,Kwasi Gyamfi Asiedu</a> | 27 março 2026</p>
+            </div>
 
             <!-- imagem -->
             <figure class="news-image">
                 <img src="/src/assets/images/hackers-ira.png" alt="Hackers ligados ao Irã">
-                <figcaption></figcaption>
             </figure><!-- imagem da noticia-->
+
 
             <!-- conteúdo -->
             <section class="news-content">
                 <!-- noticia-->
-                <p>O e-mail pessoal do diretor do FBI, Kash Patel, foi invadido por hackers ligados ao Irã nesta sexta-feira (27/3).</p>
                 <p>O grupo, conhecido como Handala Hack Team, publicou em seu site o currículo de Patel e fotos dele, junto com a seguinte declaração: "Isso é só o começo."</p>
                 <p>O FBI afirmou estar ciente da ação de "agentes maliciosos" tentando acessar informações do e-mail de Patel. "As informações em questão são antigas e não envolvem nenhum dado do governo".</p>
                 <p>A agência está oferecendo até US$ 10 milhões (R$ 52 milhões) por informações que ajudem a identificar membros do grupo Handala.</p>
@@ -83,43 +81,38 @@
                 <p>Na ocasião, a página de login dos funcionários da empresa foi alterada com uma mensagem afirmando que os dados haviam sido apagados em um ataque do tipo "wiper" pelo grupo de hackers apoiado pelo Irã.</p>
                 <p>Em uma publicação na sua conta no X, atualmente suspensa, o Handala afirmou ter apagado "mais de 200 mil sistemas, servidores e dispositivos móveis" e extraído "50 terabytes de dados críticos".</p>
                 <p>O grupo disse que o ataque cibernético à Stryker foi "em retaliação ao brutal ataque" a uma escola de meninas iraniana no início da guerra, no qual mais de 160 pessoas foram mortas, e também "em resposta aos ataques cibernéticos contínuos contra a infraestrutura" do Irã e de seus aliados.</p>
-            </section>
-  
-            <!-- rodapé da notícia -->
-            <footer class="news-footer">
-                <p>Fonte: OpenAI</p>
-            </footer>
-        </article>  
+            </article>
+        </section>  
     </main>
 
 
     <!-- rodapé -->
-    <footer>
+    <footer id="Rodape">
         <div class="box-footer">
             <div class="first-footer">
                 <!-- logo do footer -->
                 <div class="logo-footer">
-                    <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+                    <img id="logoFooter" src="../../assets/icons/logo-padrao.png" alt="Logo ByteNews">
                 </div>
                 <!-- frase do footer -->
                 <div class="phrase">
                     <p>Seu portal de tecnologia, games e inovações</p>
                 </div>
                 <div class="social-media"><!-- redes sociais-->
-                    <a href="#nav"><img src="/src/assets/icons/instagram.png" alt="Instagram"></a>
-                    <a href="#nav"><img src="/src/assets/icons/whatsapp.png" alt="Whatsapp"></a>
-                    <a href="#nav"><img src="/src/assets/icons/facebook.png" alt="Facebook"></a>
-                    <a href="#nav"><img src="/src/assets/icons/tiktok.png" alt="Tiktok"></a>
+                    <a href="#nav"><img src="../../assets/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#nav"><img src="../../assets/icons/whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#nav"><img src="../../assets/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#nav"><img src="../../assets/icons/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
-                <!-- caixa de navegação -->
-                <div class="navegacao-footer">
-                    <h2>Navegação</h2>
-                    <ul>
-                        <li><a href="#nav">Sobre Nós</a></li>
-                        <li><a href="#nav">Contato</a></li>
-                        <li><a href="#nav">Anuncie</a></li>
-                        <li><a href="#nav">Trabalhe Conosco</a></li>
+            <!-- caixa de navegação -->
+            <div class="navegacao-footer">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="#nav">Sobre Nós</a></li>
+                    <li><a href="#nav">Contato</a></li>
+                    <li><a href="#nav">Anuncie</a></li>
+                    <li><a href="#nav">Trabalhe Conosco</a></li>
                 </ul>
             </div>
             <!-- caixa de categorias -->
@@ -148,6 +141,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/scripts/script-tema.js"></script>
+    <script src="/src/scripts/script-noticias.js"></script>
 </body>
 </html>

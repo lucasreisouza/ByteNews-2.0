@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>ByteNews</title>
+    <title>Meta revela primeiro modelo de IA da equipe de superinteligência</title>
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./clear-style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
 <body class="dark">
@@ -16,93 +15,86 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="index.html">
-                <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            <a href="../../../index.html">
+                <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
         <!-- menu -->
         <div class="menu">
-            <a class="home" href="#">INÍCIO</a>
-            <a href="">NOTÍCIAS</a>
-            <a href="">REVIEWS</a>
-            <a href="">GAMES</a>
-            <a href="">CIÊNCIA</a>
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
-         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button><!--botão alterar modo-->
-            <form> 
-                <button id="login" formaction="/src/pages/account/login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+        <div class="button-menu">
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../../assets/icons/sun.png">
+            </button>
+            <form>
+                <button id="login" formaction="../../pages/account/login.html"
+                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-    </header>
+</header>
 
 
     <!-- Conteudo Principal -->
-     <main class="news-container">
-        <article class="news-article">
-            <header class="news-header">
+     <main>
+        <section class="news-article">
+            <div class="news-title">
                 <h1>Meta revela primeiro modelo de IA da equipe de superinteligência</h1><!-- titulo da noticia-->
-                <div class="news-meta">
-                    <span>Por ByteNews</span>
-                    <span>• 19 Abril 2026</span>
-                    <span>•Tecnologia<span>    
-                </div>
-            </header>
+                <p>Muse Spark é o resultado de reestruturação interna e alta disputa por talentos</p>
+                <p>Por <a href="https://www.cnnbrasil.com.br/autor/aditya-soni/" target="_blank">Aditya Soni</a> e <a href="https://www.cnnbrasil.com.br/autor/katie-paul/"> Katie Paul</a>, da Reuters | 08/04/26 às 14:55</p>
+            </div>
 
             <!-- imagem -->
             <figure class="news-image">
                 <img src="/src/assets/images/modelo-ia.png" alt=" Modelo IA">
-                <figcaption></figcaption>
             </figure><!-- imagem da noticia-->
 
 
             <!-- conteúdo -->
-            <section class="news-content">
+            <article class="news-content">
                 <!-- noticia-->
-                <p>Muse Spark é o resultado de reestruturação interna e alta disputa por talentos</p>
                 <p>A Meta apresentou nesta quarta-feira (8) o Muse Spark, o primeiro modelo de inteligência artificial de uma equipe formada no ano passado após uma cara disputa por talentos e uma ampla reestruturação interna para alcançar os concorrentes na corrida da IA.</p>
                 <p>As gigantes de tecnologia dos EUA estão sob pressão para provar que seus enormes investimentos em IA vão compensar. As apostas são especialmente altas para a Meta depois que a empresa contratou o CEO da Scale AI, Alex Wang, no ano passado, em um acordo de US$ 14,3 bilhões (cerca de R$ 73 bilhões), além de oferecer a alguns engenheiros pacotes de remuneração de centenas de milhões de dólares para montar uma nova equipe de superinteligência.</p>
                 <p>O Muse Spark é o primeiro de uma nova série de modelos dessa equipe, que busca desenvolver máquinas capazes de superar o raciocínio humano.</p>
                 <p>Inicialmente, ele estará disponível apenas no aplicativo Meta AI e no site, que ainda têm uso limitado, e nas próximas semanas substituirá os modelos Llama atualmente usados nos chatbots do WhatsApp, Instagram, Facebook e nos óculos inteligentes da Meta.</p>
                 <p>“Este modelo inicial foi projetado para ser pequeno e rápido, mas ainda assim capaz de raciocinar sobre questões complexas em áreas como ciência, matemática e saúde. É uma base poderosa, e a próxima geração já está em desenvolvimento”, afirmou a empresa em uma publicação no blog.</p>
-            </section>
-
-            <!-- rodapé da notícia -->
-            <footer class="news-footer">
-                <p>Fonte: OpenAI</p>
-            </footer>
-        </article>  
+            </article>
+        </section>  
     </main>
 
 
     <!-- rodapé -->
-    <footer>
+    <footer id="Rodape">
         <div class="box-footer">
             <div class="first-footer">
                 <!-- logo do footer -->
                 <div class="logo-footer">
-                    <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+                    <img id="logoFooter" src="../../assets/icons/logo-padrao.png" alt="Logo ByteNews">
                 </div>
                 <!-- frase do footer -->
                 <div class="phrase">
                     <p>Seu portal de tecnologia, games e inovações</p>
                 </div>
                 <div class="social-media"><!-- redes sociais-->
-                    <a href="#nav"><img src="/src/assets/icons/instagram.png" alt="Instagram"></a>
-                    <a href="#nav"><img src="/src/assets/icons/whatsapp.png" alt="Whatsapp"></a>
-                    <a href="#nav"><img src="/src/assets/icons/facebook.png" alt="Facebook"></a>
-                    <a href="#nav"><img src="/src/assets/icons/tiktok.png" alt="Tiktok"></a>
+                    <a href="#nav"><img src="../../assets/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#nav"><img src="../../assets/icons/whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#nav"><img src="../../assets/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#nav"><img src="../../assets/icons/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
-                <!-- caixa de navegação -->
-                <div class="navegacao-footer">
-                    <h2>Navegação</h2>
-                    <ul>
-                        <li><a href="#nav">Sobre Nós</a></li>
-                        <li><a href="#nav">Contato</a></li>
-                        <li><a href="#nav">Anuncie</a></li>
-                        <li><a href="#nav">Trabalhe Conosco</a></li>
+            <!-- caixa de navegação -->
+            <div class="navegacao-footer">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="#nav">Sobre Nós</a></li>
+                    <li><a href="#nav">Contato</a></li>
+                    <li><a href="#nav">Anuncie</a></li>
+                    <li><a href="#nav">Trabalhe Conosco</a></li>
                 </ul>
             </div>
             <!-- caixa de categorias -->
@@ -131,6 +123,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/scripts/script-tema.js"></script>
+<script src="/src/scripts/script-noticias.js"></script>
 </body>
 </html>
