@@ -5,60 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>ByteNews</title>
+    <title>As doenças antes incuráveis que estão ganhando tratamentos graças à IA</title>
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./clear-style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
-
 <body class="dark">
     <!-- Cabeçalho -->
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="index.html">
-                <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            <a href="../../../index.html">
+                <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
         <!-- menu -->
         <div class="menu">
-            <a class="home" href="#">INÍCIO</a>
-            <a href="">NOTÍCIAS</a>
-            <a href="">REVIEWS</a>
-            <a href="">GAMES</a>
-            <a href="">CIÊNCIA</a>
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
-         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button><!--botão alterar modo-->
-            <form> 
-                <button id="login" formaction="/src/pages/account/index-login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+        <div class="button-menu">
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../../assets/icons/sun.png">
+            </button>
+            <form>
+                <button id="login" formaction="../../pages/account/login.html"
+                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
     </header>
 
     <!-- Conteudo Principal -->
-     <main class="news-container">
-        <article class="news-article">
-            <header class="news-header">
+     <main>
+        <section class="news-article">
+            <div class="news-title">
                 <h1>As doenças antes incuráveis que estão ganhando tratamentos graças à IA</h1><!-- titulo da noticia-->
-                <div class="news-meta">
-                    <span>Por ByteNews</span>
-                    <span>• 19 Abril 2026</span>
-                    <span>•Tecnologia<span>    
-                </div>
-            </header>
+                <p>Há cerca de um século, a humanidade vem perdendo lentamente a batalha contra as bactérias.</p>
+                <p>Por <a href="https://www.bbc.com/portuguese/articles/cz0e7m77en1o" target="_blank">Laurie Clarke</a> | 3 abril 2026</p>
+            </div>
 
             <!-- imagem -->
             <figure class="news-image">
                 <img src="/src/assets/images/tratamento-ia.png" alt="Tratamento com IA">
-                <figcaption></figcaption>
             </figure><!-- imagem da noticia-->
 
+
             <!-- conteúdo -->
-            <section class="news-content">
+            <article class="news-content">
                 <!-- noticia-->
-                <p>Há cerca de um século, a humanidade vem perdendo lentamente a batalha contra as bactérias.</p>
                 <p>Nossas armas mais poderosas nesta luta são os antibióticos. Mas a resistência vem se espalhando, fazendo com que eles se tornem cada vez menos eficazes.</p>
                 <p>Atualmente, cerca de 1,1 milhão de pessoas morrem todos os anos de infecções que, até recentemente, eram facilmente tratadas. E este número deve aumentar para mais de oito milhões até 2050, a menos que sejam tomadas medidas urgentes.</p>
                 <p>Mas o desenvolvimento de novos antibióticos é um processo lento, caro e frustrante.</p>
@@ -155,43 +152,38 @@
                 <p>Atualmente, a IA é mais útil no estágio de seleção inicial do processo de desenvolvimento de medicamentos: a identificação de objetivos e a busca de moléculas para atingir aquele propósito.</p>
                 <p>Estas são apenas duas etapas do longo processo necessário para desenvolver novos medicamentos, o que indica que pode levar algum tempo até que algum desses possíveis tratamentos chegue aos pacientes, se é que isso irá acontecer.</p>
                 <p>"A IA está revolucionando a descoberta de medicamentos", segundo Vendruscolo. "Mas apenas de formas muito específicas."</p>
-            </section>
-   
-            <!-- rodapé da notícia -->
-            <footer class="news-footer">
-                <p>Fonte: OpenAI</p>
-            </footer>
-        </article>  
+            </article>
+        </section>  
     </main>
 
 
     <!-- rodapé -->
-    <footer>
+    <footer id="Rodape">
         <div class="box-footer">
             <div class="first-footer">
                 <!-- logo do footer -->
                 <div class="logo-footer">
-                    <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+                    <img id="logoFooter" src="../../assets/icons/logo-padrao.png" alt="Logo ByteNews">
                 </div>
                 <!-- frase do footer -->
                 <div class="phrase">
                     <p>Seu portal de tecnologia, games e inovações</p>
                 </div>
                 <div class="social-media"><!-- redes sociais-->
-                    <a href="#nav"><img src="/src/assets/icons/instagram.png" alt="Instagram"></a>
-                    <a href="#nav"><img src="/src/assets/icons/whatsapp.png" alt="Whatsapp"></a>
-                    <a href="#nav"><img src="/src/assets/icons/facebook.png" alt="Facebook"></a>
-                    <a href="#nav"><img src="/src/assets/icons/tiktok.png" alt="Tiktok"></a>
+                    <a href="#nav"><img src="../../assets/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#nav"><img src="../../assets/icons/whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#nav"><img src="../../assets/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#nav"><img src="../../assets/icons/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
-                <!-- caixa de navegação -->
-                <div class="navegacao-footer">
-                    <h2>Navegação</h2>
-                    <ul>
-                        <li><a href="#nav">Sobre Nós</a></li>
-                        <li><a href="#nav">Contato</a></li>
-                        <li><a href="#nav">Anuncie</a></li>
-                        <li><a href="#nav">Trabalhe Conosco</a></li>
+            <!-- caixa de navegação -->
+            <div class="navegacao-footer">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="#nav">Sobre Nós</a></li>
+                    <li><a href="#nav">Contato</a></li>
+                    <li><a href="#nav">Anuncie</a></li>
+                    <li><a href="#nav">Trabalhe Conosco</a></li>
                 </ul>
             </div>
             <!-- caixa de categorias -->
@@ -220,6 +212,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/scripts/script-tema.js"></script>
+<script src="/src/scripts/script-noticias.js"></script>
 </body>
 </html>

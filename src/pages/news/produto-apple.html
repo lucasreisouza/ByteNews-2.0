@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>ByteNews</title>
+    <title>Produto mais cobiçado da Apple pode te surpreender; veja qual</title>
     <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./clear-style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
 <body class="dark">
@@ -16,50 +15,49 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="index.html">
-                <img id="logo" src="/src/assets/icons/logo-padrao.png" alt="Logo ByteNews">
+            <a href="../../../index.html">
+                <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
         <!-- menu -->
         <div class="menu">
-            <a class="home" href="#">INÍCIO</a>
-            <a href="">NOTÍCIAS</a>
-            <a href="">REVIEWS</a>
-            <a href="">GAMES</a>
-            <a href="">CIÊNCIA</a>
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
-         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()"><img src="/src/assets/icons/sun.png"></button><!--botão alterar modo-->
-            <form> 
-                <button id="login" formaction="/src/pages/account/index-login.html" formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+        <div class="button-menu">
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../../assets/icons/sun.png">
+            </button>
+            <form>
+                <button id="login" formaction="../../pages/account/login.html"
+                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-    </header>
+</header>
 
 
     <!-- Conteudo Principal -->
-     <main class="news-container">
-        <article class="news-article">
-            <header class="news-header">
+     <main>
+        <section class="news-article">
+            <div class="news-title">
                 <h1>Produto mais cobiçado da Apple pode te surpreender; veja qual</h1><!-- titulo da noticia-->
-                <div class="news-meta">
-                    <span>Por ByteNews</span>
-                    <span>• 19 Abril 2026</span>
-                    <span>•Tecnologia<span>    
-                </div>
-            </header>
+                <p>Entusiastas de tecnologia estão comprando o pequeno computador da empresa para executar agentes de inteligência artificial como o OpenClaw</p>
+            </div>
 
             <!-- imagem -->
             <figure class="news-image">
                 <img src="/src/assets/images/produto-apple.png" alt="Produto Apple">
-                <figcaption></figcaption>
             </figure><!-- imagem da noticia-->
 
+            <p>Por <a href="https://canaltech.com.br/equipe/andre-leonardo/?_gl=1*jxlyg1*_gcl_au*MTg3OTA3MjYyMC4xNzYxNTA1ODA2" target="_blank">André Leonardo</a> | 14/10/2025 às 18:00 editado por <a href="../index.html">ByteNews</a> </p>
+
             <!-- conteúdo -->
-            <section class="news-content">
+            <article class="news-content">
                 <!-- noticia-->
-                <p>Entusiastas de tecnologia estão comprando o pequeno computador da empresa para executar agentes de inteligência artificial como o OpenClaw</p>
                 <p>A configuração do computador doméstico de Matt Shumer é um pouco mais estranha que a maioria.</p>
                 <p>Ele e seu colega de quarto têm cada um um mini computador Apple na cozinha, ambos os dispositivos trabalhando silenciosamente. Tudo o que Shumer precisa fazer é dar uma tarefa ao assistente virtual programado em seu Mac Mini, e ele cuida do resto. Isso inclui ações que normalmente exigiriam digitar, clicar e rolar, como navegar em sites e fazer login em contas.</p>
                 <p>Pode ser estranho para seus amigos fora da área de tecnologia, mas para "hobbistas" como ele, a atividade é comum.</p>
@@ -98,43 +96,38 @@
                 <p>O CEO da Nvidia, Jensen Huang, destacou a capacidade dos modelos de IA executados no DGX Spark de controlar um robô doméstico durante sua apresentação na conferência de tecnologia CES em janeiro. O OpenClaw também foi uma área importante de foco durante a conferência GTC da Nvidia em março.</p>
                 <p>"Ainda estamos na fase de inovadores dessa tendência, mas a trajetória é clara", disse Jessop por e-mail.</p>
                 <p>Shumer gosta de ter uma representação física de seu assistente pessoal de IA em sua casa. "Isso muda a forma como você pensa sobre ele, a maneira como você o usa, as tarefas que você dá a ele", disse ele.</p>
-            </section>
-
-            <!-- rodapé da notícia -->
-            <footer class="news-footer">
-                <p>Fonte: OpenAI</p>
-            </footer>
-        </article>  
+            </article>
+        </section>  
     </main>
 
 
     <!-- rodapé -->
-    <footer>
+    <footer id="Rodape">
         <div class="box-footer">
             <div class="first-footer">
                 <!-- logo do footer -->
                 <div class="logo-footer">
-                    <img id="logo" src="/src/icones/logo-padrao.png" alt="Logo ByteNews">
+                    <img id="logoFooter" src="../../assets/icons/logo-padrao.png" alt="Logo ByteNews">
                 </div>
                 <!-- frase do footer -->
                 <div class="phrase">
                     <p>Seu portal de tecnologia, games e inovações</p>
                 </div>
                 <div class="social-media"><!-- redes sociais-->
-                    <a href="#nav"><img src="/src/icones/instagram.png" alt="Instagram"></a>
-                    <a href="#nav"><img src="/src/icones/whatsapp.png" alt="Whatsapp"></a>
-                    <a href="#nav"><img src="/src/icones/facebook.png" alt="Facebook"></a>
-                    <a href="#nav"><img src="/src/icones/tiktok.png" alt="Tiktok"></a>
+                    <a href="#nav"><img src="../../assets/icons/instagram.png" alt="Instagram"></a>
+                    <a href="#nav"><img src="../../assets/icons/whatsapp.png" alt="Whatsapp"></a>
+                    <a href="#nav"><img src="../../assets/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#nav"><img src="../../assets/icons/tiktok.png" alt="Tiktok"></a>
                 </div>
             </div>
-                <!-- caixa de navegação -->
-                <div class="navegacao-footer">
-                    <h2>Navegação</h2>
-                    <ul>
-                        <li><a href="#nav">Sobre Nós</a></li>
-                        <li><a href="#nav">Contato</a></li>
-                        <li><a href="#nav">Anuncie</a></li>
-                        <li><a href="#nav">Trabalhe Conosco</a></li>
+            <!-- caixa de navegação -->
+            <div class="navegacao-footer">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="#nav">Sobre Nós</a></li>
+                    <li><a href="#nav">Contato</a></li>
+                    <li><a href="#nav">Anuncie</a></li>
+                    <li><a href="#nav">Trabalhe Conosco</a></li>
                 </ul>
             </div>
             <!-- caixa de categorias -->
@@ -163,6 +156,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/scripts/script-tema.js"></script>
+<script src="/src/scripts/script-noticias.js"></script>
 </body>
 </html>
