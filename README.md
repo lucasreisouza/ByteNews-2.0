@@ -1,4 +1,4 @@
-##📰 ByteNews 2.0
+📰 ByteNews 2.0
 
 Portal de Notícias Online
 
