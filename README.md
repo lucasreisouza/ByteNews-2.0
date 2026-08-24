@@ -1,4 +1,4 @@
-📰 ByteNews 2.0
+##📰 ByteNews 2.0
 
 Portal de Notícias Online
 
@@ -106,28 +106,6 @@ O projeto utiliza uma combinação de fontes para estabelecer uma hierarquia vis
 - CSS3 — Estilização e responsividade
 - JavaScript — Interações e funcionalidades
 - Bootstrap 5 — Componentes e recursos responsivos
-
----
-
-📁 Estrutura do Projeto
-
-ByteNews-2.0/
-│
-├── index.html
-│
-├── src/
-│   ├── assets/
-│   │   ├── CSS/
-│   │   ├── JS/
-│   │   ├── images/
-│   │   └── icons/
-│   │
-│   └── pages/
-│       ├── account/
-│       └── news/
-│
-├── README.md
-└── ...
 
 ---
 
