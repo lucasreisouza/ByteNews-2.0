@@ -203,11 +203,10 @@ main .container .carousel-main {
     position: relative;
     padding: 1px;
     /* espaço para a borda aparecer */
-    background: linear-gradient(
-        45deg, 
-        rgba(var(--neon-blue-rgb), 0.6), 
-        rgba(var(--neon-purple2-rgb), 0.8), 
-        rgba(var(--neon-purple-rgb), 0.77));
+    background: linear-gradient(45deg,
+            rgba(var(--neon-blue-rgb), 0.6),
+            rgba(var(--neon-purple2-rgb), 0.8),
+            rgba(var(--neon-purple-rgb), 0.77));
 }
 
 #carouselMain {
@@ -247,6 +246,7 @@ main .container .carousel-main {
 }
 
 .news-emphasis_title h3 {
+    font-family: "Orbitron", sans-serif;
     color: var(--text-primary);
     display: flex;
     align-items: center;
@@ -304,12 +304,10 @@ main .container .carousel-main {
     inset: 0;
     border-radius: 10px;
     padding: 1px;
-    background: linear-gradient(
-        45deg, 
-        rgba(var(--neon-blue-rgb), 0.6), 
-        rgba(var(--neon-purple2-rgb), 0.8), 
-        rgba(var(--neon-purple-rgb), 0.77)
-    );
+    background: linear-gradient(45deg,
+            rgba(var(--neon-blue-rgb), 0.6),
+            rgba(var(--neon-purple2-rgb), 0.8),
+            rgba(var(--neon-purple-rgb), 0.77));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -355,12 +353,14 @@ main .container .carousel-main {
 }
 
 .news-card_title {
+    font-family: "Orbitron", sans-serif;
     color: var(--text-white);
     text-align: left;
     font-size: 20px;
 }
 
 .news-card_time {
+    font-family: "Inter", sans-serif;
     color: var(--text-primary);
 }
 
@@ -392,6 +392,7 @@ main .container .carousel-main {
 }
 
 .news-latest_title h3 {
+    font-family: "Orbitron", sans-serif;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -474,7 +475,7 @@ main .container .carousel-main {
 }
 
 .news-latest_cards .news-card_title {
-    font-family: 'Inter', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: var(--text-white);
@@ -534,6 +535,7 @@ main .container .carousel-main {
 }
 
 .news-rise_title h3 {
+    font-family: "Orbitron", sans-serif;
     margin: 0;
     color: var(--text-primary);
     font-size: 18px;
@@ -575,6 +577,7 @@ main .container .carousel-main {
 }
 
 .news-rise_title-text {
+    font-family: "Orbitron", sans-serif;
     color: var(--text-white);
     white-space: nowrap;
     font-size: 15px;
@@ -656,6 +659,7 @@ footer #logoFooter {
 
 /* frase */
 .phrase p {
+    font-family: "Orbitron", sans-serif;
     font-size: 15px;
     color: var(--text-primary);
     margin-bottom: 15px;
@@ -684,6 +688,7 @@ footer #logoFooter {
 .navegacao-footer h2,
 .categories-footer h2,
 .legal-footer h2 {
+    font-family: "Orbitron", sans-serif;
     font-size: 18px;
     color: var(--text-primary);
     margin-bottom: 12px;
@@ -700,6 +705,7 @@ footer #logoFooter {
 .navegacao-footer li,
 .categories-footer li,
 .legal-footer li {
+    font-family: "Inter", sans-serif;
     margin-bottom: 8px;
 }
 
@@ -708,7 +714,7 @@ footer #logoFooter {
 .legal-footer a {
     text-decoration: none;
     color: var(--text-primary);
-    font-size: 13px;
+    font-size: 15px;
     transition: .2s;
 }
 
@@ -728,6 +734,7 @@ footer #logoFooter {
 }
 
 .end-footer p {
+    font-family: "Inter", sans-serif;
     margin-bottom: 0;
 }
 
@@ -736,121 +743,123 @@ footer #logoFooter {
 
 /* ===================== HEADER ===================== */
 body.clear header {
-  background: var(--bg-clear-primary);
+    background: var(--bg-clear-primary);
 }
 
 body.clear header .menu a {
-  color: var(--neon-clear-blue);
-  font-weight: 600;
+    color: var(--neon-clear-blue);
+    font-weight: 600;
 }
 
 body.clear header .menu a:hover {
-  color: var(--neon-clear-blue);
-  border-bottom: 2px solid var(--neon-clear-blue);
+    color: var(--neon-clear-blue);
+    border-bottom: 2px solid var(--neon-clear-blue);
 }
 
 body.clear header::before {
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 }
 
 
 /* ===================== BOTÕES ===================== */
 body.clear #login {
-  color: var(--neon-clear-blue);
-  border: 2px solid var(--neon-clear-blue);
-  box-shadow: none;
+    color: var(--neon-clear-blue);
+    border: 2px solid var(--neon-clear-blue);
+    box-shadow: none;
 }
 
 body.clear #tema {
-  background: none;
+    background: none;
 }
 
 /* ====================== BODY =======================*/
 
 body.clear {
-  background: var(--bg-clear-primary);
-  color: var(--text-clear-primary);
+    background: var(--bg-clear-primary);
+    color: var(--text-clear-primary);
 }
 
 body.clear .news-emphasis {
-  background-color: var(--bg-clear-secondary);
-  border: 2px solid rgba(var(--neon-blue-rgb), 0.3);
+    background-color: var(--bg-clear-secondary);
+    border: 2px solid rgba(var(--neon-blue-rgb), 0.3);
 }
 
 body.clear .news-emphasis .news-card {
-  background: var(--bg-clear-primary);
+    background: var(--bg-clear-primary);
 }
 
 body.clear .news-card_time {
-  color: var(--text-clear-secondary);
+    color: var(--text-clear-secondary);
 }
 
 body.clear .news-emphasis_title a {
-  color: var(--neon-clear-blue);
+    color: var(--neon-clear-blue);
 }
 
 body.clear .news-latest {
-  background: var(--bg-clear-secondary);
+    background: var(--bg-clear-secondary);
 }
 
 body.clear .news-latest .news-latest_title h3 {
-  color: var(--text-clear-primary);
+    color: var(--text-clear-primary);
 }
 
 body.clear .news-latest_title h3::before {
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 25px;
-  background: var(--neon-clear-blue);
-  border-radius: 2px;
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 25px;
+    background: var(--neon-clear-blue);
+    border-radius: 2px;
 }
 
 body.clear .news-latest_cards article {
-  background: var(--bg-clear-primary);
+    background: var(--bg-clear-primary);
 }
 
 body.clear .news-card_title {
-  color: var(--text-clear-primary);
+    color: var(--text-clear-primary);
 }
 
 body.clear .news-card_description .icon-eye {
-  filter: brightness(0) invert(10%);
+    filter: brightness(0) invert(10%);
 }
 
 body.clear .news-card_description p {
-  color: var(--text-clear-secondary);
+    font-family: "Inter", sans-serif;
+    color: var(--text-clear-secondary);
 }
 
 body.clear .news-rise_title {
-  background: linear-gradient(90deg,
+    background: linear-gradient(90deg,
             rgba(var(--bg-clear-primary-rgb), 1) 0%,
             rgba(var(--bg-clear-primary-rgb), 0.8) 65%,
             rgba(var(--bg-clear-primary-rgb), 0.6) 100%);
 }
 
 body.clear .news-rise {
-  background-color: var(--bg-clear-secondary);
+    background-color: var(--bg-clear-secondary);
 }
 
 body.clear .news-rise_title h3 {
-  color: var(--text-clear-primary);
+    color: var(--text-clear-primary);
 }
 
 body.clear .news-rise_rank {
-  color: var(--neon-clear-blue);
+    color: var(--neon-clear-blue);
 }
 
 body.clear .news-rise_title-text {
-  color: var(--text-clear-primary);
+    color: var(--text-clear-primary);
 }
 
 body.clear .news-rise_trend.up {
-  color: var(--text-clear-muted);
+    font-family: "Inter", sans-serif;
+    color: var(--text-clear-muted);
 }
 
 body.clear .news-rise_item {
-  border-bottom: 1px solid rgba(var(--neon-clear-purple-rgb), 0.3);
+    border-bottom: 1px solid rgba(var(--neon-clear-purple-rgb), 0.3);
 }
 
 /*====================== BODY NOTÍCIAS ========================*/
@@ -865,54 +874,54 @@ body.clear .news-title {
 
 /* ===================== FOOTER ===================== */
 body.clear footer {
-  background: var(--bg-clear-primary);
-  border-top: 1px solid var(--border-clear-color);
-  margin-top: 40px;
+    background: var(--bg-clear-primary);
+    border-top: 1px solid var(--border-clear-color);
+    margin-top: 40px;
 }
 
 body.clear footer:before {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
 }
 
 
 body.clear footer h2 {
-  color: var(--text-clear-primary);
+    color: var(--text-clear-primary);
 }
 
 body.clear footer a {
-  color: var(--text-clear-secondary);
+    color: var(--text-clear-secondary);
 }
 
 body.clear footer a:hover {
-  color: var(--neon-clear-blue);
+    color: var(--neon-clear-blue);
 }
 
 body.clear .end-footer {
-  background: var(--border-clear-color);
-  color: var(--text-clear-muted);
+    background: var(--border-clear-color);
+    color: var(--text-clear-muted);
 }
 
 /* frase */
 body.clear .phrase p {
-  font-size: 15px;
-  color: var(--text-clear-secondary);
-  margin-bottom: 15px;
+    font-size: 15px;
+    color: var(--text-clear-secondary);
+    margin-bottom: 15px;
 }
 
 body.clear .social-media img {
-  filter: none;
+    filter: none;
 }
 
 body.clear .news-emphasis_title h3 {
-  color: var(--text-clear-primary);
+    color: var(--text-clear-primary);
 }
 
 /* ========================= STYLE DAS NOTÍCIAS ========================*/
 
-.news-article{
+.news-article {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -931,7 +940,8 @@ body.clear .news-emphasis_title h3 {
     text-decoration: none;
 }
 
-.news-title{
+.news-title {
+    font-family: "Orbitron", sans-serif;
     display: flex;
     flex-direction: column;
     color: var(--text-primary);
@@ -947,122 +957,127 @@ body.clear .news-emphasis_title h3 {
     height: auto;
 }
 
-.news-content ol, .news-content ul {
+.news-content ol,
+.news-content ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+.news-content h2 {
+    font-family: "Orbitron", sans-serif;
+}
+
 /* ================= LOGIN & CADASTRO =============*/
 
 body.acount {
-  background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-  font-family: "Inter", sans-serif;
-  color: var(--text-primary);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+    background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    font-family: "Inter", sans-serif;
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* Card principal */
 #formUsuario {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 40px 32px;
-  width: 100%;
-  max-width: 420px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px 32px;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Logo */
-#formUsuario > img {
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 24px
+#formUsuario>img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 24px
 }
 
 #formUsuario .container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
 /* Labels */
 #formUsuario .container label {
-  font-family: "Orbitron", sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--neon-blue);
-  margin-bottom: 6px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--neon-blue);
+    margin-bottom: 6px;
 }
 
 /* Inputs */
 #formUsuario .container input {
-  width: 100%;
-  padding: 12px 16px;
-  margin-bottom: 20px;
-  background: rgba(15, 23, 42, 0.8);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  color: var(--text-primary);
-  font-family: "Inter", sans-serif;
-  font-size: 0.95rem;
-  outline: none;
-  transition: all 0.3s ease;
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
 input:focus {
-  border-color: var(--neon-blue);
+    border-color: var(--neon-blue);
 }
 
 /* Botão Entrar */
 .botoes {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .botoes button {
-  width: 100%;
-  padding: 12px;
-  background: var(--gradient-primary);
-  border: none;
-  border-radius: 8px;
-  color: #000;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    width: 100%;
+    padding: 12px;
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .botoes button:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 /* Link de Cadastro */
 .container p {
-  margin-top: 24px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
+    margin-top: 24px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
 }
 
 .container p a {
-  color: var(--neon-pink);
-  text-decoration: none;
-  font-weight: 600;
-  margin-left: 6px;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+    color: var(--neon-pink);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 6px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .container p a:hover {
-  color: var(--neon-blue);
+    color: var(--neon-blue);
 }
