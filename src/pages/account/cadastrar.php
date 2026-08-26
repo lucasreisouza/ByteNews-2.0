@@ -15,7 +15,7 @@ if (empty($nome) || empty($email) || empty($senha)) {
 $senha_segura = password_hash($senha,PASSWORD_DEFAULT);
 
 // Criando o comando SQL
-$sql = "INSERT INTO usuarios (nome, email, nascimento, senha_segura) 
+$sql = "INSERT INTO usuarios (nome, email, senha_segura) 
 VALUES ('$nome', '$email', '$senha_segura)";
 
 //Executando no banco de dados
