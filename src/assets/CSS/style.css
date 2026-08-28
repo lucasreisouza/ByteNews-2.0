@@ -193,12 +193,12 @@ main .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
 main .container .carousel-main {
-    width: 99%;
+    width: 100%;
     border-radius: 15px;
     position: relative;
     padding: 1px;
@@ -1247,7 +1247,8 @@ body.clear .comment-item {
     /* Main */
 
     main .container {
-        width: 95%;
+        width: 100%;
+        padding: 0;
     }
 
 
@@ -1418,7 +1419,6 @@ body.clear .comment-item {
 @media (max-width: 480px) {
 
     /* Header*/
-
     header {
         flex-wrap: wrap;
     }
@@ -1441,6 +1441,15 @@ body.clear .comment-item {
 
 
     /* Carousel */
+    main .container .carousel-main {
+        border-radius: 0;
+        background: none;
+    }
+
+    #carouselMain,
+    #carouselMain .carousel-inner {
+        border-radius: 0;
+    }
 
     #carouselMain .carousel-inner h5 {
         font-size: 17px;
@@ -1463,6 +1472,11 @@ body.clear .comment-item {
 
 
     /* Noticias*/
+
+    .news-latest {
+        border: none;
+        border-radius: 0;
+    }
 
     .news-latest_cards .news-latest_image {
         height: 180px;
