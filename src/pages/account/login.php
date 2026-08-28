@@ -19,7 +19,7 @@
         <div class="botoes">
             <button type="submit">Entrar</button>
         </div>
-        <p>Não tem conta?<a href="../account/cadastro.html">Cadastrar-se</a>
+        <p>Não tem conta?<a href="../account/cadastro.php">Cadastrar-se</a>
     </div>
 </form>
 <script src="../../assets/JS/script.js"></script>
@@ -49,7 +49,7 @@ document.getElementById("formUsuario").addEventListener("submit", function(event
 
     const params = new URLSearchParams(window.location.search);
     const redirect = params.get("redirect");
-    window.location.href = redirect || "/index.html";
+    window.location.href = redirect || "/index.php";
 });
 </script>
 </body>

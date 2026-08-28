@@ -22,7 +22,7 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="../../../index.html">
+            <a href="../../../index.php">
                 <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
@@ -40,7 +40,7 @@
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
             <form>
-                <button id="login" formaction="../../pages/account/login.html"
+                <button id="login" formaction="../../pages/account/login.php"
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
@@ -60,7 +60,7 @@
                 <img src="../../assets/images/produto-apple.png" alt="Produto Apple">
             </figure><!-- imagem da noticia-->
 
-            <p>Por <a href="https://canaltech.com.br/equipe/andre-leonardo/?_gl=1*jxlyg1*_gcl_au*MTg3OTA3MjYyMC4xNzYxNTA1ODA2" target="_blank">André Leonardo</a> | 14/10/2025 às 18:00 editado por <a href="../index.html">ByteNews</a> </p>
+            <p>Por <a href="https://canaltech.com.br/equipe/andre-leonardo/?_gl=1*jxlyg1*_gcl_au*MTg3OTA3MjYyMC4xNzYxNTA1ODA2" target="_blank">André Leonardo</a> | 14/10/2025 às 18:00 editado por <a href="../index.php">ByteNews</a> </p>
 
             <!-- conteúdo -->
             <article class="news-content">

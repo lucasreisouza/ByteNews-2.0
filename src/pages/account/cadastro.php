@@ -21,7 +21,7 @@
         <div class="botoes">
             <button type="submit">Cadastrar</button>
         </div>
-        <p class="login">Ja tem uma conta?<a href="./login.html">Entrar</a></p>
+        <p class="login">Ja tem uma conta?<a href="./login.php">Entrar</a></p>
     </div>
 </form>
 <script src="../../assets/JS/script.js"></script>
@@ -51,7 +51,7 @@ document.getElementById("formUsuario").addEventListener("submit", function(event
     }));
 
     alert("Cadastro realizado! Agora faça login.");
-    window.location.href = "./login.html";
+    window.location.href = "./login.php";
 });
 </script>
 </body>

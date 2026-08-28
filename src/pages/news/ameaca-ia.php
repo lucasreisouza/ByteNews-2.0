@@ -22,7 +22,7 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="../../../index.html">
+            <a href="../../../index.php">
                 <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
@@ -34,7 +34,7 @@
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
             <form>
-                <button id="login" formaction="../../pages/account/login.html"
+                <button id="login" formaction="../../pages/account/login.php"
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
