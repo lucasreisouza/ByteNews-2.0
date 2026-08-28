@@ -29,7 +29,7 @@
            <!-- Campos virão aqui -->
 
            <label>Nome:</label>
-           <input type="text"
+           <input type="text">
          </form>
     </main>
 </html>

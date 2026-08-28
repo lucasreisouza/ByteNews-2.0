@@ -93,7 +93,7 @@ function setupComments() {
     button.textContent = 'Fazer login';
     button.type = 'button';
     button.addEventListener('click', () => {
-      window.location.href = '../../account/login.html?redirect=' + encodeURIComponent(window.location.pathname);
+      window.location.href = '../account/login.html?redirect=' + encodeURIComponent(window.location.pathname);
     });
     textarea.addEventListener('focus', () => {
       textarea.blur();
