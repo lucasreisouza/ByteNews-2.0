@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Protótipo de 'carro voador' da Embraer completa 50 voos de teste</title>
+    <title>Ataque hacker desvia pagamento e causa prejuízo milionário a empresa de energia no Reino Unido</title>
     <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
     <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
@@ -21,6 +28,11 @@
         </div>
         <!-- menu -->
         <div class="menu">
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
         <div class="button-menu">
@@ -36,31 +48,31 @@
 
 
     <!-- Conteudo Principal -->
-    <main>
+     <main>
         <section class="news-article">
-            <!-- titulo -->
             <div class="news-title">
-                <h1>Protótipo de 'carro voador' da Embraer completa 50 voos de teste</h1><!-- titulo da noticia-->
-                <p>Versão de teste já soma mais de duas horas de voo desde dezembro, enquanto empresa prepara produção de unidades para certificação junto à Anac.</p>
-                <p>Por <a href="https://www.reuters.com/" target="_blank">Reuters</a> | 09/04/2026 11h15</p>
+                <h1>Ataque hacker desvia pagamento e causa prejuízo milionário a empresa de energia no Reino Unido</h1><!-- titulo da noticia-->
+                <p>Empresa faria pagamento para outra companhia, mas a invasão redirecionou cerca de R$ 4,7 milhões para um terceiro que não estava envolvido na negociação.</p>
+                <p>Por <a href="https://g1.globo.com/autores/redacao-g1/" target="_blank">Redação g1</a> | 10/04/2026 19h27</p>
             </div>
-            
+
             <!-- imagem -->
-            <figure class="news-image">            
-                <img src="../../assets/images/carro-voador.png" alt="Carro voador"><!-- imagem da noticia-->
-            </figure>
+            <figure class="news-image">
+                <img src="../../assets/images/hackers-reino-unido.png" alt="Ataque hacker">
+            </figure><!-- imagem da noticia-->
 
 
             <!-- conteúdo -->
             <article class="news-content">
                 <!-- noticia-->
-                <p>A Eve Air Mobility, empresa subsidiária da Embraer, informou nesta quinta-feira (9) que realizou 50 voos de teste com seu protótipo de "carro voador" (oficialmente conhecido como eVTOL) desde a estreia, em dezembro de 2025.</p>
-                <p>Ao todo, os testes já somam mais de duas horas de voo.</p>
-                <p>A empresa prevê iniciar ainda este ano a produção de protótipos de conformidade. Serão seis unidades usadas na campanha de certificação junto à Agência Nacional de Aviação Civil (Anac), cuja aprovação é necessária antes da entrada em operação.</p>
-                <p>"Alcançar 50 voos de teste com nosso protótipo de engenharia vai além de um marco técnico. É uma evidência clara da maturidade do nosso programa", afirmou Johann Bordais, CEO da Eve Air Mobility.</p>
-                <p>A Eve também ampliou os testes, com aumento gradual da velocidade de cruzeiro e avaliações de gestão de energia, controlabilidade, estabilidade, ruído e vibração.</p>
-                <p>As aeronaves da Eve são produzidas em Taubaté (SP), em uma planta com capacidade para fabricar até 480 unidades por ano. Os veículos continuam em fase de testes e devem entrar em operação em 2027.</p>
-                <p>A projeção da empresa é a de que a frota mundial de eVTOLs pode chegar a 30 mil unidades até 2045. A expectativa é que mais de 3 bilhões de passageiros sejam transportados nesse período.</p>
+                <p>Uma empresa de energia no Reino Unido sofreu um prejuízo de 700 mil libras esterlinas (cerca de R$ 4,7 milhões) após um ataque hacker desviar o destino de um pagamento que seria feito a outra companhia.</p>
+                <p>O caso se tornou público na última quinta-feira (9) e envolveu a subsidiária americana da Zephyr Energy, empresa britânica de petróleo e gás que relatou o incidente a seus investidores.</p>
+                <p>O ataque fez o valor ser transferido para um terceiro sem envolvimento na negociação, informou a Zephyr Energy.</p>
+                <p>"A empresa notificou imediatamente as autoridades policiais competentes e está trabalhando com os bancos e consultores envolvidos para tentar recuperar os fundos desviados", continuou.</p>
+                <p>A empresa não detalhou a invasão, mas esse tipo de ataque costuma envolver acessos indevidos a caixas de entrada de e-mails e a sistemas de contabilidade, por exemplo.</p>
+                <p>Os "ataques de comprometimento de e-mail comercial" estão entre os mais comuns e, em 2025, geraram prejuízo de mais de US$ 3 bilhões para milhares de vítimas em 2025, segundo um relatório do FBI.</p>
+                <p>A Zephyr Energy disse que seus sistemas estão sendo monitorados continuamente e que, apesar de seguir padrões de mercado, adotou novas camadas de segurança.</p>
+                <p>A empresa disse ainda que está realizando suas atividades normalmente e que tem capital de giro suficiente para que a invasão não afete sua operação.</p>
             </article>
 
             <!-- Comentários -->

@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteNews</title>
@@ -36,6 +43,9 @@
             <form>
                 <button id="login" formaction="./src/pages/account/login.html">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
+            <div class="dropdown">
+                <div class="dropdown-content"></div>
+            </div>
         </div>
     </header>
 
@@ -75,11 +85,11 @@
                             <div class="cartao noticia2">
                                 <a href="./src/pages/news/iphone-dobravel.html" target="_blank">
                                     <img src="./src/assets/images/carousel/iphone-dobravel.png" class="d-block"
-                                        alt="Apple Wath">
+                                        alt="iPhone dobrável">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>iPhone dobrável enfrenta problemas de engenharia e lançamento pode atrasar, diz
-                                        jornalo</h5>
+                                        jornal</h5>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +97,7 @@
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
                                 <a href="./src/pages/news/meta-ia.html" target="_blank">
-                                    <img src="./src/assets/images/carousel/meta-ai.png" class="d-block">
+                                    <img src="./src/assets/images/carousel/meta-ai.png" class="d-block" alt="celular">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Meta finalmente apresenta plano para futuro da IA na empresa</h5>
@@ -98,7 +108,7 @@
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
                                 <a href="./src/pages/news/produto-apple.html" target="_blank">
-                                    <img src="./src/assets/images/carousel/produto-apple.png" class="d-block">
+                                    <img src="./src/assets/images/carousel/produto-apple.png" class="d-block" alt="Foto da sede da Apple">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Produto mais cobiçado da Apple pode te surpreender; veja qual</h5>
@@ -109,7 +119,7 @@
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
                                 <a href="./src/pages/news/treinar-robos.html" target="_blank">
-                                    <img src="./src/assets/images/carousel/treinar-robos.png" class="d-block">
+                                    <img src="./src/assets/images/carousel/treinar-robos.png" class="d-block" alt="robôs">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Como gravar tarefas domésticas pode treinar robôs "mordomos" no futuro</h5>

@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>OpenAI, dona do ChatGPT, vê ameaça da IA ao emprego e defende semana de 4 dias</title>
+    <title>Protótipo de 'carro voador' da Embraer completa 50 voos de teste</title>
     <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
     <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
@@ -21,6 +28,7 @@
         </div>
         <!-- menu -->
         <div class="menu">
+        </div>
         <!-- botões do menu -->
         <div class="button-menu">
             <button id="tema" onclick="toggleStyle()">
@@ -31,7 +39,7 @@
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-</header>
+    </header>
 
 
     <!-- Conteudo Principal -->
@@ -39,31 +47,27 @@
         <section class="news-article">
             <!-- titulo -->
             <div class="news-title">
-                <h1>OpenAI, dona do ChatGPT, vê ameaça da IA ao emprego e defende semana de 4 dias</h1>
-                <p>Relatório da OpenAI discute impactos da IA no trabalho</p>
-                <p>Por <a href="https://g1.globo.com/autores/redacao-g1/" target="_blank">Redação g1</a> | 11/04/2026 03h00</p>
+                <h1>Protótipo de 'carro voador' da Embraer completa 50 voos de teste</h1><!-- titulo da noticia-->
+                <p>Versão de teste já soma mais de duas horas de voo desde dezembro, enquanto empresa prepara produção de unidades para certificação junto à Anac.</p>
+                <p>Por <a href="https://www.reuters.com/" target="_blank">Reuters</a> | 09/04/2026 11h15</p>
             </div>
-
+            
             <!-- imagem -->
-            <figure class="news-image">
-                <img src="../../assets/images/modelo-ia.png" alt="OpenAI IA">
+            <figure class="news-image">            
+                <img src="../../assets/images/carro-voador.png" alt="Carro voador"><!-- imagem da noticia-->
             </figure>
 
 
             <!-- conteúdo -->
             <article class="news-content">
                 <!-- noticia-->
-                <p>Documento da OpenAI defende que a IA deve gerar ganhos sociais, como redução da jornada de trabalho sem corte salarial e participação dos trabalhadores nas decisões sobre o uso da tecnologia.</p>
-                <p>Um relatório da OpenAI, dona do ChatGPT, propõe que o avanço da inteligência artificial não seja usado apenas para aumentar lucros, mas também para ampliar o bem-estar da população.</p>
-                <p>O documento da bigtech, intitulado "Política Industrial para a Era da Inteligência", foi divulgado neste mês.</p>
-                <p>Nele, a empresa afirma que, enquanto novas formas de trabalho surgirão, "alguns empregos desaparecerão" e indústrias inteiras serão remodeladas em uma velocidade sem precedentes históricos.</p>
-                <p>Entre as propostas apresentadas, a OpenAI defende a redução da jornada de trabalho sem corte de salários. A sugestão é incentivar testes com semanas de quatro dias (32 horas), mantendo os níveis de produção e serviço.</p>
-                <p>Segundo o relatório, o tempo economizado com a automação de tarefas poderia ser convertido em folgas ou em uma jornada menor.</p>
-                <p>A empresa argumenta que a automação de atividades repetitivas e administrativas tende a liberar tempo, que deveria ser "devolvido" aos trabalhadores. O documento também sugere ampliar contribuições para aposentadoria e oferecer apoio para cuidados com filhos e idosos.</p>
-                <p>Outro ponto destacado é a participação dos funcionários na adoção da IA nas empresas.</p>
-                <p>A OpenAI diz que trabalhadores deveriam ter voz formal nesse processo, ajudando a definir como a tecnologia será usada, com foco na redução de tarefas perigosas ou exaustivas, e não apenas no aumento da produtividade ou da vigilância.</p>
-                <p>O relatório também menciona a criação de um fundo para distribuir parte dos ganhos econômicos gerados pela IA à população, independentemente da renda.</p>
-                <p>Por fim, a empresa afirma que a IA deve ser tratada como infraestrutura essencial, semelhante à eletricidade e à internet, e defende a oferta de versões acessíveis da tecnologia para pequenos negócios e comunidades de baixa renda.</p>
+                <p>A Eve Air Mobility, empresa subsidiária da Embraer, informou nesta quinta-feira (9) que realizou 50 voos de teste com seu protótipo de "carro voador" (oficialmente conhecido como eVTOL) desde a estreia, em dezembro de 2025.</p>
+                <p>Ao todo, os testes já somam mais de duas horas de voo.</p>
+                <p>A empresa prevê iniciar ainda este ano a produção de protótipos de conformidade. Serão seis unidades usadas na campanha de certificação junto à Agência Nacional de Aviação Civil (Anac), cuja aprovação é necessária antes da entrada em operação.</p>
+                <p>"Alcançar 50 voos de teste com nosso protótipo de engenharia vai além de um marco técnico. É uma evidência clara da maturidade do nosso programa", afirmou Johann Bordais, CEO da Eve Air Mobility.</p>
+                <p>A Eve também ampliou os testes, com aumento gradual da velocidade de cruzeiro e avaliações de gestão de energia, controlabilidade, estabilidade, ruído e vibração.</p>
+                <p>As aeronaves da Eve são produzidas em Taubaté (SP), em uma planta com capacidade para fabricar até 480 unidades por ano. Os veículos continuam em fase de testes e devem entrar em operação em 2027.</p>
+                <p>A projeção da empresa é a de que a frota mundial de eVTOLs pode chegar a 30 mil unidades até 2045. A expectativa é que mais de 3 bilhões de passageiros sejam transportados nesse período.</p>
             </article>
 
             <!-- Comentários -->
@@ -80,7 +84,7 @@
                     <button id="commentButton" class="comment-button" type="submit">Comentar</button>
                 </form>
             </section>
-        </section>
+        </section>  
     </main>
 
 

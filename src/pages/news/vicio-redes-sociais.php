@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Ataque hacker desvia pagamento e causa prejuízo milionário a empresa de energia no Reino Unido</title>
+    <title>Meta deve enfrentar novo processo nos EUA por acusação de vício em redes sociais entre jovens</title>
     <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
     <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
@@ -39,33 +46,40 @@
         </div>
     </header>
 
-
+ 
     <!-- Conteudo Principal -->
      <main>
         <section class="news-article">
             <div class="news-title">
-                <h1>Ataque hacker desvia pagamento e causa prejuízo milionário a empresa de energia no Reino Unido</h1><!-- titulo da noticia-->
-                <p>Empresa faria pagamento para outra companhia, mas a invasão redirecionou cerca de R$ 4,7 milhões para um terceiro que não estava envolvido na negociação.</p>
-                <p>Por <a href="https://g1.globo.com/autores/redacao-g1/" target="_blank">Redação g1</a> | 10/04/2026 19h27</p>
+                <h1>Meta deve enfrentar novo processo nos EUA por acusação de vício em redes sociais entre jovens</h1><!-- titulo da noticia-->
+                <p>Empresa responsável pelo Facebook e Instagram já foi condenada a pagar US$ 6 milhões a uma mulher que afirma ter desenvolvido vício no uso das redes sociais.</p>
+                <p>Por <a href="https://www.reuters.com/" target="_blank">Reuters</a> | 10/04/2026 12h43</p>
             </div>
 
             <!-- imagem -->
             <figure class="news-image">
-                <img src="../../assets/images/hackers-reino-unido.png" alt="Ataque hacker">
+                <img src="../../assets/images/vicios-redes-sociais.png" alt="Vicio nas redes sociais">
             </figure><!-- imagem da noticia-->
 
 
             <!-- conteúdo -->
             <article class="news-content">
                 <!-- noticia-->
-                <p>Uma empresa de energia no Reino Unido sofreu um prejuízo de 700 mil libras esterlinas (cerca de R$ 4,7 milhões) após um ataque hacker desviar o destino de um pagamento que seria feito a outra companhia.</p>
-                <p>O caso se tornou público na última quinta-feira (9) e envolveu a subsidiária americana da Zephyr Energy, empresa britânica de petróleo e gás que relatou o incidente a seus investidores.</p>
-                <p>O ataque fez o valor ser transferido para um terceiro sem envolvimento na negociação, informou a Zephyr Energy.</p>
-                <p>"A empresa notificou imediatamente as autoridades policiais competentes e está trabalhando com os bancos e consultores envolvidos para tentar recuperar os fundos desviados", continuou.</p>
-                <p>A empresa não detalhou a invasão, mas esse tipo de ataque costuma envolver acessos indevidos a caixas de entrada de e-mails e a sistemas de contabilidade, por exemplo.</p>
-                <p>Os "ataques de comprometimento de e-mail comercial" estão entre os mais comuns e, em 2025, geraram prejuízo de mais de US$ 3 bilhões para milhares de vítimas em 2025, segundo um relatório do FBI.</p>
-                <p>A Zephyr Energy disse que seus sistemas estão sendo monitorados continuamente e que, apesar de seguir padrões de mercado, adotou novas camadas de segurança.</p>
-                <p>A empresa disse ainda que está realizando suas atividades normalmente e que tem capital de giro suficiente para que a invasão não afete sua operação.</p>
+                <p>A Meta, dona do Facebook, do Instagram e do WhatsApp, deve enfrentar uma ação judicial movida pela procuradora-geral do estado norte-americano de Massachusetts, que afirma que a empresa controladora do Facebook e do Instagram criou, de forma deliberada, produtos para viciar jovens.</p>
+                <p>A Meta nega as acusações e afirma que adota uma série de medidas para garantir a segurança de adolescentes e jovens em suas plataformas.</p>
+                <p>A decisão ocorre após um julgamento considerado histórico, no qual um júri da cidade norte-americana de Los Angeles concluiu, em março, que Meta e Google agiram de forma negligente ao criarem plataformas de mídia social prejudiciais aos jovens.</p>
+                <p>O júri determinou o pagamento de US$ 6 milhões a uma mulher de 20 anos que afirmou ter desenvolvido dependência de redes sociais ainda na infância.</p>
+                <p>Um júri diferente, um dia antes, decidiu que a Meta deveria pagar US$ 375 milhões em multas civis em um processo movido pelo procurador-geral do estado norte-americano do Novo México.</p>
+                <p>A ação acusa a empresa de enganar os usuários sobre a segurança do Facebook e do Instagram e de permitir a exploração sexual infantil nessas plataformas.</p>
+                <p>Outros 34 estados dos Estados Unidos movem processos semelhantes contra a Meta em um tribunal federal.</p>
+                <p>A ação apresentada pela procuradora-geral de Massachusetts, Andrea Joy Campbell, do Partido Democrata, é uma de pelo menos nove abertas por procuradores-gerais desde 2023 em tribunais estaduais. Entre elas está uma ação protocolada na quarta-feira pela procuradora-geral de Iowa, Brenna Bird, do Partido Republicano.</p>
+                <p>A ação afirma que recursos do Instagram, como notificações automáticas, "curtidas" em publicações e a rolagem infinita de conteúdo, foram desenvolvidos para explorar vulnerabilidades psicológicas dos adolescentes, especialmente o chamado "medo de ficar de fora".</p>
+                <p>O processo afirma que os recursos do Instagram, como notificações push, "curtidas" de publicações de usuários e uma rolagem interminável, foram projetados para lucrar com as vulnerabilidades psicológicas dos adolescentes e seu "medo de ficar de fora".</p>
+                <p>O estado afirma que dados internos da empresa indicam que a plataforma provoca dependência e causa prejuízos às crianças.</p>
+                <p>A Meta tentou barrar o processo de Massachusetts com base na Seção 230 da Lei de Decência nas Comunicações de 1996, uma legislação federal dos EUA que, em geral, protege empresas de internet de ações judiciais relacionadas ao conteúdo publicado por usuários.</p>
+                <p>O estado sustenta que a Seção 230 não se aplica a declarações consideradas falsas que, segundo a acusação, a Meta fez sobre a segurança do Instagram, as ações para proteger o bem-estar de usuários jovens e os sistemas de verificação de idade usados para impedir o acesso de crianças com menos de 13 anos.</p>
+                <p>Um juiz de primeira instância concordou com o argumento e afirmou que a lei também não se aplica às acusações sobre os efeitos negativos do design do Instagram.</p>
+                <p>Segundo o magistrado, o estado busca responsabilizar a Meta principalmente por sua própria conduta comercial, e não pelo conteúdo publicado por terceiros.</p>
             </article>
 
             <!-- Comentários -->

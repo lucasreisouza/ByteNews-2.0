@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Grécia proibirá redes sociais para menores de 15 anos a partir de 2027</title>
+    <title>Meta revela primeiro modelo de IA da equipe de superinteligência</title>
     <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
     <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
@@ -21,6 +28,11 @@
         </div>
         <!-- menu -->
         <div class="menu">
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">RODAPÉ</a>
         </div>
         <!-- botões do menu -->
         <div class="button-menu">
@@ -32,35 +44,32 @@
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-    </header>
+</header>
 
 
     <!-- Conteudo Principal -->
      <main>
         <section class="news-article">
-            <!--titulo  -->
             <div class="news-title">
-                <h1>Grécia proibirá redes sociais para menores de 15 anos a partir de 2027</h1><!-- titulo da noticia-->
-                <p>Medida busca reduzir impactos digitais entre jovens e pressionar União Europeia por regras similares</p>
-                <p>Por <a href="https://www.cnnbrasil.com.br/autor/antonis-pothitos/" target="_blank">Antonis Pothitos</a> e <a href="https://www.cnnbrasil.com.br/autor/renee-maltezou/" target="_blank"> Renee Maltezou, da Reuters</a> | 08/04/26 às 23:02</p>
+                <h1>Meta revela primeiro modelo de IA da equipe de superinteligência</h1><!-- titulo da noticia-->
+                <p>Muse Spark é o resultado de reestruturação interna e alta disputa por talentos</p>
+                <p>Por <a href="https://www.cnnbrasil.com.br/autor/aditya-soni/" target="_blank">Aditya Soni</a> e <a href="https://www.cnnbrasil.com.br/autor/katie-paul/"> Katie Paul</a>, da Reuters | 08/04/26 às 14:55</p>
             </div>
 
             <!-- imagem -->
             <figure class="news-image">
-                <img src="../../assets/images/grecias-redes-sociais.png" alt="Grecia proibirá redes sociais">
-            </figure>
+                <img src="../../assets/images/modelo-ia.png" alt=" Modelo IA">
+            </figure><!-- imagem da noticia-->
 
 
             <!-- conteúdo -->
             <article class="news-content">
                 <!-- noticia-->
-                <p>A Grécia proibirá o acesso às redes sociais para crianças menores de 15 anos a partir de 1º de janeiro de 2027, disse o primeiro-ministro Kyriákos Mitsotákis nesta quarta-feira (8), citando o aumento da ansiedade, problemas de sono e o design viciante das plataformas online.</p>
-                <p>Uma pesquisa de opinião da Alco publicada em fevereiro mostrou que cerca de 80% dos entrevistados aprovavam a proibição. O governo grego já proibiu os telefones celulares nas escolas e criou plataformas de controle dos pais para limitar o tempo de tela dos adolescentes.</p>
-                <p>"A Grécia estará entre os primeiros países a tomar essa iniciativa", disse Mitsotákis em uma mensagem de vídeo, acrescentando que conversou com os pais antes de tomar a decisão. "No entanto, tenho certeza de que não será o último. Nosso objetivo é pressionar a União Europeia nessa direção também."</p>
-                <p>A Austrália se tornou o primeiro país do mundo a proibir rede social para menores de 16 anos em dezembro, bloqueando o acesso a plataformas como TikTok, YouTube, Instagram e Facebook.</p>
-                <p>Meta, Snapchat e TikTok disseram que continuavam acreditando que a proibição da Austrália não protegeria os jovens, mas se comprometeram a cumprí-la.</p>
-                <p>A Grécia ainda não pode forçar essas plataformas de mídia social a verificar a idade de seus usuários, mas recomenda que as plataformas usem os mecanismos que a UE e a Grécia já definiram, disse o governo, pedindo aos pais que também ajudem no esforço.</p>
-                <p>A partir de 1º de janeiro de 2027, as plataformas precisarão ser capazes de restringir os usuários ou enfrentarão multas descritas na Lei de Serviços Digitais da UE (DSA), que podem chegar a 6% de seu faturamento global, disse o ministro da Governança Digital, Dimitris Papastergiou.</p>
+                <p>A Meta apresentou nesta quarta-feira (8) o Muse Spark, o primeiro modelo de inteligência artificial de uma equipe formada no ano passado após uma cara disputa por talentos e uma ampla reestruturação interna para alcançar os concorrentes na corrida da IA.</p>
+                <p>As gigantes de tecnologia dos EUA estão sob pressão para provar que seus enormes investimentos em IA vão compensar. As apostas são especialmente altas para a Meta depois que a empresa contratou o CEO da Scale AI, Alex Wang, no ano passado, em um acordo de US$ 14,3 bilhões (cerca de R$ 73 bilhões), além de oferecer a alguns engenheiros pacotes de remuneração de centenas de milhões de dólares para montar uma nova equipe de superinteligência.</p>
+                <p>O Muse Spark é o primeiro de uma nova série de modelos dessa equipe, que busca desenvolver máquinas capazes de superar o raciocínio humano.</p>
+                <p>Inicialmente, ele estará disponível apenas no aplicativo Meta AI e no site, que ainda têm uso limitado, e nas próximas semanas substituirá os modelos Llama atualmente usados nos chatbots do WhatsApp, Instagram, Facebook e nos óculos inteligentes da Meta.</p>
+                <p>“Este modelo inicial foi projetado para ser pequeno e rápido, mas ainda assim capaz de raciocinar sobre questões complexas em áreas como ciência, matemática e saúde. É uma base poderosa, e a próxima geração já está em desenvolvimento”, afirmou a empresa em uma publicação no blog.</p>
             </article>
 
             <!-- Comentários -->
@@ -78,7 +87,7 @@
                 </form>
             </section>
         </section>  
-     </main>
+    </main>
 
 
     <!-- rodapé -->

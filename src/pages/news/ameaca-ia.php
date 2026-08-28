@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Meta deve enfrentar novo processo nos EUA por acusação de vício em redes sociais entre jovens</title>
+    <title>OpenAI, dona do ChatGPT, vê ameaça da IA ao emprego e defende semana de 4 dias</title>
     <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
     <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
@@ -21,12 +28,6 @@
         </div>
         <!-- menu -->
         <div class="menu">
-            <a class="home" href="#Home">INÍCIO</a>
-            <a class="destaques" href="#Destaques">DESTAQUES</a>
-            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
-            <a class="em-alta" href="#EmAlta">EM ALTA</a>
-            <a class="rodape" href="#Rodape">RODAPÉ</a>
-        </div>
         <!-- botões do menu -->
         <div class="button-menu">
             <button id="tema" onclick="toggleStyle()">
@@ -37,42 +38,39 @@
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-    </header>
+</header>
 
- 
+
     <!-- Conteudo Principal -->
-     <main>
+    <main>
         <section class="news-article">
+            <!-- titulo -->
             <div class="news-title">
-                <h1>Meta deve enfrentar novo processo nos EUA por acusação de vício em redes sociais entre jovens</h1><!-- titulo da noticia-->
-                <p>Empresa responsável pelo Facebook e Instagram já foi condenada a pagar US$ 6 milhões a uma mulher que afirma ter desenvolvido vício no uso das redes sociais.</p>
-                <p>Por <a href="https://www.reuters.com/" target="_blank">Reuters</a> | 10/04/2026 12h43</p>
+                <h1>OpenAI, dona do ChatGPT, vê ameaça da IA ao emprego e defende semana de 4 dias</h1>
+                <p>Relatório da OpenAI discute impactos da IA no trabalho</p>
+                <p>Por <a href="https://g1.globo.com/autores/redacao-g1/" target="_blank">Redação g1</a> | 11/04/2026 03h00</p>
             </div>
 
             <!-- imagem -->
             <figure class="news-image">
-                <img src="../../assets/images/vicios-redes-sociais.png" alt="Vicio nas redes sociais">
-            </figure><!-- imagem da noticia-->
+                <img src="../../assets/images/modelo-ia.png" alt="OpenAI IA">
+            </figure>
 
 
             <!-- conteúdo -->
             <article class="news-content">
                 <!-- noticia-->
-                <p>A Meta, dona do Facebook, do Instagram e do WhatsApp, deve enfrentar uma ação judicial movida pela procuradora-geral do estado norte-americano de Massachusetts, que afirma que a empresa controladora do Facebook e do Instagram criou, de forma deliberada, produtos para viciar jovens.</p>
-                <p>A Meta nega as acusações e afirma que adota uma série de medidas para garantir a segurança de adolescentes e jovens em suas plataformas.</p>
-                <p>A decisão ocorre após um julgamento considerado histórico, no qual um júri da cidade norte-americana de Los Angeles concluiu, em março, que Meta e Google agiram de forma negligente ao criarem plataformas de mídia social prejudiciais aos jovens.</p>
-                <p>O júri determinou o pagamento de US$ 6 milhões a uma mulher de 20 anos que afirmou ter desenvolvido dependência de redes sociais ainda na infância.</p>
-                <p>Um júri diferente, um dia antes, decidiu que a Meta deveria pagar US$ 375 milhões em multas civis em um processo movido pelo procurador-geral do estado norte-americano do Novo México.</p>
-                <p>A ação acusa a empresa de enganar os usuários sobre a segurança do Facebook e do Instagram e de permitir a exploração sexual infantil nessas plataformas.</p>
-                <p>Outros 34 estados dos Estados Unidos movem processos semelhantes contra a Meta em um tribunal federal.</p>
-                <p>A ação apresentada pela procuradora-geral de Massachusetts, Andrea Joy Campbell, do Partido Democrata, é uma de pelo menos nove abertas por procuradores-gerais desde 2023 em tribunais estaduais. Entre elas está uma ação protocolada na quarta-feira pela procuradora-geral de Iowa, Brenna Bird, do Partido Republicano.</p>
-                <p>A ação afirma que recursos do Instagram, como notificações automáticas, "curtidas" em publicações e a rolagem infinita de conteúdo, foram desenvolvidos para explorar vulnerabilidades psicológicas dos adolescentes, especialmente o chamado "medo de ficar de fora".</p>
-                <p>O processo afirma que os recursos do Instagram, como notificações push, "curtidas" de publicações de usuários e uma rolagem interminável, foram projetados para lucrar com as vulnerabilidades psicológicas dos adolescentes e seu "medo de ficar de fora".</p>
-                <p>O estado afirma que dados internos da empresa indicam que a plataforma provoca dependência e causa prejuízos às crianças.</p>
-                <p>A Meta tentou barrar o processo de Massachusetts com base na Seção 230 da Lei de Decência nas Comunicações de 1996, uma legislação federal dos EUA que, em geral, protege empresas de internet de ações judiciais relacionadas ao conteúdo publicado por usuários.</p>
-                <p>O estado sustenta que a Seção 230 não se aplica a declarações consideradas falsas que, segundo a acusação, a Meta fez sobre a segurança do Instagram, as ações para proteger o bem-estar de usuários jovens e os sistemas de verificação de idade usados para impedir o acesso de crianças com menos de 13 anos.</p>
-                <p>Um juiz de primeira instância concordou com o argumento e afirmou que a lei também não se aplica às acusações sobre os efeitos negativos do design do Instagram.</p>
-                <p>Segundo o magistrado, o estado busca responsabilizar a Meta principalmente por sua própria conduta comercial, e não pelo conteúdo publicado por terceiros.</p>
+                <p>Documento da OpenAI defende que a IA deve gerar ganhos sociais, como redução da jornada de trabalho sem corte salarial e participação dos trabalhadores nas decisões sobre o uso da tecnologia.</p>
+                <p>Um relatório da OpenAI, dona do ChatGPT, propõe que o avanço da inteligência artificial não seja usado apenas para aumentar lucros, mas também para ampliar o bem-estar da população.</p>
+                <p>O documento da bigtech, intitulado "Política Industrial para a Era da Inteligência", foi divulgado neste mês.</p>
+                <p>Nele, a empresa afirma que, enquanto novas formas de trabalho surgirão, "alguns empregos desaparecerão" e indústrias inteiras serão remodeladas em uma velocidade sem precedentes históricos.</p>
+                <p>Entre as propostas apresentadas, a OpenAI defende a redução da jornada de trabalho sem corte de salários. A sugestão é incentivar testes com semanas de quatro dias (32 horas), mantendo os níveis de produção e serviço.</p>
+                <p>Segundo o relatório, o tempo economizado com a automação de tarefas poderia ser convertido em folgas ou em uma jornada menor.</p>
+                <p>A empresa argumenta que a automação de atividades repetitivas e administrativas tende a liberar tempo, que deveria ser "devolvido" aos trabalhadores. O documento também sugere ampliar contribuições para aposentadoria e oferecer apoio para cuidados com filhos e idosos.</p>
+                <p>Outro ponto destacado é a participação dos funcionários na adoção da IA nas empresas.</p>
+                <p>A OpenAI diz que trabalhadores deveriam ter voz formal nesse processo, ajudando a definir como a tecnologia será usada, com foco na redução de tarefas perigosas ou exaustivas, e não apenas no aumento da produtividade ou da vigilância.</p>
+                <p>O relatório também menciona a criação de um fundo para distribuir parte dos ganhos econômicos gerados pela IA à população, independentemente da renda.</p>
+                <p>Por fim, a empresa afirma que a IA deve ser tratada como infraestrutura essencial, semelhante à eletricidade e à internet, e defende a oferta de versões acessíveis da tecnologia para pequenos negócios e comunidades de baixa renda.</p>
             </article>
 
             <!-- Comentários -->
@@ -89,7 +87,7 @@
                     <button id="commentButton" class="comment-button" type="submit">Comentar</button>
                 </form>
             </section>
-        </section>  
+        </section>
     </main>
 
 
