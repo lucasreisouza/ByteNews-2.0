@@ -6,8 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Sua voz pode ser clonada por IA! Saiba identificar e como se proteger</title>
-    <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="/src/assets/CSS/style.css">
+    <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
+    <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
 
 <body class="claro">
@@ -49,7 +49,7 @@
 
             <!-- imagem -->
             <figure class="news-image">
-                <img src="/src/assets/images/voz-clonada.png" alt="voz clonada">
+                <img src="../../assets/images/voz-clonada.png" alt="voz clonada">
             </figure><!-- imagem da noticia-->
 
 
@@ -114,6 +114,21 @@
                 <p>O avanço dessas fraudes está diretamente ligado à popularização das ferramentas de inteligência artificial, que se tornaram mais acessíveis e fáceis de usar. Ao mesmo tempo, a grande quantidade de áudios disponíveis online facilita a coleta de material para clonagem.</p>
                 <p>Outro fator relevante é a baixa maturidade de segurança em parte das empresas, que ainda utilizam métodos vulneráveis de autenticação. Isso amplia o alcance das fraudes e exige respostas mais rápidas do mercado.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>
     </main>
 
@@ -174,6 +189,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/assets/JS/script.js"></script>
+    <script src="../../assets/JS/script.js"></script>
 </body>
 </html>

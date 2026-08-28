@@ -6,8 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>GTA 6: lançamento, trailer e o que esperar do jogo</title>
-    <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="/src/assets/CSS/style.css">
+    <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
+    <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
 
 <body class="dark">
@@ -52,7 +52,7 @@
             
             <!-- imagem -->
             <figure class="news-image">
-                <img src="/src/assets/images/gta-6.png" alt="Lançamento GTA 6">
+                <img src="../../assets/images/gta-6.png" alt="Lançamento GTA 6">
             </figure>
 
 
@@ -87,6 +87,21 @@
                 <p>A Rockstar Games confirmou o lançamento de Grand Theft Auto VI para os consoles PlayStation 5, Xbox Series X e Xbox Series S. Por enquanto, ainda não há confirmação oficial de uma versão para computadores.</p>
                 <p>Porém, considerando que GTA 5 chegou depois aos PCs, muitos fãs esperam que GTA 6 siga o mesmo caminho e ganha uma versão algum tempo depois do lançamento.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 
@@ -146,6 +161,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/assets/JS/script.js"></script>
+    <script src="../../assets/JS/script.js"></script>
 </body>
 </html>
