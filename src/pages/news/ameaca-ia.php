@@ -28,6 +28,12 @@
         </div>
         <!-- menu -->
         <div class="menu">
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">CONTATO</a>
+        </div>
         <!-- botões do menu -->
         <div class="button-menu">
             <button id="tema" onclick="toggleStyle()">
