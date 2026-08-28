@@ -66,6 +66,21 @@
                 <p>O plano da Apple era lançar um aparelho dobrável em linha com o movimento da Samsung, que entrou nesse mercado em 2019 para tentar atrair novos clientes com mudanças no design.</p>
                 <p>Na época, segundo o The Information, a Apple buscava fornecedores na Ásia para fabricar componentes do dispositivo e criou o codinome interno V68 para o projeto.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 

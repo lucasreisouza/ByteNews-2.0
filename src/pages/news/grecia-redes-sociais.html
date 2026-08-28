@@ -62,6 +62,21 @@
                 <p>A Grécia ainda não pode forçar essas plataformas de mídia social a verificar a idade de seus usuários, mas recomenda que as plataformas usem os mecanismos que a UE e a Grécia já definiram, disse o governo, pedindo aos pais que também ajudem no esforço.</p>
                 <p>A partir de 1º de janeiro de 2027, as plataformas precisarão ser capazes de restringir os usuários ou enfrentarão multas descritas na Lei de Serviços Digitais da UE (DSA), que podem chegar a 6% de seu faturamento global, disse o ministro da Governança Digital, Dimitris Papastergiou.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
      </main>
 

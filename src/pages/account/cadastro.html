@@ -19,11 +19,40 @@
         <label for="senha">Confirmar senha</label>
         <input type="password" id="confirme-senha" name="confirme-senha" placeholder="confirme a senha">
         <div class="botoes">
-            <button formaction="/index.html" formtarget="_self">Cadastrar</button>
+            <button type="submit">Cadastrar</button>
         </div>
         <p class="login">Ja tem uma conta?<a href="./login.html">Entrar</a></p>
     </div>
 </form>
 <script src="/src/assets/JS/script.js"></script>
+<script>
+document.getElementById("formUsuario").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("e-mail").value.trim();
+    const senha = document.getElementById("senha").value;
+    const confirmar = document.getElementById("confirme-senha").value;
+
+    if (!nome || !email || !senha || !confirmar) {
+        alert("Preencha todos os campos.");
+        return;
+    }
+
+    if (senha !== confirmar) {
+        alert("As senhas não coincidem.");
+        return;
+    }
+
+    localStorage.setItem("byteNewsAccount", JSON.stringify({
+        nome: nome,
+        email: email,
+        senha: senha,
+        role: "leitor"
+    }));
+
+    alert("Cadastro realizado! Agora faça login.");
+    window.location.href = "./login.html";
+});
+</script>
 </body>
 </html>

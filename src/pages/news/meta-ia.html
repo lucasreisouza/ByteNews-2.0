@@ -82,6 +82,21 @@
                 <p>A Meta precisa de uma vitória. O metaverso não revolucionou a internet como esperado. Os óculos inteligentes enfrentam preocupações de privacidade. E o surgimento do ChatGPT pegou a indústria — incluindo a Meta — de surpresa, forçando as gigantes de tecnologia a uma corrida de recuperação nos últimos três anos.</p>
                 <p>Ainda não se sabe se os novos modelos de IA levarão os produtos da Meta a novos patamares, repetindo o sucesso dos primeiros dias do Facebook e Instagram. Mas o lançamento de um modelo feito especificamente para seus produtos sugere que a Meta está construindo uma visão clara.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 

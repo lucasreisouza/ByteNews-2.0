@@ -74,6 +74,21 @@
                 <p>Um juiz de primeira instância concordou com o argumento e afirmou que a lei também não se aplica às acusações sobre os efeitos negativos do design do Instagram.</p>
                 <p>Segundo o magistrado, o estado busca responsabilizar a Meta principalmente por sua própria conduta comercial, e não pelo conteúdo publicado por terceiros.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 

@@ -64,6 +64,21 @@
                 <p>Inicialmente, ele estará disponível apenas no aplicativo Meta AI e no site, que ainda têm uso limitado, e nas próximas semanas substituirá os modelos Llama atualmente usados nos chatbots do WhatsApp, Instagram, Facebook e nos óculos inteligentes da Meta.</p>
                 <p>“Este modelo inicial foi projetado para ser pequeno e rápido, mas ainda assim capaz de raciocinar sobre questões complexas em áreas como ciência, matemática e saúde. É uma base poderosa, e a próxima geração já está em desenvolvimento”, afirmou a empresa em uma publicação no blog.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 

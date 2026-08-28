@@ -65,6 +65,21 @@
                 <p>O relatório também menciona a criação de um fundo para distribuir parte dos ganhos econômicos gerados pela IA à população, independentemente da renda.</p>
                 <p>Por fim, a empresa afirma que a IA deve ser tratada como infraestrutura essencial, semelhante à eletricidade e à internet, e defende a oferta de versões acessíveis da tecnologia para pequenos negócios e comunidades de baixa renda.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>
     </main>
 

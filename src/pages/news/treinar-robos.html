@@ -100,6 +100,21 @@
                 <p>"Se o robô pegar meu bebê e colocá-lo em uma lixeira, aí vem o processo de um milhão de dólares", disse ele.</p>
                 <p>Testar robôs com bebês ainda está muito distante, disse Rajalingam. No entanto, ele acrescentou, eles já começaram com cães.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 

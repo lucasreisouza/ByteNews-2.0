@@ -87,6 +87,21 @@
                 <p>A Rockstar Games confirmou o lançamento de Grand Theft Auto VI para os consoles PlayStation 5, Xbox Series X e Xbox Series S. Por enquanto, ainda não há confirmação oficial de uma versão para computadores.</p>
                 <p>Porém, considerando que GTA 5 chegou depois aos PCs, muitos fãs esperam que GTA 6 siga o mesmo caminho e ganha uma versão algum tempo depois do lançamento.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 

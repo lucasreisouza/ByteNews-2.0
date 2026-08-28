@@ -90,6 +90,21 @@
                 <p>Uma reportagem publicada pelo jornal norte-americano The New York Times em 2024 aponta que o Maven enfrentou o seu primeiro teste real na Guerra da Ucrânia, mas ali o software enfrentou um problema.</p>
                 <p>Segundo o jornal, a guerra evidenciou que é difícil aplicar tecnologia avançada em um conflito que ainda se parece com guerras do passado, baseadas em trincheiras e artilharia pesada.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 

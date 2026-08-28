@@ -82,6 +82,21 @@
                 <p>Em uma publicação na sua conta no X, atualmente suspensa, o Handala afirmou ter apagado "mais de 200 mil sistemas, servidores e dispositivos móveis" e extraído "50 terabytes de dados críticos".</p>
                 <p>O grupo disse que o ataque cibernético à Stryker foi "em retaliação ao brutal ataque" a uma escola de meninas iraniana no início da guerra, no qual mais de 160 pessoas foram mortas, e também "em resposta aos ataques cibernéticos contínuos contra a infraestrutura" do Irã e de seus aliados.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
     </main>
 
