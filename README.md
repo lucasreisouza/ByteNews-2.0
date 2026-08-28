@@ -1,83 +1,144 @@
-# ByteNews-2.0
+📰 ByteNews 2.0
 
-Criar uma versão mais estilizada do nosso site
+Portal de Notícias Online
 
-## 📖 Descrição
+O ByteNews é um portal de notícias desenvolvido como projeto final de Front-End. O projeto tem como objetivo oferecer uma experiência moderna, responsiva e intuitiva para leitura de notícias, com navegação entre matérias e diferentes recursos de interação.
 
-0 ByteNews é um portal de notícias desenvolvido com foco em simplicidade, agilidade e boa organização. O projeto foi criado para praticar conceitos fundamentais de Front-End, como estruturação de páginas, estilização responsiva e manipulação de elementos com JavaScript.
-O objetivo é entregar uma experiência clara, moderna e funcional para apresentar notícias de forma dinâmica.
+---
 
-## 🎥 Preview 
+📌 Sobre o Projeto
 
-![imagem](./Imagens/print.png)
+O ByteNews foi desenvolvido com foco em:
 
-## ⚙️ Funcionalidades
+- 📰 Portal de notícias moderno
+- 📱 Design responsivo
+- 🌙 Modo escuro
+- 🎨 Identidade visual própria
+- 🧭 Navegação entre páginas
+- 🖼️ Imagens ilustrativas
+- 📄 Páginas individuais para as notícias
+- 💬 Sistema de comentários
+- 👤 Área de usuário
+- 🔎 Organização e apresentação das notícias
 
- - Layout organizado em seções
+---
 
- - Cards de notícias estilizados
+🚀 Funcionalidades
 
- - Navegação simples e intuitiva
+🏠 Página Inicial
 
- - Design responsivo
+A página inicial apresenta as principais notícias do portal, contendo:
 
- - Futuras integrações com APIs de notícias
+- Logo do ByteNews
+- Menu de navegação
+- Botão para alternar entre os temas
+- Notícias em destaque
+- Imagens ilustrativas
+- Títulos e resumos
+- Acesso às matérias completas
 
-## 🛠️ Tecnologias Utilizadas
+📰 Páginas de Notícias
 
-- HTML
+Cada notícia possui uma página própria contendo:
 
-- CSS
+- Título da notícia
+- Imagem de destaque
+- Conteúdo completo
+- Informações da publicação
+- Área de comentários
+- Navegação entre páginas
 
-- JavaScript
+🌙 Modo Escuro
 
-- Visual Studio
+O ByteNews possui um sistema de Dark Mode, permitindo alternar entre o tema claro e o tema escuro.
 
-## ▶️ Como Rodar o Projeto
+A alteração do tema é realizada utilizando JavaScript e classes CSS, mantendo a identidade visual do portal nos diferentes temas.
 
-Como o projeto usa apenas HTML, CSS e JavaScript, o processo é bem simples:
+💬 Sistema de Comentários
 
-- 1. Baixe ou clone este repositório
-- 2. Abra a pasta ByteNews
-- 3. Clique duas vezes no arquivo index.html para abrir no navegador
+As páginas de notícias possuem uma área destinada à interação dos leitores.
 
-## 📂 Como Clonar o Repositório
+O sistema permite:
 
-Execute no terminal:
+- Informar o nome
+- Informar o e-mail
+- Escrever um comentário
+- Validar os campos do formulário
+- Exibir mensagens de erro
+- Adicionar múltiplos comentários
+- Exibir os comentários enviados na própria página
 
-git clone https://github.com/lh-luiii/ByteNews-2.0
+👤 Área de Usuário
 
-Depois:
+O projeto possui páginas destinadas ao acesso e gerenciamento da conta do usuário.
 
-cd ByteNews
+---
 
-## 🚀 Melhorias Futuras
+🎨 Identidade Visual
 
-- Implementação de modo escuro
+O ByteNews possui uma identidade visual própria, desenvolvida para transmitir uma aparência moderna e tecnológica.
 
-- Carregamento dinâmico de notícias
+🎨 Cores
 
-- Integração com API de jornalismo
+A identidade visual utiliza principalmente tons escuros combinados com elementos de destaque em estilo neon.
 
-- Animações no design
+A paleta de cores é aplicada em:
 
-- Área administrativa para cadastrar notícias
+- Fundos
+- Textos
+- Botões
+- Links
+- Destaques
+- Elementos de navegação
 
-## 📚 Aprendizado
+🔤 Tipografia
 
-No desenvolvimento do ByteNews, foram praticados e reforçados conhecimentos em:
+O projeto utiliza uma combinação de fontes para estabelecer uma hierarquia visual entre títulos e textos.
 
-- Estruturação semântica com HTML
+- Títulos: fonte de destaque
+- Textos: fonte simples e legível
 
-- Estilização avançada com CSS
+---
 
-- Responsividade para diferentes telas
+🛠️ Tecnologias Utilizadas
 
-- Manipulação básica de DOM com JavaScript
+- HTML5 — Estrutura das páginas
+- CSS3 — Estilização e responsividade
+- JavaScript — Interações e funcionalidades
+- Bootstrap 5 — Componentes e recursos responsivos
 
-- Organização e boas práticas no Front-End
+---
 
-## 👤 Autores
+📱 Responsividade
 
-[Luís Henrique](https://github.com/lh-luiii), [Lucas Reis Souza](https://github.com/lucasreisouza) e [Gustavo Ítalo](https://github.com/GustavoI7)
-Turma de Tecnologia em informática para internet (vespertino) - Senac DF
+O ByteNews foi desenvolvido para se adaptar a diferentes tamanhos de tela, proporcionando uma boa experiência em:
+
+- 💻 Computadores
+- 💻 Notebooks
+- 📱 Smartphones
+- 📱 Tablets
+
+---
+
+🔮 Melhorias Futuras
+
+Algumas funcionalidades podem ser aprimoradas futuramente, como:
+
+- 🔎 Sistema de pesquisa de notícias
+- 🗂️ Categorias e filtros de notícias
+- 🔔 Sistema de notificações
+- ☁️ Integração com banco de dados
+- 🌐 Integração com uma API real de notícias
+- 💾 Persistência dos comentários
+- 👤 Sistema completo de autenticação
+- ⚡ Otimização de desempenho
+
+---
+
+👨‍💻 Projeto
+
+ByteNews 2.0
+
+Projeto desenvolvido para o trabalho final de Front-End.
+
+«📰 Informação, tecnologia e inovação em um só lugar.»
