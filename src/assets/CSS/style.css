@@ -1473,6 +1473,10 @@ body.clear .comment-item {
 
     /* Noticias*/
 
+    .news-lower {
+        margin: 0;
+    }
+
     .news-latest {
         border: none;
         border-radius: 0;
@@ -1485,8 +1489,14 @@ body.clear .comment-item {
 
     /* Mais lidas */
 
+    .news-rise {
+        border-radius: 0;
+        border: none;
+    }
+
     .news-rise_title {
         padding: 12px;
+        border-radius: 0;
     }
 
     .news-rise_list {
@@ -1503,5 +1513,10 @@ body.clear .comment-item {
     }
     #formUsuario > img {
         max-width: 150px;
+    }
+
+    /*FOOTER*/
+    footer {
+        margin: 0;
     }
 }
