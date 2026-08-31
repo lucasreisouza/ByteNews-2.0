@@ -2,13 +2,20 @@
 <html lang="en">
 
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteNews</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./src/assets/icons/icone.png">
-    <link rel="stylesheet" href="/src/assets/CSS/style.css">
+    <link rel="stylesheet" href="./src/assets/CSS/style.css">
 </head>
 
 <body class="dark">
@@ -16,7 +23,7 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="index.html">
+            <a href="index.php">
                 <img id="logoHeader" src="./src/assets/icons/logo-padrao.png">
             </a>
         </div>
@@ -34,8 +41,11 @@
                 <img id="iconTema" src="./src/assets/icons/sun.png">
             </button>
             <form>
-                <button id="login" formaction="./src/pages/account/login.html">ENTRAR</button><!--botão para entra em uma conta-->
+                <button id="login" formaction="./src/pages/account/login.php">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
+            <div class="dropdown">
+                <div class="dropdown-content"></div>
+            </div>
         </div>
     </header>
 
@@ -61,7 +71,7 @@
                         <div class="carousel-item active">
                             <div class="cartao noticia1">
                                 <!-- Link abre notícia em nova aba -->
-                                <a href="./src/pages/news/gta-6.html" target="_blank">
+                                <a href="./src/pages/news/gta-6.php" target="_blank">
                                     <img src="./src/assets/images/carousel/gta-6.png" class="d-block"
                                         alt="Lançamento do GTA 6">
                                 </a>
@@ -73,21 +83,21 @@
                         <!-- Slide 2 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia2">
-                                <a href="./src/pages/news/iphone-dobravel.html" target="_blank">
+                                <a href="./src/pages/news/iphone-dobravel.php" target="_blank">
                                     <img src="./src/assets/images/carousel/iphone-dobravel.png" class="d-block"
-                                        alt="Apple Wath">
+                                        alt="iPhone dobrável">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>iPhone dobrável enfrenta problemas de engenharia e lançamento pode atrasar, diz
-                                        jornalo</h5>
+                                        jornal</h5>
                                 </div>
                             </div>
                         </div>
                         <!-- Slide 3 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
-                                <a href="./src/pages/news/meta-ia.html" target="_blank">
-                                    <img src="./src/assets/images/carousel/meta-ai.png" class="d-block">
+                                <a href="./src/pages/news/meta-ia.php" target="_blank">
+                                    <img src="./src/assets/images/carousel/meta-ai.png" class="d-block" alt="celular">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Meta finalmente apresenta plano para futuro da IA na empresa</h5>
@@ -97,8 +107,8 @@
                         <!-- Slide 4 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
-                                <a href="./src/pages/news/produto-apple.html" target="_blank">
-                                    <img src="./src/assets/images/carousel/produto-apple.png" class="d-block">
+                                <a href="./src/pages/news/produto-apple.php" target="_blank">
+                                    <img src="./src/assets/images/carousel/produto-apple.png" class="d-block" alt="Foto da sede da Apple">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Produto mais cobiçado da Apple pode te surpreender; veja qual</h5>
@@ -108,8 +118,8 @@
                         <!-- Slide 5 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
-                                <a href="./src/pages/news/treinar-robos.html" target="_blank">
-                                    <img src="./src/assets/images/carousel/treinar-robos.png" class="d-block">
+                                <a href="./src/pages/news/treinar-robos.php" target="_blank">
+                                    <img src="./src/assets/images/carousel/treinar-robos.png" class="d-block" alt="robôs">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Como gravar tarefas domésticas pode treinar robôs "mordomos" no futuro</h5>
@@ -133,15 +143,15 @@
                 <!-- Título da seção -->
                 <div class="news-emphasis_title">
                     <h3>DESTAQUES DO DIA</h3>
-                    <a href=".//src/noticias/rool-noticias.html">VER TODOS →</a>
+                    <a href="./src/noticias/rool-noticias.php">VER TODOS →</a>
                 </div>
                 <div class="news-emphasis_cards">
                     <!-- Card de notícia -->
                     <article class="news-card">
-                        <a target="_blank" href="/src/pages/news/grecia-redes-sociais.html">
+                        <a target="_blank" href="./src/pages/news/grecia-redes-sociais.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
-                                <img src="/src/assets/images/news-emphasis/grecias-redes-sociais.png"
+                                <img src="./src/assets/images/news-emphasis/grecias-redes-sociais.png"
                                     alt="Grécia proibirá redes sociais para menores de 15 anos a partir de 2027">
                             </figure>
                             <!-- Conteúdo da notícia -->
@@ -155,10 +165,10 @@
                         </a>
                     </article>
                     <article class="news-card">
-                        <a target="_blank" href="/src/pages/news/hacker-reino-unido.html">
+                        <a target="_blank" href="./src/pages/news/hacker-reino-unido.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
-                                <img src="/src/assets/images/news-emphasis/hackers-reino-unido.png"
+                                <img src="./src/assets/images/news-emphasis/hackers-reino-unido.png"
                                     alt="Imagem ilustrativa do hacker no Reino Unido">
                             </figure>
                             <!-- Conteúdo da notícia -->
@@ -172,10 +182,10 @@
                         </a>
                     </article>
                     <article class="news-card">
-                        <a target="_blank" href="/src/pages/news/modelo-ia.html">
+                        <a target="_blank" href="./src/pages/news/modelo-ia.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
-                                <img src="/src/assets/images/news-emphasis/modelo-ia.png"
+                                <img src="./src/assets/images/news-emphasis/modelo-ia.png"
                                     alt="Imagem ilustrativa do modelo de IA">
                             </figure>
                             <!-- Conteúdo da notícia -->
@@ -189,10 +199,10 @@
                         </a>
                     </article>
                     <article class="news-card">
-                        <a target="_blank" href="/src/pages/news/voz-clonada.html">
+                        <a target="_blank" href="./src/pages/news/voz-clonada.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
-                                <img src="/src/assets/images/news-emphasis/voz-clonada.png"
+                                <img src="./src/assets/images/news-emphasis/voz-clonada.png"
                                     alt="Imagem ilustrativa da voz clonada">
                             </figure>
                             <!-- Conteúdo da notícia -->
@@ -220,7 +230,7 @@
                     <div class="news-latest_cards">
                         <!-- Card notícia -->
                         <article>
-                            <a href="./src/pages/news/ameaca-ia.html" target="_blank">
+                            <a href="./src/pages/news/ameaca-ia.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/ameaca-ia.png">
                                     <span class="news-card_category ia">IA</span>
@@ -239,7 +249,7 @@
                             </a>
                         </article>
                         <article>
-                            <a href="./src/pages/news/carro-voador.html" target="_blank">
+                            <a href="./src/pages/news/carro-voador.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/carro-voador.png">
                                     <span class="news-card_category smartphones">SMARTPHONES</span>
@@ -258,7 +268,7 @@
                             </a>
                         </article>
                         <article>
-                            <a href="./src/pages/news/guerra-eua.html" target="_blank">
+                            <a href="./src/pages/news/guerra-eua.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/guerra-eua.png">
                                     <span class="news-card_category ia">IA</span>
@@ -277,7 +287,7 @@
                             </a>
                         </article>
                         <article>
-                            <a href="./src/pages/news/vicio-redes-sociais.html" target="_blank">
+                            <a href="./src/pages/news/vicio-redes-sociais.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/vicios-redes-sociais.png">
                                     <span class="news-card_category redes_sociais">REDES SOCIAIS</span>
@@ -309,7 +319,7 @@
                     <!-- lista de notícias em alta -->
                     <ol class="news-rise_list">
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/gta-6.html" target="_blank">
+                            <a href="./src/pages/news/gta-6.php" target="_blank">
                                 <span class="news-rise_rank">1</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">GTA 6: lançamento</h4>
@@ -321,7 +331,7 @@
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/carro-voador.html" target="_blank">
+                            <a href="./src/pages/news/carro-voador.php" target="_blank">
                                 <span class="news-rise_rank">2</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Protótipo de 'carro voador'</h4>
@@ -333,7 +343,7 @@
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/hacker-reino-unido.html" target="_blank">
+                            <a href="./src/pages/news/hacker-reino-unido.php" target="_blank">
                                 <span class="news-rise_rank">3</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Ataque hacker desvia pagamento</h4>
@@ -345,7 +355,7 @@
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/hackers-ira.html" target="_blank">
+                            <a href="./src/pages/news/hackers-ira.php" target="_blank">
                                 <span class="news-rise_rank">4</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Hackers ligados ao Irã invadem e-mail</h4>
@@ -357,7 +367,7 @@
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/iphone-dobravel.html" target="_blank">
+                            <a href="./src/pages/news/iphone-dobravel.php" target="_blank">
                                 <span class="news-rise_rank">5</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">iPhone dobrável enfrenta problemas</h4>
@@ -369,7 +379,7 @@
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/tratamento-ia.html" target="_blank">
+                            <a href="./src/pages/news/tratamento-ia.php" target="_blank">
                                 <span class="news-rise_rank">6</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Tratamento de doenças graças a IA</h4>
@@ -381,7 +391,7 @@
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/voz-clonada.html" target="_blank">
+                            <a href="./src/pages/news/voz-clonada.php" target="_blank">
                                 <span class="news-rise_rank">7</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Sua voz pode ser clonada por IA!</h4>
@@ -457,7 +467,7 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/assets/JS/script.js"></script>
+    <script src="./src/assets/JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Grécia proibirá redes sociais para menores de 15 anos a partir de 2027</title>
-    <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="/src/assets/CSS/style.css">
+    <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
+    <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
 
 <body class="dark">
@@ -15,12 +22,17 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="../../../index.html">
+            <a href="../../../index.php">
                 <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
         <!-- menu -->
         <div class="menu">
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">CONTATO</a>
         </div>
         <!-- botões do menu -->
         <div class="button-menu">
@@ -28,7 +40,7 @@
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
             <form>
-                <button id="login" formaction="../../pages/account/login.html"
+                <button id="login" formaction="../../pages/account/login.php"
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
@@ -47,7 +59,7 @@
 
             <!-- imagem -->
             <figure class="news-image">
-                <img src="/src/assets/images/grecias-redes-sociais.png" alt="Grecia proibirá redes sociais">
+                <img src="../../assets/images/grecias-redes-sociais.png" alt="Grecia proibirá redes sociais">
             </figure>
 
 
@@ -62,6 +74,21 @@
                 <p>A Grécia ainda não pode forçar essas plataformas de mídia social a verificar a idade de seus usuários, mas recomenda que as plataformas usem os mecanismos que a UE e a Grécia já definiram, disse o governo, pedindo aos pais que também ajudem no esforço.</p>
                 <p>A partir de 1º de janeiro de 2027, as plataformas precisarão ser capazes de restringir os usuários ou enfrentarão multas descritas na Lei de Serviços Digitais da UE (DSA), que podem chegar a 6% de seu faturamento global, disse o ministro da Governança Digital, Dimitris Papastergiou.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>  
      </main>
 
@@ -121,6 +148,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-<script src="/src/assets/JS/script.js"></script>
+<script src="../../assets/JS/script.js"></script>
 </body>
 </html>

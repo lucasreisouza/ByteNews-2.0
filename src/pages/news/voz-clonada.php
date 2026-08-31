@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
+    <meta property="og:title" content="ByteNews - Portal de Tecnologia e Games">
+    <meta property="og:description" content="Fique por dentro das últimas notícias de tecnologia, IA e games.">
+    <meta property="og:image" content="https://lucasreisouza.github.io/ByteNews-2.0/src/assets/icons/logo-padrao.png">
+    <meta property="og:url" content="https://lucasreisouza.github.io/ByteNews-2.0/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Sua voz pode ser clonada por IA! Saiba identificar e como se proteger</title>
-    <link rel="icon" type="image/png" href="/src/assets/icons/icone.png">
-    <link rel="stylesheet" href="/src/assets/CSS/style.css">
+    <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
+    <link rel="stylesheet" href="../../assets/CSS/style.css">
 </head>
 
 <body class="claro">
@@ -15,7 +22,7 @@
     <header id="nav">
         <!-- logo -->
         <div class="logo">
-            <a href="../../../index.html">
+            <a href="../../../index.php">
                 <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
             </a>
         </div>
@@ -25,7 +32,7 @@
             <a class="destaques" href="#Destaques">DESTAQUES</a>
             <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
             <a class="em-alta" href="#EmAlta">EM ALTA</a>
-            <a class="rodape" href="#Rodape">RODAPÉ</a>
+            <a class="rodape" href="#Rodape">CONTATO</a>
         </div>
         <!-- botões do menu -->
         <div class="button-menu">
@@ -33,7 +40,7 @@
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
             <form>
-                <button id="login" formaction="../../pages/account/login.html"
+                <button id="login" formaction="../../pages/account/login.php"
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
@@ -49,7 +56,7 @@
 
             <!-- imagem -->
             <figure class="news-image">
-                <img src="/src/assets/images/voz-clonada.png" alt="voz clonada">
+                <img src="../../assets/images/voz-clonada.png" alt="voz clonada">
             </figure><!-- imagem da noticia-->
 
 
@@ -114,6 +121,21 @@
                 <p>O avanço dessas fraudes está diretamente ligado à popularização das ferramentas de inteligência artificial, que se tornaram mais acessíveis e fáceis de usar. Ao mesmo tempo, a grande quantidade de áudios disponíveis online facilita a coleta de material para clonagem.</p>
                 <p>Outro fator relevante é a baixa maturidade de segurança em parte das empresas, que ainda utilizam métodos vulneráveis de autenticação. Isso amplia o alcance das fraudes e exige respostas mais rápidas do mercado.</p>
             </article>
+
+            <!-- Comentários -->
+            <section class="news-comments" aria-labelledby="commentsTitle">
+                <h2 id="commentsTitle" class="news-comments-title">Vejam o que os usuários estão comentando</h2>
+
+                <div id="commentsList" class="comments-list" aria-live="polite"></div>
+
+                <form id="commentForm" class="comment-form">
+                    <label for="commentText">Seu comentário</label>
+                    <textarea id="commentText" name="comment" placeholder="Escreva seu comentário..."></textarea>
+                    <p id="commentError" class="comment-error" role="alert"></p>
+                    <p class="comment-login-message">Seu nome será exibido junto ao comentário.</p>
+                    <button id="commentButton" class="comment-button" type="submit">Comentar</button>
+                </form>
+            </section>
         </section>
     </main>
 
@@ -174,6 +196,6 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="/src/assets/JS/script.js"></script>
+    <script src="../../assets/JS/script.js"></script>
 </body>
 </html>
