@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="../../assets/CSS/style.css">
     <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
 <body class="acount">
-<form id="formUsuario">
+<form id="formUsuario" method="POST" action="../../php/login.php">
     <img src="../../assets/icons/logo-padrao.png" alt="Logo ByteNews">
     <div class="container">
         <label for="email">email:</label>
-        <input type="text" id="email" placeholder="Digite seu email">
+        <input type="text" name="email" id="email" placeholder="Digite seu email">
         <label for="senha">senha:</label>
-        <input type="password" id="senha" placeholder="Digite sua senha">
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
         <div class="botoes">
             <button type="submit">Entrar</button>
         </div>
@@ -24,33 +24,33 @@
 </form>
 <script src="../../assets/JS/script.js"></script>
 <script>
-document.getElementById("formUsuario").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const email = document.getElementById("email").value.trim();
-    const senha = document.getElementById("senha").value;
-    const account = JSON.parse(localStorage.getItem("byteNewsAccount") || "null");
+// document.getElementById("formUsuario").addEventListener("submit", function(event) {
+//     event.preventDefault();
+//     const email = document.getElementById("email").value.trim();
+//     const senha = document.getElementById("senha").value;
+//     const account = JSON.parse(localStorage.getItem("byteNewsAccount") || "null");
 
-    if (!email || !senha) {
-        alert("Preencha e-mail e senha.");
-        return;
-    }
+//     if (!email || !senha) {
+//         alert("Preencha e-mail e senha.");
+//         return;
+//     }
 
-    if (!account || account.email !== email || account.senha !== senha) {
-        alert("E-mail ou senha incorretos.");
-        return;
-    }
+//     if (!account || account.email !== email || account.senha !== senha) {
+//         alert("E-mail ou senha incorretos.");
+//         return;
+//     }
 
-    localStorage.setItem("byteNewsUser", JSON.stringify({
-        name: account.nome,
-        email: account.email,
-        role: account.role || "leitor",
-        loggedIn: true
-    }));
+//     localStorage.setItem("byteNewsUser", JSON.stringify({
+//         name: account.nome,
+//         email: account.email,
+//         role: account.role || "leitor",
+//         loggedIn: true
+//     }));
 
-    const params = new URLSearchParams(window.location.search);
-    const redirect = params.get("redirect");
-    window.location.href = redirect || "/index.php";
-});
+//     const params = new URLSearchParams(window.location.search);
+//     const redirect = params.get("redirect");
+//     window.location.href = redirect || "/index.php";
+// });
 </script>
 </body>
 </html>

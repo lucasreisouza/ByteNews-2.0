@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-include('../../php/conexao.php');
-
 if (isset($_SESSION['id_usuario'])) {
     header("Location: ../../../index.php");
     exit();
@@ -22,8 +20,8 @@ if (isset($_SESSION['id_usuario'])) {
     <div class="container">
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome" placeholder="informe seu nome completo">
-        <label for="e-mail">Informe seu e-mail:</label>
-        <input type="text" id="e-mail" name="e-mail" placeholder="ex:@gmail">
+        <label for="email">Informe seu email:</label>
+        <input type="text" id="email" name="email" placeholder="ex:@gmail">
         <label for="senha">Senha</label>
         <input type="password" id="senha" name="senha" placeholder="informe a senha">
         <label>Pergunta de Segurança:</label>
@@ -43,33 +41,33 @@ if (isset($_SESSION['id_usuario'])) {
 </form>
 <script src="../../assets/JS/script.js"></script>
 <script>
-document.getElementById("formUsuario").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const nome = document.getElementById("nome").value.trim();
-    const email = document.getElementById("e-mail").value.trim();
-    const senha = document.getElementById("senha").value;
-    const confirmar = document.getElementById("confirme-senha").value;
+// document.getElementById("formUsuario").addEventListener("submit", function(event) {
+//     event.preventDefault();
+//     const nome = document.getElementById("nome").value.trim();
+//     const email = document.getElementById("e-mail").value.trim();
+//     const senha = document.getElementById("senha").value;
+//     const confirmar = document.getElementById("confirme-senha").value;
 
-    if (!nome || !email || !senha || !confirmar) {
-        alert("Preencha todos os campos.");
-        return;
-    }
+//     if (!nome || !email || !senha || !confirmar) {
+//         alert("Preencha todos os campos.");
+//         return;
+//     }
 
-    if (senha !== confirmar) {
-        alert("As senhas não coincidem.");
-        return;
-    }
+//     if (senha !== confirmar) {
+//         alert("As senhas não coincidem.");
+//         return;
+//     }
 
-    localStorage.setItem("byteNewsAccount", JSON.stringify({
-        nome: nome,
-        email: email,
-        senha: senha,
-        role: "leitor"
-    }));
+//     localStorage.setItem("byteNewsAccount", JSON.stringify({
+//         nome: nome,
+//         email: email,
+//         senha: senha,
+//         role: "leitor"
+//     }));
 
-    alert("Cadastro realizado! Agora faça login.");
-    window.location.href = "./login.php";
-});
+//     alert("Cadastro realizado! Agora faça login.");
+//     window.location.href = "./login.php";
+// });
 </script>
 </body>
 </html>
