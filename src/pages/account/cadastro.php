@@ -1,4 +1,14 @@
-    <!DOCTYPE html>
+<?php
+session_start();
+
+include('../../php/conexao.php');
+
+if (isset($_SESSION['id_usuario'])) {
+    header("Location: ../../../index.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +17,7 @@
     <link rel="stylesheet" href="../../assets/CSS/style.css">
     <link rel="icon" type="image/png" href="../../assets/icons/icone.png">
 <body class="acount">
-<form id="formUsuario">
+<form id="formUsuario" method="POST" action="../../php/cadastro.php">
     <img src="../../assets/icons/logo-padrao.png" alt="Logo ByteNews">
     <div class="container">
         <label for="nome">Nome Completo:</label>
@@ -16,8 +26,15 @@
         <input type="text" id="e-mail" name="e-mail" placeholder="ex:@gmail">
         <label for="senha">Senha</label>
         <input type="password" id="senha" name="senha" placeholder="informe a senha">
-        <label for="senha">Confirmar senha</label>
-        <input type="password" id="confirme-senha" name="confirme-senha" placeholder="confirme a senha">
+        <label>Pergunta de Segurança:</label>
+        <select name="pergunta_seguranca" required>
+            <option value="">Selecione uma pergunta...</option>
+            <option value="Qual é o nome do seu primeiro pet?">Qual é o nome do seu primeiro pet?</option>
+            <option value="Qual é o nome da sua cidade natal?">Qual é o nome da sua cidade natal?</option>
+            <option value="Qual o nome do seu filme favorito?">Qual o nome do seu filme favorito?</option>
+        </select>
+        <label>Resposta da Pergunta:</label>
+        <input type="text" name="resposta_seguranca" required placeholder="Sua resposta secreta">
         <div class="botoes">
             <button type="submit">Cadastrar</button>
         </div>

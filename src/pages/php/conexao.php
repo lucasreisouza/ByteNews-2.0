@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "senac";
-$banco = "bytenews";
+$banco = "bytenewsteste";
 $porta = 3307;
 
 $conexao = new mysqli($servidor, $usuario, $senha, $banco, $porta);
