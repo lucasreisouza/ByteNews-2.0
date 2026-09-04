@@ -1,3 +1,8 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,9 +45,17 @@
             <button id="tema" onclick="toggleStyle()">
                 <img id="iconTema" src="./src/assets/icons/sun.png">
             </button>
-            <form>
-                <button id="login" formaction="./src/pages/account/login.php">ENTRAR</button><!--botão para entra em uma conta-->
-            </form>
+            <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
+                <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">Cadastrar Noticia</a>
+            <?php endif; ?>
+
+            <?php if (isset($_SESSION['id_usuario'])): ?>
+                <a href="./src/pages/painel.php" class="nav-link <?php echo ($pagina_atual === './src/pages/painel.php') ? 'ativo' : ''; ?>">Meu Perfil</a>
+                <a href="./src/php/logout.php" class="nav-link">Sair</a>
+            <?php else: ?>
+                <a href="./src/pages/account/login.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/login.php') ? 'ativo' : ''; ?>">Entrar</a>
+                <a href="./src/pages/account/cadastro.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/cadastro.php') ? 'ativo' : ''; ?>">Cadastrar-se</a>
+            <?php endif; ?>
             <div class="dropdown">
                 <div class="dropdown-content"></div>
             </div>

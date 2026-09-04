@@ -3,7 +3,7 @@
     session_start();
     # Destrói a sessão
     session_destroy();
-    # Redireciona para a página de login 
-    header("Location: ../pages/login.php");
+    # Redireciona para a página inicial
+    header("Location: ../../index.php");
     exit;
 ?>

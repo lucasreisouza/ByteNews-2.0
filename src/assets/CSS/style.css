@@ -98,7 +98,6 @@
         GRADIENTE
     ==========================================*/
     --gradient-primary: linear-gradient(135deg, #00E5FF, #A855F7);
-
 }
 
 header {
@@ -111,17 +110,12 @@ header {
     padding: 5px 15px;
     height: 60px;
     position: relative;
-    /* IMPORTANTE */
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(90deg,
             var(--neon-blue-transp),
             var(--neon-purple-transp),
             var(--neon-purple2-transp)) 1;
 }
-
-
-/* linha neon */
-
 
 header #logoHeader {
     width: 200px;
@@ -147,8 +141,9 @@ header .menu a {
 
 header .button-menu {
     display: flex;
-    justify-content: space-around;
-    width: 130px;
+    align-items: center;
+    gap: 12px;
+    width: auto;
 }
 
 header .button-menu #tema {
@@ -173,6 +168,35 @@ header .button-menu #login {
     padding: 5px;
     width: 75px;
     box-shadow: 0 0 10px #00f0ff50;
+}
+
+/* Estilo padronizado para os botões do header (.nav-link) */
+header .button-menu .nav-link {
+    background: transparent;
+    color: var(--btn-primary);
+    border: 1px solid var(--btn-primary);
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+header .button-menu .nav-link:hover {
+    background-color: rgba(0, 229, 255, 0.15);
+    box-shadow: 0 0 15px var(--neon-blue);
+    color: var(--text-white);
+}
+
+header .button-menu .nav-link.ativo {
+    background-color: var(--btn-primary);
+    color: var(--bg-primary);
+    box-shadow: 0 0 12px var(--neon-blue);
 }
 
 body {
