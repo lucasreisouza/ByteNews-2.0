@@ -165,34 +165,6 @@
     box-shadow: 0 0 10px #00f0ff50;
 }
 
-/* Estilo padronizado para os botões do header (.nav-link) */
-header .button-menu .nav-link {
-    background: transparent;
-    color: var(--btn-primary);
-    border: 1px solid var(--btn-primary);
-    border-radius: 8px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    padding: 6px 14px;
-    text-decoration: none;
-    white-space: nowrap;
-    box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
-    transition: all 0.3s ease;
-}
-
-header .button-menu .nav-link:hover {
-    background-color: rgba(0, 229, 255, 0.15);
-    box-shadow: 0 0 15px var(--neon-blue);
-    color: var(--text-white);
-}
-
-header .button-menu .nav-link.ativo {
-    background-color: var(--btn-primary);
-    color: var(--bg-primary);
-    box-shadow: 0 0 12px var(--neon-blue);
-}
 .hamburger {
     display: none;
     flex-direction: column;
@@ -1039,7 +1011,7 @@ body.acount {
 }
 
 /* Inputs */
-#formUsuario .container input {
+#formUsuario .container input, select {
     width: 100%;
     padding: 12px 16px;
     margin-bottom: 20px;
@@ -1056,6 +1028,8 @@ body.acount {
 input:focus {
     border-color: var(--neon-blue);
 }
+
+
 
 /* Botão Entrar */
 .botoes {
