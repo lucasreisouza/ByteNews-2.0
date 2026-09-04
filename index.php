@@ -41,8 +41,8 @@ if (session_status() === PHP_SESSION_NONE) {
             <?php endif; ?>
 
             <?php if (isset($_SESSION['id_usuario'])): ?>
-                <a href="./src/pages/painel.php" class="nav-link <?php echo ($pagina_atual === './src/pages/painel.php') ? 'ativo' : ''; ?>">Meu Perfil</a>
-                <a href="./src/php/logout.php" class="nav-link">Sair</a>
+                <a href="./src/pages/painel.php" class="nav-link <?php echo ($pagina_atual === './src/pages/painel.php') ? 'ativo' : ''; ?>">MEU PERFIL</a>
+                <a href="./src/php/logout.php" class="nav-link">SAIR</a>
             <?php else: ?>
                 <a href="./src/pages/account/login.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/login.php') ? 'ativo' : ''; ?>">ENTRAR</a>
                 <a href="./src/pages/account/cadastro.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/cadastro.php') ? 'ativo' : ''; ?>">CADASTRAR-SE</a>

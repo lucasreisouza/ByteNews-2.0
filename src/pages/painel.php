@@ -48,6 +48,7 @@ $email = $_SESSION['usuario_email'] ?? 'usuario@bytenews.com';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil - ByteNews</title>
+    <link rel="icon" type="image/png" href="../assets/icons/icone.png">
     <link rel="stylesheet" href="../style.css">
     <style>
         * {
@@ -367,20 +368,43 @@ $email = $_SESSION['usuario_email'] ?? 'usuario@bytenews.com';
         <input type="checkbox" id="menu-toggle" hidden>
 
         <nav class="menu">
-            <a href="#Home">INÍCIO</a>
-            <a href="#Destaques">DESTAQUES</a>
-            <a href="#Rodape">CONTATO</a>
+    
+            <a href="../../index.php#Home" class="nav-link <?php echo ($pagina_atual === '../../index.php#Home') ? 'ativo' : ''; ?>">
+                HOME
+            </a>
+
+            <a href="../../index.php#Destaques" class="nav-link <?php echo ($pagina_atual === '../../index.php#Destaques') ? 'ativo' : ''; ?>">
+                DESTAQUES
+            </a>
+
+            <a href="../../index.php#Rodape" class="nav-link <?php echo ($pagina_atual === '../../index.php#Rodape') ? 'ativo' : ''; ?>">
+                CONTATO
+            </a>
+
             <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
-                <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">Cadastrar Noticia</a>
+                <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">
+                    CADASTRAR NOTÍCIA
+                </a>
             <?php endif; ?>
 
             <?php if (isset($_SESSION['id_usuario'])): ?>
-                <a href="painel.html" class="nav-link <?php echo ($pagina_atual === 'painel.html') ? 'ativo' : ''; ?>">Meu Perfil</a>
-                <a href="../../src/php/logout.php" class="nav-link">Sair</a>
+                <a href="painel.php" class="nav-link <?php echo ($pagina_atual === 'painel.php') ? 'ativo' : ''; ?>">
+                    MEU PERFIL
+                </a>
+
+                <a href="../../src/php/logout.php" class="nav-link <?php echo ($pagina_atual === 'logout.php') ? 'ativo' : ''; ?>">
+                    SAIR
+                </a>
             <?php else: ?>
-                <a href="./account/login.php" class="nav-link <?php echo ($pagina_atual === './account/login.php') ? 'ativo' : ''; ?>">ENTRAR</a>
-                <a href="./account/cadastro.php" class="nav-link <?php echo ($pagina_atual === './account/cadastro.php') ? 'ativo' : ''; ?>">CADASTRAR-SE</a>
+                <a href="./account/login.php" class="nav-link <?php echo ($pagina_atual === 'login.php') ? 'ativo' : ''; ?>">
+                    ENTRAR
+                </a>
+
+                <a href="./account/cadastro.php" class="nav-link <?php echo ($pagina_atual === 'cadastro.php') ? 'ativo' : ''; ?>">
+                    CADASTRAR-SE
+                </a>
             <?php endif; ?>
+
         </nav>
 
         <div class="button-menu">
