@@ -360,27 +360,40 @@ $email = $_SESSION['usuario_email'] ?? 'usuario@bytenews.com';
 <body class="dark">
     <!-- Cabeçalho -->
     <header id="nav">
-        <!-- logo -->
         <div class="logo">
-            <a href="../../../index.php">
-                <img id="logoHeader" src="../assets/icons/logo-padrao.png">
-            </a>
+            <a href="../../index.php"><img id="logoHeader" src="../assets/icons/logo-padrao.png" alt="ByteNews"></a>
         </div>
-        <!-- menu -->
-        <div class="menu">
-            <a class="home" href="#Home">INÍCIO</a>
-            <a class="destaques" href="#Destaques">DESTAQUES</a>
-            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
-            <a class="em-alta" href="#EmAlta">EM ALTA</a>
-            <a class="rodape" href="#Rodape">CONTATO</a>
-        </div>
-        <!-- botões do menu -->
+
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <nav class="menu">
+            <a href="#Home">INÍCIO</a>
+            <a href="#Destaques">DESTAQUES</a>
+            <a href="#Rodape">CONTATO</a>
+            <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
+                <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">Cadastrar Noticia</a>
+            <?php endif; ?>
+
+            <?php if (isset($_SESSION['id_usuario'])): ?>
+                <a href="painel.html" class="nav-link <?php echo ($pagina_atual === 'painel.html') ? 'ativo' : ''; ?>">Meu Perfil</a>
+                <a href="../../src/php/logout.php" class="nav-link">Sair</a>
+            <?php else: ?>
+                <a href="./account/login.php" class="nav-link <?php echo ($pagina_atual === './account/login.php') ? 'ativo' : ''; ?>">ENTRAR</a>
+                <a href="./account/cadastro.php" class="nav-link <?php echo ($pagina_atual === './account/cadastro.php') ? 'ativo' : ''; ?>">CADASTRAR-SE</a>
+            <?php endif; ?>
+        </nav>
+
         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()">
-                <img id="iconTema" src="../assets/icons/sun.png">
+            <button type="button" id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../assets/icons/sun.png" alt="">
             </button>
+            <div class="dropdown">
+                <div class="dropdown-content"></div>
+            </div>
+            <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
         </div>
     </header>
+
 
     <!-- Estrutura do Painel -->
     <div class="container">

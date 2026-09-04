@@ -44,7 +44,7 @@
                     formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
             </form>
         </div>
-</header>
+    </header>
 
 
     <!-- Conteudo Principal -->
