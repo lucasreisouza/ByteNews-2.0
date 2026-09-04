@@ -26,24 +26,23 @@ if (session_status() === PHP_SESSION_NONE) {
 <body class="dark">
     <!-- header -->
     <header id="nav">
-        <!-- logo -->
         <div class="logo">
-            <a href="index.php">
-                <img id="logoHeader" src="./src/assets/icons/logo-padrao.png">
-            </a>
+            <a href="index.php"><img id="logoHeader" src="./src/assets/icons/logo-padrao.png" alt="ByteNews"></a>
         </div>
-        <!-- menu -->
-        <div class="menu">
-            <a class="home" href="#Home">INÍCIO</a>
-            <a class="destaques" href="#Destaques">DESTAQUES</a>
-            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
-            <a class="em-alta" href="#EmAlta">EM ALTA</a>
-            <a class="rodape" href="#Rodape">CONTATO</a>
-        </div>
-        <!-- botões do menu -->
+
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <nav class="menu">
+            <a href="#Home">INÍCIO</a>
+            <a href="#Destaques">DESTAQUES</a>
+            <a href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a href="#EmAlta">EM ALTA</a>
+            <a href="#Rodape">CONTATO</a>
+        </nav>
+
         <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()">
-                <img id="iconTema" src="./src/assets/icons/sun.png">
+            <button type="button" id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="./src/assets/icons/sun.png" alt="">
             </button>
             <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
                 <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">Cadastrar Noticia</a>
@@ -59,6 +58,8 @@ if (session_status() === PHP_SESSION_NONE) {
             <div class="dropdown">
                 <div class="dropdown-content"></div>
             </div>
+            <a id="login" href="./src/pages/account/login.php">ENTRAR</a>
+            <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
         </div>
     </header>
 
