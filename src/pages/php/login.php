@@ -5,7 +5,7 @@ session_start();
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$sql = "SELECT * FROM usuarios WHERE email = '$email'";
+$sql = "SELECT * FROM usuarios WHERE email = '?'";
 
 $resultado = $conexao->query($sql);
 
