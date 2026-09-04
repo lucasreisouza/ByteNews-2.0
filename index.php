@@ -35,15 +35,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <nav class="menu">
             <a href="#Home">INÍCIO</a>
             <a href="#Destaques">DESTAQUES</a>
-            <a href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
-            <a href="#EmAlta">EM ALTA</a>
             <a href="#Rodape">CONTATO</a>
-        </nav>
-
-        <div class="button-menu">
-            <button type="button" id="tema" onclick="toggleStyle()">
-                <img id="iconTema" src="./src/assets/icons/sun.png" alt="">
-            </button>
             <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
                 <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">Cadastrar Noticia</a>
             <?php endif; ?>
@@ -52,9 +44,15 @@ if (session_status() === PHP_SESSION_NONE) {
                 <a href="./src/pages/painel.php" class="nav-link <?php echo ($pagina_atual === './src/pages/painel.php') ? 'ativo' : ''; ?>">Meu Perfil</a>
                 <a href="./src/php/logout.php" class="nav-link">Sair</a>
             <?php else: ?>
-                <a href="./src/pages/account/login.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/login.php') ? 'ativo' : ''; ?>">Entrar</a>
-                <a href="./src/pages/account/cadastro.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/cadastro.php') ? 'ativo' : ''; ?>">Cadastrar-se</a>
+                <a href="./src/pages/account/login.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/login.php') ? 'ativo' : ''; ?>">ENTRAR</a>
+                <a href="./src/pages/account/cadastro.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/cadastro.php') ? 'ativo' : ''; ?>">CADASTRAR-SE</a>
             <?php endif; ?>
+        </nav>
+
+        <div class="button-menu">
+            <button type="button" id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="./src/assets/icons/sun.png" alt="">
+            </button>
             <div class="dropdown">
                 <div class="dropdown-content"></div>
             </div>
