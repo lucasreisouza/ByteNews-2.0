@@ -114,7 +114,6 @@
     border-image: linear-gradient(90deg, var(--neon-blue-transp), var(--neon-purple-transp), var(--neon-purple2-transp)) 1;
 }
 
-header #logoHeader {
 #nav #logoHeader {
     width: 200px;
 }
@@ -193,6 +192,7 @@ header .button-menu .nav-link.ativo {
     background-color: var(--btn-primary);
     color: var(--bg-primary);
     box-shadow: 0 0 12px var(--neon-blue);
+}
 .hamburger {
     display: none;
     flex-direction: column;
@@ -794,11 +794,6 @@ body.clear #nav::before {
 
 
 /* ===================== BOTÕES ===================== */
-body.clear #login {
-    color: var(--neon-clear-blue);
-    border: 2px solid var(--neon-clear-blue);
-    box-shadow: none;
-}
 
 body.clear #tema {
     background: none;

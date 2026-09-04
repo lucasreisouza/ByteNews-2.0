@@ -58,7 +58,6 @@ if (session_status() === PHP_SESSION_NONE) {
             <div class="dropdown">
                 <div class="dropdown-content"></div>
             </div>
-            <a id="login" href="./src/pages/account/login.php">ENTRAR</a>
             <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
         </div>
     </header>
