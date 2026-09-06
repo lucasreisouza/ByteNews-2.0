@@ -3,51 +3,21 @@ const logoHeader = document.querySelector('#logoHeader');
 const logoFooter = document.querySelector('#logoFooter');
 const temaIcon = document.querySelector('#iconTema');
 
-function getAssetPath(fileName) {
-  const path = window.location.pathname;
-  // Pega tudo antes do /src/ -> ex: /GitHub/ByteNews-2.0
-  const root = path.includes('/src/')? path.split('/src/')[0] : path.substring(0, path.lastIndexOf('/'));
-  // root + /src/assets/icons/file
-  return root + '/src/assets/icons/' + fileName;
-}
-
-function setImagens(isClear) {
-  const logoFile = isClear? 'logo-claro.png' : 'logo-padrao.png';
-  const iconFile = isClear? 'moon.png' : 'sun.png';
-
-  const logoPath = getAssetPath(logoFile);
-  const iconPath = getAssetPath(iconFile);
-
-  console.log('Carregando:', logoPath);
-
-  if (logoHeader) logoHeader.src = logoPath;
-  if (logoFooter) logoFooter.src = logoPath;
-  if (temaIcon) temaIcon.src = iconPath;
-}
-
 function toggleStyle() {
-  const isDark = body.classList.contains('dark');
-  if (isDark) {
-    body.classList.replace('dark', 'clear');
-    setImagens(true);
-  } else {
-    body.classList.replace('clear', 'dark');
-    setImagens(false);
-  }
-  localStorage.setItem('tema', body.classList.contains('clear')? 'clear' : 'dark');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const temaSalvo = localStorage.getItem('tema');
-  if (temaSalvo === 'clear') {
+  if (body.classList.contains('dark')) {
     body.classList.remove('dark');
     body.classList.add('clear');
-    setImagens(true);
+    logoHeader.src = '/src/assets/icons/logo-claro.png';
+    logoFooter.src = '/src/assets/icons/logo-claro.png';
+    temaIcon.src = '/src/assets/icons/moon.png';
   } else {
+    body.classList.remove('clear');
     body.classList.add('dark');
-    setImagens(false);
+    logoHeader.src = '/src/assets/icons/logo-padrao.png';
+    logoFooter.src = '/src/assets/icons/logo-padrao.png';
+    temaIcon.src = '/src/assets/icons/sun.png';
   }
-});
+}
 
 
 /* ================= COMENTARIOS DAS NOTICIAS ================= */

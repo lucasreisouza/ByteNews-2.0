@@ -20,28 +20,31 @@
 <body class="dark">
     <!-- Cabeçalho -->
     <header id="nav">
+        <!-- logo -->
         <div class="logo">
-            <a href="../../../index.php"><img id="logoHeader" src="../../assets/icons/logo-padrao.png" alt="ByteNews"></a>
+            <a href="../../../index.php">
+                <img id="logoHeader" src="../../assets/icons/logo-padrao.png">
+            </a>
         </div>
-
-        <input type="checkbox" id="menu-toggle" hidden>
-
-        <nav class="menu">
-            <a href="#Home">INÍCIO</a>
-            <a href="#Destaques">DESTAQUES</a>
-            <a href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
-            <a href="#EmAlta">EM ALTA</a>
-            <a href="#Rodape">CONTATO</a>
-        </nav>
-
+        <!-- menu -->
+        <div class="menu">
+            <a class="home" href="#Home">INÍCIO</a>
+            <a class="destaques" href="#Destaques">DESTAQUES</a>
+            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a class="em-alta" href="#EmAlta">EM ALTA</a>
+            <a class="rodape" href="#Rodape">CONTATO</a>
+        </div>
+        <!-- botões do menu -->
         <div class="button-menu">
-            <button type="button" id="tema" onclick="toggleStyle()">
-                <img id="iconTema" src="../../assets/icons/sun.png" alt="Trocar tema">
+            <button id="tema" onclick="toggleStyle()">
+                <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
-            <a id="login" href="../../pages/account/login.php">ENTRAR</a>
-            <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
+            <form>
+                <button id="login" formaction="../../pages/account/login.php"
+                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
+            </form>
         </div>
-    </header>
+</header>
 
 
     <!-- Conteudo Principal -->
