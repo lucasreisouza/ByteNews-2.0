@@ -4,7 +4,7 @@ Criar uma versão mais estilizada do nosso site
 
 ## 📖 Descrição
 
-0 ByteNews é um portal de notícias desenvolvido com foco em simplicidade, agilidade e boa organização. O projeto foi criado para praticar conceitos fundamentais de Front-End, como estruturação de páginas, estilização responsiva e manipulação de elementos com JavaScript.
+O ByteNews é um portal de notícias desenvolvido com foco em simplicidade, agilidade e boa organização. O projeto foi criado para praticar conceitos de Front-End, PHP e banco de dados MySQL.
 O objetivo é entregar uma experiência clara, moderna e funcional para apresentar notícias de forma dinâmica.
 
 ## 🎥 Preview 
@@ -31,15 +31,18 @@ O objetivo é entregar uma experiência clara, moderna e funcional para apresent
 
 - JavaScript
 
-- Visual Studio
+- PHP
+
+- MySQL
 
 ## ▶️ Como Rodar o Projeto
 
-Como o projeto usa apenas HTML, CSS e JavaScript, o processo é bem simples:
+O projeto usa PHP e MySQL. Para executá-lo com o XAMPP:
 
-- 1. Baixe ou clone este repositório
-- 2. Abra a pasta ByteNews
-- 3. Clique duas vezes no arquivo index.html para abrir no navegador
+- 1. Copie a pasta do projeto para `C:\xampp\htdocs`
+- 2. Inicie os serviços Apache e MySQL no painel do XAMPP
+- 3. Importe o arquivo `sistemaByteNews.sql` no phpMyAdmin
+- 4. Acesse `http://localhost/ByteNews-2.0-CORRIGIDO-LOGOUT/ByteNews-2.0-CORRIGIDO/index.php` no navegador
 
 ## 📂 Como Clonar o Repositório
 
@@ -81,3 +84,7 @@ No desenvolvimento do ByteNews, foram praticados e reforçados conhecimentos em:
 
 [Luís Henrique](https://github.com/lh-luiii), [Lucas Reis Souza](https://github.com/lucasreisouza) e [Gustavo Ítalo](https://github.com/GustavoI7)
 Turma de Tecnologia em informática para internet (vespertino) - Senac DF
+
+
+### Logout
+O botão `SAIR` encerra a sessão PHP em `src/php/logout.php` e remove o usuário salvo em versões antigas do localStorage.

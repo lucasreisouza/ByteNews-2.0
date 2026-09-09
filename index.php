@@ -1,10 +1,9 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+session_start();
+$headerBasePath = '';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
@@ -24,41 +23,7 @@ if (session_status() === PHP_SESSION_NONE) {
 </head>
 
 <body class="dark">
-    <!-- header -->
-    <header id="nav">
-        <div class="logo">
-            <a href="index.php"><img id="logoHeader" src="./src/assets/icons/logo-padrao.png" alt="ByteNews"></a>
-        </div>
-
-        <input type="checkbox" id="menu-toggle" hidden>
-
-        <nav class="menu">
-            <a href="#Home">INÍCIO</a>
-            <a href="#Destaques">DESTAQUES</a>
-            <a href="#Rodape">CONTATO</a>
-            <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
-                <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">Cadastrar Noticia</a>
-            <?php endif; ?>
-
-            <?php if (isset($_SESSION['id_usuario'])): ?>
-                <a href="./src/pages/painel.php" class="nav-link <?php echo ($pagina_atual === './src/pages/painel.php') ? 'ativo' : ''; ?>">Meu Perfil</a>
-                <a href="./src/php/logout.php" class="nav-link">Sair</a>
-            <?php else: ?>
-                <a href="./src/pages/account/login.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/login.php') ? 'ativo' : ''; ?>">ENTRAR</a>
-                <a href="./src/pages/account/cadastro.php" class="nav-link <?php echo ($pagina_atual === './src/pages/account/cadastro.php') ? 'ativo' : ''; ?>">CADASTRAR-SE</a>
-            <?php endif; ?>
-        </nav>
-
-        <div class="button-menu">
-            <button type="button" id="tema" onclick="toggleStyle()">
-                <img id="iconTema" src="./src/assets/icons/sun.png" alt="">
-            </button>
-            <div class="dropdown">
-                <div class="dropdown-content"></div>
-            </div>
-            <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
-        </div>
-    </header>
+    <?php require __DIR__ . '/src/php/header.php'; ?>
 
     <!-- Conteúdo principal da página -->
     <main>
@@ -69,12 +34,12 @@ if (session_status() === PHP_SESSION_NONE) {
                 <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
                 <!-- Indicadores (bolinhas do carrossel) -->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0"
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0"
                             class="active"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="3"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="4"></button>
                     </div>
                     <!-- Slides do carrossel -->
                     <div class="carousel-inner" data-bs-interval="3000">
@@ -154,7 +119,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 <!-- Título da seção -->
                 <div class="news-emphasis_title">
                     <h3>DESTAQUES DO DIA</h3>
-                    <a href="./src/noticias/rool-noticias.php">VER TODOS →</a>
+                    <a href="./src/pages/noticias.php">VER TODOS →</a>
                 </div>
                 <div class="news-emphasis_cards">
                     <!-- Card de notícia -->
@@ -167,7 +132,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category redes_sociais">REDES SOCIAIS</span>
+                                <span class="news-card_category smartphones">Smartphones</span>
                                 <h2 class="news-card_title">
                                     Grécia proíbe redes sociais para menores
                                 </h2>
@@ -184,7 +149,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category ciberseguranca">CIBERSEGURANÇA</span>
+                                <span class="news-card_category hardware">Hardware</span>
                                 <h2 class="news-card_title">
                                     Hacker ataca sistemas do Reino Unido
                                 </h2>
@@ -201,7 +166,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category ia">IA</span>
+                                <span class="news-card_category tecnologia">Tecnologia</span>
                                 <h2 class="news-card_title">
                                     IA revoluciona setor de tecnologia
                                 </h2>
@@ -218,7 +183,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category ia">IA</span>
+                                <span class="news-card_category tecnologia">Tecnologia</span>
                                 <h2 class="news-card_title">
                                     Voz clonada é usada em ataque de phishing
                                 </h2>
@@ -244,7 +209,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             <a href="./src/pages/news/ameaca-ia.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/ameaca-ia.png">
-                                    <span class="news-card_category ia">IA</span>
+                                    <span class="news-card_category ia_machine_learning">IA &amp; Machine Learning</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->
@@ -263,7 +228,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             <a href="./src/pages/news/carro-voador.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/carro-voador.png">
-                                    <span class="news-card_category smartphones">SMARTPHONES</span>
+                                    <span class="news-card_category hardware">Hardware</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->
@@ -282,7 +247,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             <a href="./src/pages/news/guerra-eua.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/guerra-eua.png">
-                                    <span class="news-card_category ia">IA</span>
+                                    <span class="news-card_category tecnologia">Tecnologia</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->
@@ -301,7 +266,7 @@ if (session_status() === PHP_SESSION_NONE) {
                             <a href="./src/pages/news/vicio-redes-sociais.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/vicios-redes-sociais.png">
-                                    <span class="news-card_category redes_sociais">REDES SOCIAIS</span>
+                                    <span class="news-card_category smartphones">Smartphones</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->
