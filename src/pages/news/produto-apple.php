@@ -43,7 +43,7 @@
             </button>
             <a id="login" href="../../pages/account/login.php">ENTRAR</a>
         </div>
-    </header>
+</header>
 
 
     <!-- Conteudo Principal -->
