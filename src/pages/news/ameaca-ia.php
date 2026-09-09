@@ -31,27 +31,16 @@
         <nav class="menu">
             <a href="#Home">INÍCIO</a>
             <a href="#Destaques">DESTAQUES</a>
+            <a href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
+            <a href="#EmAlta">EM ALTA</a>
             <a href="#Rodape">CONTATO</a>
-            <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'admin'): ?>
-                <a href="cadastrarNoticia.php" class="nav-link <?php echo ($pagina_atual === 'cadastrarNoticia.php') ? 'ativo' : ''; ?>">Cadastrar Noticia</a>
-            <?php endif; ?>
-
-            <?php if (isset($_SESSION['id_usuario'])): ?>
-                <a href="../painel.php" class="nav-link <?php echo ($pagina_atual === '../painel.php') ? 'ativo' : ''; ?>">MEU PERFIL</a>
-                <a href="./src/php/logout.php" class="nav-link">SAIR</a>
-            <?php else: ?>
-                <a href="../account/login.php" class="nav-link <?php echo ($pagina_atual === '../account/login.php') ? 'ativo' : ''; ?>">ENTRAR</a>
-                <a href="../account/cadastro.php" class="nav-link <?php echo ($pagina_atual === '../account/cadastro.php') ? 'ativo' : ''; ?>">CADASTRAR-SE</a>
-            <?php endif; ?>
         </nav>
 
         <div class="button-menu">
             <button type="button" id="tema" onclick="toggleStyle()">
-                <img id="iconTema" src="../../assets/icons/sun.png" alt="">
+                <img id="iconTema" src="../../assets/icons/sun.png" alt="Trocar tema">
             </button>
-            <div class="dropdown">
-                <div class="dropdown-content"></div>
-            </div>
+            <a id="login" href="../../pages/account/login.php">ENTRAR</a>
             <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
         </div>
     </header>
