@@ -1,0 +1,14 @@
+<?php
+require_once __DIR__ . '/../php/autorizacao.php';
+require_once __DIR__ . '/../php/conexao.php';
+exigirLogin();
+$idUsuario = (int) $_SESSION['id_usuario'];
+$stmt = $conexao->prepare('SELECT nome, email, pergunta_seguranca FROM usuarios WHERE id_usuario = ?');
+$stmt->bind_param('i', $idUsuario);
+$stmt->execute();
+$perfil = $stmt->get_result()->fetch_assoc();
+$erro = $_GET['erro'] ?? '';
+?>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Meu perfil | ByteNews</title><link rel="stylesheet" href="../assets/CSS/style.css"><link rel="icon" href="../assets/icons/icone.png"></head><body class="dark">
+<?php $headerBasePath = '../../'; require __DIR__ . '/../php/header.php'; ?>
+<main class="page-shell account-page"><section class="account-hero"><span class="eyebrow">MINHA CONTA</span><h1>Meu perfil</h1><p>Atualize seus dados e mantenha sua conta ByteNews sempre em dia.</p></section><form class="profile-form" method="post" action="../php/perfil.php"><div class="profile-form-avatar"><?= htmlspecialchars(strtoupper(substr($perfil['nome'], 0, 1))) ?></div><div class="form-section"><span class="section-kicker">Dados pessoais</span><label>Nome completo<input name="nome" required maxlength="200" value="<?= htmlspecialchars($perfil['nome']) ?>"></label><label>E-mail<input type="email" name="email" required maxlength="255" value="<?= htmlspecialchars($perfil['email']) ?>"></label></div><div class="form-section"><span class="section-kicker">Segurança</span><label>Senha atual <small>Obrigatória para trocar a senha.</small><input type="password" name="senha_atual" autocomplete="current-password"></label><label>Nova senha <small>Deixe em branco para manter a senha atual.</small><input type="password" name="senha" minlength="6" autocomplete="new-password"></label><label>Confirmar nova senha<input type="password" name="confirmar_senha" minlength="6" autocomplete="new-password"></label><label>Pergunta de segurança<select name="pergunta_seguranca" required><?php foreach (['Qual é o nome do seu primeiro pet?','Qual é o nome da sua cidade natal?','Qual o nome do seu filme favorito?'] as $pergunta): ?><option <?= $perfil['pergunta_seguranca'] === $pergunta ? 'selected' : '' ?>><?= $pergunta ?></option><?php endforeach; ?></select></label><label>Resposta de segurança<input name="resposta_seguranca" placeholder="Informe somente se quiser atualizar"></label></div><?php if ($erro): ?><p class="form-feedback">Não foi possível atualizar os dados. Verifique as informações.</p><?php endif; ?><div class="form-actions"><a class="text-link" href="./painel.php">Voltar ao painel</a><button class="primary-action" type="submit">Salvar alterações <span>→</span></button></div></form></main><script src="../assets/JS/script.js"></script></body></html>

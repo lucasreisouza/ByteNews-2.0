@@ -1,25 +1,56 @@
 <?php
-    include('conexao.php');
-    # Captura os dados do formulário de cadastro
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    $pergunta = $_POST['pergunta_seguranca'];
-    $resposta = $_POST['resposta_seguranca'];
-    # Valida dados vazios 
-    if(empty($nome) || empty($email) || empty($senha) || empty($pergunta) || empty($resposta)){
-        echo "<p>Preencha todos os campos!</p>"; exit(); }
-    # Aplica criptografia na senha
-    $senha_segura = password_hash($senha, PASSWORD_DEFAULT);
-    # Cria comando SQL de inserção usando Prepared Statements (Seguro)
-    $stmt = $conexao->prepare("INSERT INTO usuarios(nome, email, senha_segura, pergunta_seguranca, resposta_seguranca) VALUES (?, ?, ?, ?, ?)");
-    # "ssss" indica que os 4 parâmetros são strings
-    $stmt->bind_param("sssss", $nome, $email, $senha_segura, $pergunta, $resposta);
-    # Executa o comando
-    if($stmt->execute()){
-        # Redireciona o usuário para a página de login após o cadastro
-        header("Location: ../pages/account/login.php");
-} else { echo "Erro ao cadastrar: " . $conexao->error;}
+session_start();
+require_once __DIR__ . '/conexao.php';
+
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: ../pages/account/cadastro.php');
+    exit;
+}
+
+$nome = trim($_POST['nome'] ?? '');
+$email = trim($_POST['email'] ?? '');
+$senha = $_POST['senha'] ?? '';
+$confirmarSenha = $_POST['confirmar_senha'] ?? '';
+$pergunta = trim($_POST['pergunta_seguranca'] ?? '');
+$resposta = trim($_POST['resposta_seguranca'] ?? '');
+
+if ($nome === '' || $email === '' || $senha === '' || $confirmarSenha === '' || $pergunta === '' || $resposta === '') {
+    header('Location: ../pages/account/cadastro.php?erro=preencha');
+    exit;
+}
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    header('Location: ../pages/account/cadastro.php?erro=email');
+    exit;
+}
+
+if (strlen($senha) < 6) {
+    header('Location: ../pages/account/cadastro.php?erro=senha');
+    exit;
+}
+
+if ($senha !== $confirmarSenha) {
+    header('Location: ../pages/account/cadastro.php?erro=confirmacao');
+    exit;
+}
+
+$stmt = $conexao->prepare('SELECT id_usuario FROM usuarios WHERE email = ? LIMIT 1');
+$stmt->bind_param('s', $email);
+$stmt->execute();
+if ($stmt->get_result()->num_rows > 0) {
+    header('Location: ../pages/account/cadastro.php?erro=existente');
+    exit;
+}
 $stmt->close();
-$conexao->close();
-?>
+
+$senha_segura = password_hash($senha, PASSWORD_DEFAULT);
+$stmt = $conexao->prepare("INSERT INTO usuarios (nome, email, senha_segura, tipo_usuario, pergunta_seguranca, resposta_seguranca) VALUES (?, ?, ?, 'leitor', ?, ?)");
+$stmt->bind_param('sssss', $nome, $email, $senha_segura, $pergunta, $resposta);
+
+if (!$stmt->execute()) {
+    header('Location: ../pages/account/cadastro.php?erro=banco');
+    exit;
+}
+
+header('Location: ../pages/account/login.php?cadastro=ok');
+exit;

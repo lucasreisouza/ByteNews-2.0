@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,7 +20,8 @@
 
 <body class="dark">
     <!-- Cabeçalho -->
-    <header id="nav">
+    <?php $headerBasePath = '../../../'; require __DIR__ . '/../../php/header.php'; ?>
+    <header class="legacy-header">
         <!-- logo -->
         <div class="logo">
             <a href="../../../index.php">
@@ -39,10 +41,7 @@
             <button id="tema" onclick="toggleStyle()">
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
-            <form>
-                <button id="login" formaction="../../pages/account/login.php"
-                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
-            </form>
+            <a id="login" href="../../pages/account/login.php">ENTRAR</a>
         </div>
 </header>
 
@@ -50,7 +49,7 @@
     <!-- Conteudo Principal -->
      <main class="news-container">
         <section class="news-article">
-            <div class="news-header">
+            <div class="news-title">
                 <h1>Hackers ligados ao Irã invadem e-mail de diretor do FBI e vazam fotos e mensagens; o que se sabe</h1><!-- titulo da noticia-->
                 <p>O e-mail pessoal do diretor do FBI, Kash Patel, foi invadido por hackers ligados ao Irã nesta sexta-feira (27/3).</p>
                 <p>Por <a href="https://www.bbc.com/portuguese/articles/czd7ldv289go" target="_blank">Grace Eliza Goodwine Author,Kwasi Gyamfi Asiedu</a> | 27 março 2026</p>
@@ -163,6 +162,7 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="../../assets/JS/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,7 +20,8 @@
 
 <body class="dark">
     <!-- Cabeçalho -->
-    <header id="nav">
+    <?php $headerBasePath = '../../../'; require __DIR__ . '/../../php/header.php'; ?>
+    <header class="legacy-header">
         <div class="logo">
             <a href="../../../index.php"><img id="logoHeader" src="../../assets/icons/logo-padrao.png" alt="ByteNews"></a>
         </div>
@@ -149,6 +151,7 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="../../assets/JS/script.js"></script>
 </body>
 </html>
