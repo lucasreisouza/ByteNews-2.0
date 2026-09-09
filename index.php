@@ -1,5 +1,9 @@
+<?php
+session_start();
+$headerBasePath = '';
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta name="description" content="ByteNews - Seu portal de tecnologia, games e inovações. As últimas notícias sobre IA, smartphones, games e hardware.">
@@ -19,35 +23,7 @@
 </head>
 
 <body class="dark">
-    <!-- header -->
-    <header id="nav">
-        <!-- logo -->
-        <div class="logo">
-            <a href="index.php">
-                <img id="logoHeader" src="./src/assets/icons/logo-padrao.png">
-            </a>
-        </div>
-        <!-- menu -->
-        <div class="menu">
-            <a class="home" href="#Home">INÍCIO</a>
-            <a class="destaques" href="#Destaques">DESTAQUES</a>
-            <a class="ultimas" href="#Ultimas">ÚLTIMAS NOTÍCIAS</a>
-            <a class="em-alta" href="#EmAlta">EM ALTA</a>
-            <a class="rodape" href="#Rodape">CONTATO</a>
-        </div>
-        <!-- botões do menu -->
-        <div class="button-menu">
-            <button id="tema" onclick="toggleStyle()">
-                <img id="iconTema" src="./src/assets/icons/sun.png">
-            </button>
-            <form>
-                <button id="login" formaction="./src/pages/account/login.php">ENTRAR</button><!--botão para entra em uma conta-->
-            </form>
-            <div class="dropdown">
-                <div class="dropdown-content"></div>
-            </div>
-        </div>
-    </header>
+    <?php require __DIR__ . '/src/php/header.php'; ?>
 
     <!-- Conteúdo principal da página -->
     <main>
@@ -58,12 +34,12 @@
                 <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
                 <!-- Indicadores (bolinhas do carrossel) -->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0"
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0"
                             class="active"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="3"></button>
-                        <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="4"></button>
                     </div>
                     <!-- Slides do carrossel -->
                     <div class="carousel-inner" data-bs-interval="3000">
@@ -143,7 +119,7 @@
                 <!-- Título da seção -->
                 <div class="news-emphasis_title">
                     <h3>DESTAQUES DO DIA</h3>
-                    <a href="./src/noticias/rool-noticias.php">VER TODOS →</a>
+                    <a href="./src/pages/noticias.php">VER TODOS →</a>
                 </div>
                 <div class="news-emphasis_cards">
                     <!-- Card de notícia -->
@@ -156,7 +132,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category redes_sociais">REDES SOCIAIS</span>
+                                <span class="news-card_category smartphones">Smartphones</span>
                                 <h2 class="news-card_title">
                                     Grécia proíbe redes sociais para menores
                                 </h2>
@@ -173,7 +149,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category ciberseguranca">CIBERSEGURANÇA</span>
+                                <span class="news-card_category hardware">Hardware</span>
                                 <h2 class="news-card_title">
                                     Hacker ataca sistemas do Reino Unido
                                 </h2>
@@ -190,7 +166,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category ia">IA</span>
+                                <span class="news-card_category tecnologia">Tecnologia</span>
                                 <h2 class="news-card_title">
                                     IA revoluciona setor de tecnologia
                                 </h2>
@@ -207,7 +183,7 @@
                             </figure>
                             <!-- Conteúdo da notícia -->
                             <div class="news-card_content">
-                                <span class="news-card_category ia">IA</span>
+                                <span class="news-card_category tecnologia">Tecnologia</span>
                                 <h2 class="news-card_title">
                                     Voz clonada é usada em ataque de phishing
                                 </h2>
@@ -233,7 +209,7 @@
                             <a href="./src/pages/news/ameaca-ia.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/ameaca-ia.png">
-                                    <span class="news-card_category ia">IA</span>
+                                    <span class="news-card_category ia_machine_learning">IA &amp; Machine Learning</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->
@@ -252,7 +228,7 @@
                             <a href="./src/pages/news/carro-voador.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/carro-voador.png">
-                                    <span class="news-card_category smartphones">SMARTPHONES</span>
+                                    <span class="news-card_category hardware">Hardware</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->
@@ -271,7 +247,7 @@
                             <a href="./src/pages/news/guerra-eua.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/guerra-eua.png">
-                                    <span class="news-card_category ia">IA</span>
+                                    <span class="news-card_category tecnologia">Tecnologia</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->
@@ -290,7 +266,7 @@
                             <a href="./src/pages/news/vicio-redes-sociais.php" target="_blank">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/vicios-redes-sociais.png">
-                                    <span class="news-card_category redes_sociais">REDES SOCIAIS</span>
+                                    <span class="news-card_category smartphones">Smartphones</span>
                                 </figure>
                                 <div class="news-latest_content">
                                     <!-- título -->

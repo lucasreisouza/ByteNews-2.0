@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,7 +20,8 @@
 
 <body class="dark">
     <!-- Cabeçalho -->
-    <header id="nav">
+    <?php $headerBasePath = '../../../'; require __DIR__ . '/../../php/header.php'; ?>
+    <header class="legacy-header">
         <!-- logo -->
         <div class="logo">
             <a href="../../../index.php">
@@ -39,10 +41,7 @@
             <button id="tema" onclick="toggleStyle()">
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
-            <form>
-                <button id="login" formaction="../../pages/account/login.php"
-                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
-            </form>
+            <a id="login" href="../../pages/account/login.php">ENTRAR</a>
         </div>
 </header>
 
@@ -60,7 +59,7 @@
                 <img src="../../assets/images/produto-apple.png" alt="Produto Apple">
             </figure><!-- imagem da noticia-->
 
-            <p>Por <a href="https://canaltech.com.br/equipe/andre-leonardo/?_gl=1*jxlyg1*_gcl_au*MTg3OTA3MjYyMC4xNzYxNTA1ODA2" target="_blank">André Leonardo</a> | 14/10/2025 às 18:00 editado por <a href="../index.php">ByteNews</a> </p>
+            <p>Por <a href="https://canaltech.com.br/equipe/andre-leonardo/?_gl=1*jxlyg1*_gcl_au*MTg3OTA3MjYyMC4xNzYxNTA1ODA2" target="_blank">André Leonardo</a> | 14/10/2025 às 18:00 editado por <a href="../../../index.php">ByteNews</a> </p>
 
             <!-- conteúdo -->
             <article class="news-content">

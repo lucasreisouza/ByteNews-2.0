@@ -1,13 +1,18 @@
 <?php
 $servidor = "localhost";
 $usuario = "root";
-$senha = "senac";
-$banco = "bytenewsteste";
-$conexao = new mysqli($servidor, $usuario, $senha, $banco, 3307);
+$senha = "";
+$banco = "sistemaByteNews";
+$porta = 3306;
+
+$conexao = new mysqli($servidor, $usuario, $senha, $banco, $porta);
 
 if ($conexao->connect_error) {
-    die("Erro: " . $conexao->connect_error);
+    http_response_code(500);
+    die("Falha na conexão com o banco de dados.");
 }
 
-echo "Conectado com sucesso";
-?>
+$conexao->set_charset("utf8mb4");
+
+$conexao->query("ALTER TABLE noticias ADD COLUMN IF NOT EXISTS visualizacoes INT NOT NULL DEFAULT 0");
+$conexao->query("ALTER TABLE noticias ADD COLUMN IF NOT EXISTS slug VARCHAR(180) NULL");

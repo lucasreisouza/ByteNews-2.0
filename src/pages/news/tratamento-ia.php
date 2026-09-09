@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -18,7 +19,8 @@
 </head>
 <body class="dark">
     <!-- Cabeçalho -->
-    <header id="nav">
+    <?php $headerBasePath = '../../../'; require __DIR__ . '/../../php/header.php'; ?>
+    <header class="legacy-header">
         <!-- logo -->
         <div class="logo">
             <a href="../../../index.php">
@@ -38,10 +40,7 @@
             <button id="tema" onclick="toggleStyle()">
                 <img id="iconTema" src="../../assets/icons/sun.png">
             </button>
-            <form>
-                <button id="login" formaction="../../pages/account/login.php"
-                    formtarget="_blank">ENTRAR</button><!--botão para entra em uma conta-->
-            </form>
+            <a id="login" href="../../pages/account/login.php">ENTRAR</a>
         </div>
     </header>
 
