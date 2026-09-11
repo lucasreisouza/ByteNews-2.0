@@ -95,6 +95,8 @@ async function updateHeader() {
 }
 
 function getNewsSlug() {
+  const slug = new URLSearchParams(window.location.search).get('slug');
+  if (slug) return slug;
   const parts = window.location.pathname.split('/');
   const file = parts[parts.length - 1] || '';
   return file.replace(/\.php$/, '');
@@ -133,11 +135,31 @@ function setupFavoriteButton() {
   title.appendChild(button);
 }
 
+function setupLikeButton() {
+  const title = document.querySelector('.news-title');
+  if (!title) return;
+  const ids = { 'ameaca-ia': 1, 'carro-voador': 2, 'grecia-redes-sociais': 3, 'gta-6': 4, 'guerra-eua': 5, 'hacker-reino-unido': 6, 'hackers-ira': 7, 'iphone-dobravel': 8, 'meta-ia': 9, 'modelo-ia': 10, 'produto-apple': 11, 'tratamento-ia': 12, 'treinar-robos': 13, 'vicio-redes-sociais': 14, 'voz-clonada': 15 };
+  const idNoticia = Number(document.body.dataset.newsId || ids[getNewsSlug()] || 0);
+  if (!idNoticia) return;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'like-button';
+  const update = data => { button.dataset.liked = data.curtido ? 'true' : 'false'; button.textContent = `${data.curtido ? '♥' : '♡'} ${data.curtidas} ${data.curtidas === 1 ? 'curtida' : 'curtidas'}`; };
+  fetch(getPhpPath(`curtidas.php?id_noticia=${encodeURIComponent(idNoticia)}`), { credentials: 'same-origin' }).then(response => response.ok ? response.json() : null).then(data => { if (data) update(data); });
+  button.addEventListener('click', async () => {
+    const formData = new FormData(); formData.append('id_noticia', idNoticia); formData.append('acao', button.dataset.liked === 'true' ? 'remover' : 'curtir');
+    const response = await fetch(getPhpPath('curtidas.php'), { method: 'POST', body: formData, credentials: 'same-origin' });
+    if (response.status === 401) { window.location.href = getLoginPath() + '?redirect=' + encodeURIComponent(window.location.pathname + window.location.search); return; }
+    if (response.ok) update(await response.json());
+  });
+  title.appendChild(button);
+}
+
 function setupHomeNews() {
   const emphasis = document.querySelector('.news-emphasis_cards');
   if (!emphasis) return;
   fetch(getPhpPath('home-noticias.php'), { credentials: 'same-origin' }).then(response => response.json()).then(data => {
-    const makeUrl = item => item.slug ? './src/pages/news/' + item.slug + '.php' : './src/pages/noticias.php#noticia-' + item.id_noticia;
+    const makeUrl = item => item.slug ? './src/pages/news/noticia.php?slug=' + encodeURIComponent(item.slug) : './src/pages/news/noticia.php?id_noticia=' + encodeURIComponent(item.id_noticia);
     const makeImage = item => './src/assets/images/' + item.imagem;
     const updateCards = (selector, items, type) => {
       const cards = document.querySelectorAll(selector);
@@ -153,13 +175,13 @@ function setupHomeNews() {
         if (image) { image.src = makeImage(item); image.alt = item.titulo; }
         if (title) title.textContent = item.titulo;
         if (category) { category.textContent = item.categoria; category.className = 'news-card_category ia'; }
-        if (time) time.textContent = type === 'latest' ? new Date(item.data_publicacao.replace(' ', 'T')).toLocaleDateString('pt-BR') : type === 'hot' ? '↑ ' + Number(item.visualizacoes).toLocaleString('pt-BR') : '💬 ' + item.comentarios + ' comentários';
+        if (time) time.textContent = type === 'latest' ? new Date(item.data_publicacao.replace(' ', 'T')).toLocaleDateString('pt-BR') : type === 'hot' ? '♥ ' + Number(item.curtidas).toLocaleString('pt-BR') : '💬 ' + item.comentarios + ' comentários';
       });
     };
     updateCards('.news-emphasis_cards .news-card', data.destaques, 'featured');
     updateCards('.news-latest_cards article', data.ultimas, 'latest');
     const hotItems = document.querySelectorAll('.news-rise_item');
-    data.alta.forEach((item, index) => { const row = hotItems[index]; if (!row) return; const link = row.querySelector('a'); const title = row.querySelector('.news-rise_title-text'); const stats = row.querySelector('.news-rise_trend'); if (link) link.href = makeUrl(item); if (title) title.textContent = item.titulo; if (stats) stats.textContent = '↑ ' + Number(item.visualizacoes).toLocaleString('pt-BR'); });
+    data.alta.forEach((item, index) => { const row = hotItems[index]; if (!row) return; const link = row.querySelector('a'); const title = row.querySelector('.news-rise_title-text'); const stats = row.querySelector('.news-rise_trend'); if (link) link.href = makeUrl(item); if (title) title.textContent = item.titulo; if (stats) stats.textContent = '♥ ' + Number(item.curtidas).toLocaleString('pt-BR'); });
   }).catch(() => {});
 }
 
@@ -298,6 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setImagens(clear);
   registerNewsView();
   setupFavoriteButton();
+  setupLikeButton();
   setupHomeNews();
   setupEditorialControls();
   setupComments();

@@ -3682,6 +3682,21 @@ body.clear .comment-item {
     background: rgba(var(--neon-pink-rgb), .18);
 }
 
+.like-button {
+    display: inline-block;
+    margin: 14px 0 0 10px;
+    padding: 10px 14px;
+    border: 1px solid #ff5a7a;
+    border-radius: 7px;
+    background: rgba(255, 90, 122, .08);
+    color: #ff6b87;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.like-button:hover { background: rgba(255, 90, 122, .22); }
+
 .add-paragraph {
     margin-top: 12px;
     padding: 9px 12px;
@@ -4387,6 +4402,6 @@ body.clear .overview-label {
     color: var(--text-white);
 }
 
-body.clear .request-row, .moderator-card {
+body.clear .request-row, body.clear .moderator-card {
     background: var(--bg-clear-primary);
 }

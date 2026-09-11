@@ -47,7 +47,7 @@ $headerBasePath = '';
                         <div class="carousel-item active">
                             <div class="cartao noticia1">
                                 <!-- Link abre notícia em nova aba -->
-                                <a href="./src/pages/news/gta-6.php" target="_blank">
+                                <a href="./src/pages/news/gta-6.php">
                                     <img src="./src/assets/images/carousel/gta-6.png" class="d-block"
                                         alt="Lançamento do GTA 6">
                                 </a>
@@ -59,7 +59,7 @@ $headerBasePath = '';
                         <!-- Slide 2 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia2">
-                                <a href="./src/pages/news/iphone-dobravel.php" target="_blank">
+                                <a href="./src/pages/news/iphone-dobravel.php">
                                     <img src="./src/assets/images/carousel/iphone-dobravel.png" class="d-block"
                                         alt="iPhone dobrável">
                                 </a>
@@ -72,7 +72,7 @@ $headerBasePath = '';
                         <!-- Slide 3 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
-                                <a href="./src/pages/news/meta-ia.php" target="_blank">
+                                <a href="./src/pages/news/meta-ia.php">
                                     <img src="./src/assets/images/carousel/meta-ai.png" class="d-block" alt="celular">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
@@ -83,7 +83,7 @@ $headerBasePath = '';
                         <!-- Slide 4 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
-                                <a href="./src/pages/news/produto-apple.php" target="_blank">
+                                <a href="./src/pages/news/produto-apple.php">
                                     <img src="./src/assets/images/carousel/produto-apple.png" class="d-block" alt="Foto da sede da Apple">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
@@ -94,7 +94,7 @@ $headerBasePath = '';
                         <!-- Slide 5 -->
                         <div class="carousel-item" data-bs-interval="3000">
                             <div class="cartao noticia3">
-                                <a href="./src/pages/news/treinar-robos.php" target="_blank">
+                                <a href="./src/pages/news/treinar-robos.php">
                                     <img src="./src/assets/images/carousel/treinar-robos.png" class="d-block" alt="robôs">
                                 </a>
                                 <div class="carousel-caption d-none d-md-block">
@@ -124,7 +124,7 @@ $headerBasePath = '';
                 <div class="news-emphasis_cards">
                     <!-- Card de notícia -->
                     <article class="news-card">
-                        <a target="_blank" href="./src/pages/news/grecia-redes-sociais.php">
+                        <a href="./src/pages/news/grecia-redes-sociais.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
                                 <img src="./src/assets/images/news-emphasis/grecias-redes-sociais.png"
@@ -141,7 +141,7 @@ $headerBasePath = '';
                         </a>
                     </article>
                     <article class="news-card">
-                        <a target="_blank" href="./src/pages/news/hacker-reino-unido.php">
+                        <a href="./src/pages/news/hacker-reino-unido.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
                                 <img src="./src/assets/images/news-emphasis/hackers-reino-unido.png"
@@ -158,7 +158,7 @@ $headerBasePath = '';
                         </a>
                     </article>
                     <article class="news-card">
-                        <a target="_blank" href="./src/pages/news/modelo-ia.php">
+                        <a href="./src/pages/news/modelo-ia.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
                                 <img src="./src/assets/images/news-emphasis/modelo-ia.png"
@@ -175,7 +175,7 @@ $headerBasePath = '';
                         </a>
                     </article>
                     <article class="news-card">
-                        <a target="_blank" href="./src/pages/news/voz-clonada.php">
+                        <a href="./src/pages/news/voz-clonada.php">
                             <!-- Imagem da notícia -->
                             <figure class="news-card_image">
                                 <img src="./src/assets/images/news-emphasis/voz-clonada.png"
@@ -206,7 +206,7 @@ $headerBasePath = '';
                     <div class="news-latest_cards">
                         <!-- Card notícia -->
                         <article>
-                            <a href="./src/pages/news/ameaca-ia.php" target="_blank">
+                            <a href="./src/pages/news/ameaca-ia.php">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/ameaca-ia.png">
                                     <span class="news-card_category ia_machine_learning">IA &amp; Machine Learning</span>
@@ -225,7 +225,7 @@ $headerBasePath = '';
                             </a>
                         </article>
                         <article>
-                            <a href="./src/pages/news/carro-voador.php" target="_blank">
+                            <a href="./src/pages/news/carro-voador.php">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/carro-voador.png">
                                     <span class="news-card_category hardware">Hardware</span>
@@ -244,7 +244,7 @@ $headerBasePath = '';
                             </a>
                         </article>
                         <article>
-                            <a href="./src/pages/news/guerra-eua.php" target="_blank">
+                            <a href="./src/pages/news/guerra-eua.php">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/guerra-eua.png">
                                     <span class="news-card_category tecnologia">Tecnologia</span>
@@ -263,7 +263,7 @@ $headerBasePath = '';
                             </a>
                         </article>
                         <article>
-                            <a href="./src/pages/news/vicio-redes-sociais.php" target="_blank">
+                            <a href="./src/pages/news/vicio-redes-sociais.php">
                                 <figure class="news-latest_image">
                                     <img src="./src/assets/images/vicios-redes-sociais.png">
                                     <span class="news-card_category smartphones">Smartphones</span>
@@ -289,13 +289,13 @@ $headerBasePath = '';
                     <!-- título -->
                     <div class="news-rise_title">
                         <img src="./src/assets/icons/fire.png" alt="">
-                        <h3>EM ALTA</h3>
+                        <h3>MAIS CURTIDAS</h3>
                     </div>
 
                     <!-- lista de notícias em alta -->
                     <ol class="news-rise_list">
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/gta-6.php" target="_blank">
+                            <a href="./src/pages/news/gta-6.php">
                                 <span class="news-rise_rank">1</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">GTA 6: lançamento</h4>
@@ -307,7 +307,7 @@ $headerBasePath = '';
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/carro-voador.php" target="_blank">
+                            <a href="./src/pages/news/carro-voador.php">
                                 <span class="news-rise_rank">2</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Protótipo de 'carro voador'</h4>
@@ -319,7 +319,7 @@ $headerBasePath = '';
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/hacker-reino-unido.php" target="_blank">
+                            <a href="./src/pages/news/hacker-reino-unido.php">
                                 <span class="news-rise_rank">3</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Ataque hacker desvia pagamento</h4>
@@ -331,7 +331,7 @@ $headerBasePath = '';
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/hackers-ira.php" target="_blank">
+                            <a href="./src/pages/news/hackers-ira.php">
                                 <span class="news-rise_rank">4</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Hackers ligados ao Irã invadem e-mail</h4>
@@ -343,7 +343,7 @@ $headerBasePath = '';
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/iphone-dobravel.php" target="_blank">
+                            <a href="./src/pages/news/iphone-dobravel.php">
                                 <span class="news-rise_rank">5</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">iPhone dobrável enfrenta problemas</h4>
@@ -355,7 +355,7 @@ $headerBasePath = '';
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/tratamento-ia.php" target="_blank">
+                            <a href="./src/pages/news/tratamento-ia.php">
                                 <span class="news-rise_rank">6</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Tratamento de doenças graças a IA</h4>
@@ -367,7 +367,7 @@ $headerBasePath = '';
                         </li>
 
                         <li class="news-rise_item">
-                            <a href="./src/pages/news/voz-clonada.php" target="_blank">
+                            <a href="./src/pages/news/voz-clonada.php">
                                 <span class="news-rise_rank">7</span>
                                 <div class="news-rise_content">
                                     <h4 class="news-rise_title-text">Sua voz pode ser clonada por IA!</h4>
