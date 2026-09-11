@@ -1396,6 +1396,80 @@ body.clear.acount .container p a {
   opacity: 0.8;
 }
 
+/* Solicitação de acesso */
+.access-request-page {
+  min-height: calc(100vh - 60px);
+  justify-content: center;
+  padding: 42px 20px 70px;
+  background: radial-gradient(circle at 75% 20%, rgba(var(--neon-purple2-rgb), 0.16), transparent 32%), radial-gradient(circle at 18% 75%, rgba(var(--neon-blue-rgb), 0.1), transparent 30%);
+}
+
+.access-request-card {
+  width: min(100%, 760px);
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid rgba(var(--neon-blue-rgb), 0.42);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(0, 7, 24, 0.96), rgba(14, 20, 32, 0.92));
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28), 0 0 32px rgba(var(--neon-blue-rgb), 0.08);
+}
+
+.access-request-intro { position: relative; max-width: 600px; }
+
+.access-request-mark {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(var(--neon-blue-rgb), 0.45);
+  border-radius: 50%;
+  color: var(--neon-blue);
+  font-size: 25px;
+  box-shadow: 0 0 20px rgba(var(--neon-blue-rgb), 0.18);
+}
+
+.access-request-intro h1 {
+  max-width: 550px;
+  margin: 14px 0 12px;
+  color: var(--text-white);
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(25px, 4vw, 39px);
+  line-height: 1.15;
+}
+
+.access-request-intro p { max-width: 550px; color: var(--text-secondary); font-size: 15px; line-height: 1.7; }
+
+.access-request-flow { display: flex; align-items: center; margin: 42px 0 30px; }
+
+.access-step { display: flex; align-items: center; gap: 8px; color: var(--text-muted); font-size: 11px; white-space: nowrap; }
+
+.access-step span { display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid var(--border-color); border-radius: 50%; font-family: "Orbitron", sans-serif; font-size: 9px; }
+
+.access-step.active { color: var(--neon-blue); }
+.access-step.active span { border-color: var(--neon-blue); box-shadow: 0 0 12px rgba(var(--neon-blue-rgb), 0.35); }
+.access-step-line { flex: 1; height: 1px; margin: 0 10px; background: var(--border-color); }
+
+.access-request-status { display: flex; align-items: center; gap: 16px; min-height: 82px; padding: 16px 18px; border-left: 3px solid var(--neon-blue); background: rgba(var(--neon-blue-rgb), 0.07); }
+
+.status-icon { display: grid; flex: 0 0 38px; place-items: center; width: 38px; height: 38px; border: 1px solid currentColor; border-radius: 50%; font-size: 17px; }
+.status-icon.pending { color: #ffd166; }
+.status-icon.approved { color: var(--neon-green); }
+.status-icon.ready { color: var(--neon-blue); }
+.status-label { color: var(--text-white); font-family: "Orbitron", sans-serif; font-size: 12px; text-transform: uppercase; }
+.access-request-status p { margin-top: 6px; color: var(--text-secondary); font-size: 14px; line-height: 1.5; }
+
+.access-request-actions { display: flex; justify-content: flex-end; margin-top: 26px; }
+.access-request-actions .primary-action { width: auto; }
+.access-back-link { display: inline-block; margin-top: 28px; color: var(--text-secondary); font-size: 13px; }
+
+body.clear .access-request-page { background: radial-gradient(circle at 75% 20%, rgba(139, 92, 246, 0.1), transparent 32%), var(--bg-clear-primary); }
+body.clear .access-request-card { background: var(--bg-clear-secondary); border-color: rgba(59, 130, 246, 0.35); box-shadow: 0 22px 60px rgba(15, 23, 42, 0.1); }
+body.clear .access-request-intro h1, body.clear .status-label { color: var(--text-clear-primary); }
+body.clear .access-request-intro p, body.clear .access-request-status p { color: var(--text-clear-secondary); }
+body.clear .access-request-status { background: rgba(59, 130, 246, 0.06); }
+
 body.clear .comment-form,
 body.clear .comment-item {
   background: var(--bg-clear-secondary, #f4f7fb);
@@ -1647,6 +1721,42 @@ body.clear .comment-item {
   }
 
   .comment-button {
+    width: 100%;
+  }
+
+  .access-request-page {
+    min-height: calc(100vh - 60px);
+    padding: 28px 14px 45px;
+  }
+
+  .access-request-card {
+    padding: 26px 20px;
+  }
+
+  .access-request-mark {
+    position: static;
+    margin-bottom: 22px;
+  }
+
+  .access-request-flow {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    margin: 32px 0 24px;
+  }
+
+  .access-step-line {
+    flex: none;
+    width: 1px;
+    height: 14px;
+    margin: -3px 0 -3px 13px;
+  }
+
+  .access-request-status {
+    align-items: flex-start;
+  }
+
+  .access-request-actions .primary-action {
     width: 100%;
   }
 

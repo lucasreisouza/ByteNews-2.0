@@ -1,8 +1,4 @@
 const body = document.querySelector("body");
-const logoHeader = document.querySelector("#logoHeader");
-const logoFooter = document.querySelector("#logoFooter");
-const temaIcon = document.querySelector("#iconTema");
-
 function getAssetPath(fileName) {
   const path = window.location.pathname;
   const root = path.includes("/src/")
@@ -14,6 +10,9 @@ function getAssetPath(fileName) {
 function setImagens(isClear) {
   const logoFile = isClear ? "logo-claro.png" : "logo-padrao.png";
   const iconFile = isClear ? "moon.png" : "sun.png";
+  const logoHeader = document.querySelector("#logoHeader");
+  const logoFooter = document.querySelector("#logoFooter");
+  const temaIcon = document.querySelector("#iconTema");
   if (logoHeader) logoHeader.src = getAssetPath(logoFile);
   if (logoFooter) logoFooter.src = getAssetPath(logoFile);
   if (temaIcon) temaIcon.src = getAssetPath(iconFile);
