@@ -9,12 +9,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $placeholders = implode(',', array_fill(0, count($ids), '?'));
         $tipos = str_repeat('i', count($ids));
         $imagens = [];
-        $buscar = $conexao->prepare("SELECT imagem FROM noticias WHERE id_noticia IN ($placeholders)");
+        $slugs = [];
+        $buscar = $conexao->prepare("SELECT imagem, slug FROM noticias WHERE id_noticia IN ($placeholders)");
         $buscar->bind_param($tipos, ...$ids);
         $buscar->execute();
         $resultadoImagens = $buscar->get_result();
         while ($noticia = $resultadoImagens->fetch_assoc()) {
             $imagens[] = $noticia['imagem'];
+            $slugs[] = $noticia['slug'];
         }
 
         $conexao->begin_transaction();
@@ -45,6 +47,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 : $diretorioImagens . '/' . basename($imagem);
             if (is_file($arquivo)) {
                 unlink($arquivo);
+            }
+        }
+
+        $diretorioNoticias = realpath(dirname(__DIR__) . '/pages/news');
+        foreach (array_unique($slugs) as $slug) {
+            if (!is_string($slug) || !preg_match('/^[a-z0-9-]+$/', $slug)) {
+                continue;
+            }
+
+            $arquivoNoticia = $diretorioNoticias . '/' . $slug . '.php';
+            if (basename($arquivoNoticia) === 'noticia.php' || !is_file($arquivoNoticia)) {
+                continue;
+            }
+
+            $arquivoResolvido = realpath($arquivoNoticia);
+            if ($arquivoResolvido !== false && str_starts_with($arquivoResolvido, $diretorioNoticias . DIRECTORY_SEPARATOR)) {
+                unlink($arquivoResolvido);
             }
         }
     } elseif ($ids && $acao === 'atualizar') {
