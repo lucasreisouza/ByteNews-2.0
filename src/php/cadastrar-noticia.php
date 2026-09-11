@@ -10,11 +10,14 @@ $titulo = trim($_POST['titulo'] ?? '');
 $subtitulo = trim($_POST['subtitulo'] ?? '');
 $categoria = trim($_POST['categoria'] ?? '');
 $autor = trim($_POST['autor'] ?? '');
+$fonteNome = trim($_POST['fonte_nome'] ?? '');
+$fonteUrl = trim($_POST['fonte_url'] ?? '');
 $tipos = $_POST['blocos_tipo'] ?? [];
 $blocos = $_POST['blocos_conteudo'] ?? [];
-if ($titulo === '' || $categoria === '' || $autor === '' || !is_array($tipos) || !is_array($blocos) || count($tipos) !== count($blocos) || count($blocos) === 0) { voltarComErro('campos'); }
+if ($titulo === '' || $categoria === '' || $autor === '' || $fonteNome === '' || $fonteUrl === '' || !is_array($tipos) || !is_array($blocos) || count($tipos) !== count($blocos) || count($blocos) === 0) { voltarComErro('campos'); }
+if (mb_strlen($fonteNome) > 150 || !filter_var($fonteUrl, FILTER_VALIDATE_URL) || !in_array(parse_url($fonteUrl, PHP_URL_SCHEME), ['http', 'https'], true)) { voltarComErro('fonte'); }
 
-$permitidos = ['paragrafo', 'recuado', 'titulo'];
+$permitidos = ['paragrafo', 'lista_ordenada', 'lista_nao_ordenada', 'titulo'];
 $conteudo = [];
 foreach ($blocos as $indice => $bloco) {
     $tipo = $tipos[$indice] ?? '';
@@ -37,9 +40,9 @@ $slug = ($baseSlug !== '' ? $baseSlug : 'noticia') . '-' . bin2hex(random_bytes(
 try {
     $conteudoJson = json_encode($conteudo, JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
     $imagem = 'news-upload/' . $nomeImagem;
-    $stmt = $conexao->prepare('INSERT INTO noticias (titulo, subtitulo, conteudo, categoria, autor, data_publicacao, imagem, slug) VALUES (?, ?, ?, ?, ?, NOW(), ?, ?)');
+    $stmt = $conexao->prepare('INSERT INTO noticias (titulo, subtitulo, conteudo, categoria, autor, fonte_nome, fonte_url, data_publicacao, imagem, slug) VALUES (?, ?, ?, ?, ?, ?, ?, NOW(), ?, ?)');
     if (!$stmt) { throw new RuntimeException('Não foi possível preparar a publicação.'); }
-    $stmt->bind_param('sssssss', $titulo, $subtitulo, $conteudoJson, $categoria, $autor, $imagem, $slug);
+    $stmt->bind_param('sssssssss', $titulo, $subtitulo, $conteudoJson, $categoria, $autor, $fonteNome, $fonteUrl, $imagem, $slug);
     if (!$stmt->execute()) { throw new RuntimeException('Não foi possível salvar a publicação.'); }
 } catch (Throwable) { @unlink($diretorio . '/' . $nomeImagem); voltarComErro('banco'); }
 header('Location: ../pages/news/noticia.php?slug=' . urlencode($slug));

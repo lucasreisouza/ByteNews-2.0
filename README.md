@@ -1,90 +1,44 @@
-# ByteNews-2.0
+# ByteNews 2.0
 
-Criar uma versão mais estilizada do nosso site
+Portal de notícias sobre tecnologia, inteligência artificial, games e hardware. O projeto foi desenvolvido para praticar front-end, PHP e MySQL.
 
-## 📖 Descrição
+## Funcionalidades
 
-O ByteNews é um portal de notícias desenvolvido com foco em simplicidade, agilidade e boa organização. O projeto foi criado para praticar conceitos de Front-End, PHP e banco de dados MySQL.
-O objetivo é entregar uma experiência clara, moderna e funcional para apresentar notícias de forma dinâmica.
+- Catálogo de notícias com busca e filtros por categoria
+- Autenticação, perfil e níveis de acesso (leitor, editor e administrador)
+- Comentários, curtidas e favoritos
+- Painel editorial para publicar e gerenciar notícias
+- Tema claro/escuro e layout responsivo
 
-## 🎥 Preview 
+## Tecnologias
 
-![imagem](./Imagens/print.png)
+- HTML, CSS e JavaScript
+- PHP 8+
+- MySQL/MariaDB
+- XAMPP (ambiente local sugerido)
 
-## ⚙️ Funcionalidades
+## Como executar localmente
 
- - Layout organizado em seções
+1. Copie ou clone o repositório para `C:\xampp\htdocs\ByteNews-2.0`.
+2. Inicie o Apache e o MySQL no XAMPP.
+3. Importe `sistemabytenews.sql` no phpMyAdmin, criando o banco `sistemabytenews`.
+4. Ajuste host, porta, usuário e senha locais em `src/php/conexao.php` conforme sua instalação.
+5. Acesse `http://localhost/ByteNews-2.0/`.
 
- - Cards de notícias estilizados
+## Estrutura principal
 
- - Navegação simples e intuitiva
+- `index.php`: página inicial
+- `src/pages`: telas da aplicação
+- `src/php`: autenticação, regras de negócio e endpoints
+- `src/assets`: estilos, scripts, ícones e imagens
+- `sistemabytenews.sql`: estrutura e dados de demonstração
 
- - Design responsivo
+## Observações
 
- - Futuras integrações com APIs de notícias
+- Notícias novas recebem um slug único e são acessadas por `src/pages/news/noticia.php?slug=...`.
+- O dump preenche os slugs das notícias legadas e mantém o acesso por ID como compatibilidade.
+- O botão **Sair** encerra a sessão PHP em `src/php/logout.php`.
 
-## 🛠️ Tecnologias Utilizadas
+## Autores
 
-- HTML
-
-- CSS
-
-- JavaScript
-
-- PHP
-
-- MySQL
-
-## ▶️ Como Rodar o Projeto
-
-O projeto usa PHP e MySQL. Para executá-lo com o XAMPP:
-
-- 1. Copie a pasta do projeto para `C:\xampp\htdocs`
-- 2. Inicie os serviços Apache e MySQL no painel do XAMPP
-- 3. Importe o arquivo `sistemaByteNews.sql` no phpMyAdmin
-- 4. Acesse `http://localhost/ByteNews-2.0-CORRIGIDO-LOGOUT/ByteNews-2.0-CORRIGIDO/index.php` no navegador
-
-## 📂 Como Clonar o Repositório
-
-Execute no terminal:
-
-git clone https://github.com/lh-luiii/ByteNews-2.0
-
-Depois:
-
-cd ByteNews
-
-## 🚀 Melhorias Futuras
-
-- Implementação de modo escuro
-
-- Carregamento dinâmico de notícias
-
-- Integração com API de jornalismo
-
-- Animações no design
-
-- Área administrativa para cadastrar notícias
-
-## 📚 Aprendizado
-
-No desenvolvimento do ByteNews, foram praticados e reforçados conhecimentos em:
-
-- Estruturação semântica com HTML
-
-- Estilização avançada com CSS
-
-- Responsividade para diferentes telas
-
-- Manipulação básica de DOM com JavaScript
-
-- Organização e boas práticas no Front-End
-
-## 👤 Autores
-
-[Luís Henrique](https://github.com/lh-luiii), [Lucas Reis Souza](https://github.com/lucasreisouza) e [Gustavo Ítalo](https://github.com/GustavoI7)
-Turma de Tecnologia em informática para internet (vespertino) - Senac DF
-
-
-### Logout
-O botão `SAIR` encerra a sessão PHP em `src/php/logout.php` e remove o usuário salvo em versões antigas do localStorage.
+[Luís Henrique](https://github.com/lh-luiii), [Lucas Reis Souza](https://github.com/lucasreisouza) e [Gustavo Ítalo](https://github.com/GustavoI7) — Senac DF, Técnico em Informática para Internet.

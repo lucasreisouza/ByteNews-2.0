@@ -229,7 +229,5 @@ if (podeGerenciarNoticias()) {
 
     </section>
   </main>
-
-  <script src="../assets/JS/script.js"></script>
 </body>
 </html>

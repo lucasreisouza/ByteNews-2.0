@@ -11,7 +11,7 @@ function prepararNoticias(mysqli $conexao, string $ordem, int $limite): array
 }
 $mapear = static function (array $noticias): array {
     return array_map(static function (array $noticia): array {
-        $noticia['imagem'] = basename($noticia['imagem']);
+        $noticia['imagem'] = str_starts_with($noticia['imagem'], 'news-upload/') ? $noticia['imagem'] : basename($noticia['imagem']);
         return $noticia;
     }, $noticias);
 };

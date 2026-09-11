@@ -233,6 +233,5 @@
             <p>&copy;2025 ByteNews • Todos os direitos reservados</p>
         </div>
     </footer>
-<script src="../../assets/JS/script.js"></script>
 </body>
 </html>

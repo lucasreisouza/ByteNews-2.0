@@ -49,6 +49,5 @@ $mensagens = [
     </div>
 </form>
 </main>
-<script src="../../assets/JS/script.js"></script>
 </body>
 </html>

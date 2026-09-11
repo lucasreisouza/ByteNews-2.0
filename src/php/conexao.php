@@ -1,9 +1,9 @@
 <?php
 $servidor = "localhost";
 $usuario = "root";
-$senha = "";
+$senha = "senac";
 $banco = "sistemabytenews";
-$porta = 3306;
+$porta = 3307;
 
 $conexao = new mysqli($servidor, $usuario, $senha, $banco, $porta);
 
